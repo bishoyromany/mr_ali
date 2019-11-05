@@ -1,0 +1,38 @@
+{
+  "name": "vpn_website",
+  "version": "1.0.0",
+  "description": "Gulp Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gulp_tutorial"
+  },
+  "keywords": [
+    "tutorial",
+    "gulp"
+  ],
+  "author": "Bishoy Romany",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-reload": "0.0.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.1",
+    "vinyl-ftp": "^0.6.1"
+  },
+  "dependencies": {
+    "livereload": "^0.8.2",
+    "static-server": "^2.2.1"
+  }
+}
