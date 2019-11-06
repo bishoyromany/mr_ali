@@ -9,13 +9,78 @@
     <link rel="stylesheet" href="/css/lib.css"/>
   </header>
   <body> 
-    <navbar> 
-      <ul> 
-        <li> <a>Nav One Yeah</a></li>
-      </ul>
+    <div id="homepageBanner" style="background:url(/images/banners/homepage_banner.jpg) no-repeat right 0; background-size:cover;"> 
+      <div class="container-fluid wow fadeInUp">
+        <div class="logo_contact"><a class="logo" href="/"> <img src="/images/logos/Voice_Logo.png" alt="Voice Logo"/></a>
+          <div class="contact_container">
+            <div class="contact text-center"><span>Contact us at <a href="tel:+1111111111">111-111-1111 </a><span>or  </span><a class="contact_us_link" href="/contact_us.html">Click Here</a></span></div>
+          </div>
+        </div>
+        <div class="demo"> 
+          <h2>Affordable, Reliable and Flexible: VoIP for Modern Enterprises.  </h2><a href="contact_us.html">Request A Demo</a>
+        </div>
+      </div>
+    </div>
+    <navbar id="navbar">
+      <div class="container">
+        <ul class="list-unstyled"> 
+          <li> 
+            <div class="hasSub"><a href="/">Home</a>
+              <ul class="list-unstyled">
+                <li> <a href="#Introduction">Introduction</a></li>
+                <div class="clear-fix"></div><span class="bottom"> <img src="/images/navbar/navbar_list_botton.webp" alt="Link"/></span>
+              </ul>
+            </div>
+          </li>
+          <li> 
+            <div> <a href="/products.html">Products</a></div>
+          </li>
+          <li> 
+            <div> <a href="/support.html">Support </a></div>
+          </li>
+          <li> 
+            <div><a href="/why_us.html">Why Us</a></div>
+          </li>
+          <li> 
+            <div><a href="/contact_us.html">Contact Us</a></div>
+          </li>
+        </ul>
+      </div>
     </navbar>
-    <main class="container">Project Setted Up</main>
+    <div id="homePageIntroduce1"> 
+      <div class="background">
+        <div class="row">
+          <div class="col-md-6 talk">
+            <h2 class="wow bounceInLeft">Reduce Overhead. Ensure Quality Calls. Increase Efficiency.</h2><img class="wow bounceInLeft phone" src="/images/introduce/phone.png"/>
+          </div>
+          <div class="col-md-6 video">
+            <div class="mobile_background wow bounceInRight"><img src="/images/introduce/Tab_image.png" alt="Mobile"/>
+              <div class="text wow bounceInRight"> 
+                <div class="data"> <span class="see">See it yourself!</span><span class="watch">Watch The Video </span><a class="active" id="callTheVideo" href="#">Click Here</a></div>
+              </div>
+            </div>
+          </div>
+          <div id="theVideo"> 
+            <div> 
+              <iframe src="https://player.vimeo.com/video/243345977" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="homePageIntroduce2"> 
+      <div class="background text-center">
+        <div class="data wow fadeInUp"><span>About Company</span>
+          <h1>Expert Advice And Quality Service</h1>
+          <h5>Sed maximus risus tristique viverra dapibus. Nam vehicula dictum eros nec pharetra.</h5>
+          <p>Etiam vitae libero ut nulla rutrum iaculis vitae a elit. Morbi venenatis accumsan consectetur. Quisque nec congue neque. Integer interdum tellus ac orci mollis, nec finibus eros congue. Etiam ut sapien a dolor rutrum placerat. Nunc egestas justo ac leo placerat, at posuere ex dignissim. Praesent accumsan lorem vel lorem commodo efficitur.</p>
+          <div class="buttons"> <a class="more" href="/why_us.html">More About Us </a><a class="contact" href="/contact_us.html">Contact Us</a></div>
+        </div>
+      </div>
+    </div>
     <footer> 
+      <script src="/js/jquery/jquery.js"></script>
+      <script src="/js/lib.js"></script>
       <script src="/js/main.js"></script>
       <script src="http://localhost:35729/livereload.js"></script>
     </footer>

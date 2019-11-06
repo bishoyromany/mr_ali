@@ -1,9 +1,14 @@
+include pug/global/mainVars.pug
 <!DOCTYPE html>
 html 
     include pug/global/header.pug
     body 
+        //- upprt banner
+        include pug/components/homepage/banner.pug
+        //- navbar
         include pug/global/navbar.pug
+        //- introduction section
+        include pug/components/homepage/introduce.pug
 
-        main.container Project Setted Up
 
         include pug/global/footer.pug

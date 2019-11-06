@@ -1,0 +1,207 @@
+/*
+* this file contains all introduce options
+*/
+#homePageIntroduce1{
+    position : relative;
+    .background{
+        min-height : 400px; 
+        padding : 60px 30px;
+        background:url(/images/introduce/intro1_background.jpg) no-repeat; 
+        background-size:cover;
+        .talk{
+            .phone{
+                position: absolute;
+                left : -30px;
+                bottom : 0px;
+                // margin-left : -30px;
+            }
+            h2{
+                margin-bottom: 25px;
+                color: #003d59;
+                font-size: 82px;
+                line-height: 82px;
+                margin: 0 0 60px;
+                padding: 0;
+                font-family : $font-family-ultra-light;
+                &::after{
+                    content: '';
+                    margin-left: 10px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 0 20px 20px;
+                    border-color: transparent transparent $background-hover transparent;
+                }
+            }
+        }
+        
+        .mobile_background{
+            position : relative;
+            .text{
+                width : 100%;
+                height : 100%;
+                position : absolute;
+                top : 0px;
+                left : 0px;
+                display : flex;
+                align-items : center;
+                text-align : center;
+                .data{
+                    flex : 1;
+                }
+                span , a{
+                    display : block;
+                }
+                .see{
+                    color: $color-active;
+                    font-size: 30px;
+                    line-height: normal;
+                    margin: 0;
+                    padding: 0;
+                    font-weight: normal;
+                    font-family: $font-family-ultra-light;
+                }
+                .watch{
+                    color: $background-hover;
+                    font-size: 50px;
+                    line-height: normal;
+                    margin: 0;
+                    padding: 0;
+                    font-family: $font-family-ultra-light;
+                    margin-bottom : 20px;
+                }
+
+                a{
+                    position: relative;
+                    padding-top: 100px;
+                    display: inline-block;
+                    text-decoration: none;
+                    outline: 0;
+                    color: $background-hover;
+                    transition : $transition;
+                    line-height : 30px;
+                    font-size : 20px;
+                    &:hover{
+                        color : $color-active;
+                    }
+                    &:before{
+                        background: url(/images/introduce/play_button.webp) no-repeat;
+                        content: '';
+                        width: 56px;
+                        height: 65px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        margin: auto;
+                        background-position: center 0;
+                    }
+                }
+            }
+        }
+        #theVideo{
+            position : fixed;
+            z-index : 1111111;
+            top : 0px;
+            left : 0px;
+            height : 100vh;
+            width : 100vw;
+            align-items : center;
+            background-color : rgba(36, 36, 36, 0.37);
+            display : none;
+            &.activated{
+                display : flex !important;
+            }
+            div{
+                position : relative;
+                width : 70%;
+                height : 65%;
+                margin : 0px auto;
+                padding : 10px;
+                background-color : #FFF;
+                &::before{
+                    content: '';
+                    width: 32px;
+                    height: 35px;
+                    position: absolute;
+                    top: -20px;
+                    right: -5px;
+                    cursor: pointer;
+                    background : url(/images/introduce/times.png);
+                }   
+                iframe{
+                    border-radius : 10px;
+                    border : none;
+                    width : 100%;
+                    height : 100%;
+                }
+            }
+            
+        }
+    }
+}
+#homePageIntroduce2{
+    position : relative;
+    .background{
+        padding : 75px 150px 100px;
+        background:url(/images/introduce/intro2_background.jpg) no-repeat; 
+        background-size:cover;
+        span{
+            text-transform: uppercase;
+            font-family : Lato;
+            font-weight: bold;
+            margin-bottom : 10px;
+            display : inline-block;
+        }
+        h1{
+            font-weight: 700;
+            font-family : 'Lato';
+            font-style: normal;
+            margin-bottom : 30px;
+        }
+        h5{
+            font-weight: 700;
+            font-family : 'Lato';
+            font-style: normal;
+            margin-bottom : 30px;
+        }
+
+        .buttons{
+            margin-top : 30px;
+            .more{
+                padding : 10px 30px;
+                border-radius : 30px;
+                background-color : $background-hover;
+                border : 2px solid $background-hover;
+                display : inline-block;
+                margin-right : 40px;
+                color : $color-active;
+                text-decoration : none;
+                transition: $transition;
+                &:hover{
+                    background-color: $background-color;
+                    color : $color-hover;
+                }
+            }
+
+            .contact{
+                padding : 10px 30px;
+                border-radius : 30px;
+                background-color : $background-color;
+                border : 2px solid $background-hover;
+                display : inline-block;
+                margin-right : 40px;
+                color : $color-hover;
+                text-decoration : none;
+                transition: $transition;
+                &:hover{
+                    background-color: $background-hover;
+                    color : $color-active;
+                }
+            }
+        }
+    }
+}

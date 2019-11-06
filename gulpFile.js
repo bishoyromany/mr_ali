@@ -12,7 +12,8 @@ const
     uglify     = require('gulp-uglify'),
     notify     = require('gulp-notify'),
     zip        = require('gulp-zip'),
-    ftp        = require('vinyl-ftp');
+    ftp        = require('vinyl-ftp'),
+    image      = require('gulp-image');
 
 /**
  * create html pug task
@@ -92,7 +93,7 @@ gulp.task('js' , function() {
      * * .html all html files
      * special files use []
      */
-    return gulp.src(['project/js/*.js' , '!project/js/2.js']) 
+    return gulp.src(['project/js/*.js']) 
     // collect them all in one file called main js
     .pipe(concat('main.js'))
     // minify javascript
@@ -103,6 +104,43 @@ gulp.task('js' , function() {
     .pipe(livereload());
 });
 
+/**
+ * create js task for libraries
+ */
+gulp.task('jsLibs' , function() {
+    // get files from this location
+    /**
+     * * all files
+     * * .html all html files
+     * special files use []
+     */
+    return gulp.src(['project/js/libs/*.js']) 
+    // collect them all in one file called main js
+    .pipe(concat('lib.js'))
+    // minify javascript
+    .pipe(uglify())
+    // production location
+    .pipe(gulp.dest('dist/js'))
+    // live reload data
+    .pipe(livereload());
+});
+
+/**
+ * image
+ */
+gulp.task('image' , function(){
+    return gulp.src(['project/images/**']) 
+    .pipe(image())
+    .pipe(gulp.dest('dist/images'));
+});
+
+/**
+ * fonts
+ */
+gulp.task('fonts' , function(){
+    return gulp.src(['project/fonts/**'])
+    .pipe(gulp.dest('dist/fonts'));
+});
 
 /**
  * run local server
@@ -157,6 +195,12 @@ gulp.task('watch' , function(){
     gulp.watch('project/css/libs/*.css', gulp.series('css'));
     // js
     gulp.watch('project/js/*.js', gulp.series('js'));
+    // js libs
+    gulp.watch('project/js/libs/*.js', gulp.series('jsLibs'));
+    // images
+    gulp.watch('project/images/**' , gulp.series('image'));
+    // fonts
+    gulp.watch('project/fonts/**' , gulp.series('fonts'));
     /**
      * watch compressing files
      */
@@ -166,7 +210,7 @@ gulp.task('watch' , function(){
 /**
  * default task
  */
-// gulp('default' , ['watch']);
+// gulp.task('default', ['watch']);
 
 
 /**
