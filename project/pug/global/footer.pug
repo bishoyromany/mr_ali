@@ -2,11 +2,11 @@ footer
     .container
         .upper 
             .row 
-                .col-md-3 
+                .col-md-3.col-6
                     a(href="/")
                         img.img-fluid(src="/images/logos/footer_logo.png")
-                .col-md-6 
-                .col-md-3
+                .col-md-6.col-1 
+                .col-md-3.col-5
                     
                     a.scroll_top(href="#top") Back To Top
 
@@ -23,7 +23,7 @@ footer
                 - var hasSub = false;
                 each val , index in navbar
                     - val[2] ? newClass = true : newClass = false;
-                    .col-md-2 
+                    .col-md-2.col-6
                         a.header(href=val[1])= val[0] 
                         if val[2]
                             ul.list-unstyled 

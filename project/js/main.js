@@ -25,6 +25,29 @@ $(document).ready(function(){
     })
 
 
+    /**
+     * show subnavbar for mobile
+     */
+    $("#showSubNavbar").click(function(){
+        $(".linksOfNavbar").addClass('showNavBarMobile');
+        $(".overlyNavbar").addClass("show");
+    });
+    /**
+     * close navbar
+     */
+    $(".closeNavBar").click(function(){
+        $(".linksOfNavbar").removeClass('showNavBarMobile');
+        $(".overlyNavbar").removeClass("show");
+    });
+    $(".toggleSubNavLinks").click(function(){
+        if(!$(this).hasClass('clicked_it')){
+            $(".clicked_it").next('ul').slideUp();
+            $(".clicked_it").removeClass('clicked_it');
+        }
+        $(this).toggleClass("clicked_it");
+        $(this).next('ul').slideToggle();
+    });
+
     // $(".navSubContainer").hover(function(){
     //     $(this).css('overflow' , '');
     // });

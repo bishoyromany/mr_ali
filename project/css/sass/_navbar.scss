@@ -5,6 +5,9 @@
     background-color : $background-color;
     display : block;
     @extend %navbar_box_shadow;
+    .mobileNavbar{
+        display : none;
+    }
     & > div{
         & > ul{
             margin : 0px;
@@ -149,6 +152,251 @@
     &.fixed-top{
         .subNavLinks{
             top : -300px;
+        }
+    }
+
+    .closeNavBar , .toggleSubNavLinks , .mobileExtraOptions , .overlyNavbar{
+        display : none;
+    }
+}
+
+
+/*
+** website navbar for mobile design
+*/
+@media screen and (max-width : 991px){
+    #navbar{
+        position : fixed !important;
+        z-index : 100;
+        background-color : $color-hover;
+        top : 0px;
+        left : 0px;
+        width : 100%;
+        z-index: 10000000;
+        .mobileNavbar{
+            display : block;
+            min-height : 40px;
+            width : 100%;
+            .row{
+                align-items: center;
+                .drop{
+                    color : $color-active;
+                    cursor : pointer;
+                    text-transform: uppercase;
+                    text-align : right;
+                    font-size : 20px;
+                    font-family : $font-family;
+                    img{
+                        margin-left : 5px;
+                        width : 30px;
+                    }
+                }
+            }
+        }
+        .overlyNavbar{
+            width : 100vw;
+            height : 100vh;
+            position: fixed;
+            background-color : rgba(0, 0, 0, 0.192);
+            top : 0px;
+            left : 0px;
+            display : none;
+            &.show{
+                display : block;
+            }
+        }
+        .linksOfNavbar{
+            // display : none;
+            position: fixed;
+            right : -100vw;
+            top : 0px;
+            background-color : $color-hover;
+            z-index : 100000;
+            width : 90%;
+            height : 100vh;
+            overflow : auto;
+            text-align : center;
+            transition : $transition;
+            &.showNavBarMobile{
+                right : 0px;
+            }
+            // mobile things
+            .closeNavBar{
+                text-align : right;
+                padding : 10px 20px;
+                display : block;
+                img{
+                    width : 15px;
+                    cursor: pointer;
+                }
+            }
+            .toggleSubNavLinks{
+                display: block !important;
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                width: 65px !important;
+                min-width: 55px !important;
+                height: 45px !important;
+                padding: 0 !important;
+                span{
+                    width: 15px;
+                    height: 1px;
+                    background-color: #fff;
+                    display: block;
+                    position: relative;
+                    top: 50%;
+                    margin: 0 auto !important;
+                    -webkit-transition-duration: .2s;
+                    -moz-transition-duration: .2s;
+                    transition-duration: .2s;
+                    &:after{
+                        width: 15px;
+                        height: 1px;
+                        background-color: #fff;
+                        display: block;
+                        -webkit-transform: rotate(-90deg);
+                        -ms-transform: rotate(-90deg);
+                        transform: rotate(-90deg);
+                        -webkit-transition-duration: .2s;
+                        -moz-transition-duration: .2s;
+                        transition-duration: .2s;
+                        position: absolute;
+                        content: '';
+                    }
+                }
+                &.clicked_it{
+                    span{
+                        &:after{
+                            -webkit-transform: rotate(-180deg) !important;
+                            -ms-transform: rotate(-180deg) !important;
+                            transform: rotate(-180deg) !important;
+                            -webkit-transition-duration: .2s;
+                            -moz-transition-duration: .2s;
+                            transition-duration: .2s;
+                        }
+                    }
+                }
+            }
+            .mobileExtraOptions{
+                display : block;
+                color : $color-active;
+                font-family : $font-family-regular;
+                text-shadow: 26px 0px 27px rgba(42,49,61,1);
+                *{
+                    margin : 5px 0px;
+                }
+                .one{
+                    border-bottom: 1px solid rgba(255,255,255,0.1);
+                    a{
+                        display : block;
+                        color : $color-active;
+                        text-decoration: none;    
+                        &.contact{
+                            color: $background-hover;
+                        }
+                    }
+                }
+                .two{
+                    padding : 10px 20px;
+                    a{
+                        text-decoration : none;
+                        width: 100%;
+                        display: block;
+                        border: 1px solid $color-active;
+                        color: $color-active;
+                        font-size: 20px;
+                        height: 38px;
+                        line-height: 20px;
+                        min-width: 130px;
+                        text-align: center;
+                        padding: 7px 0;
+                    }
+                }
+                ul{
+                    display : flex;
+                    max-width : 150px;
+                    margin : 0px auto;
+                    li{
+                        flex : 1;
+                        margin: 0px 5px;
+                    }
+                }
+
+            }   
+            // main data
+            & > div{
+                display : block;
+                & > li{
+                    display : block;
+                    position: relative;
+                    border-bottom: 1px solid rgba(255,255,255,0.1);
+                    & > div {
+                        transition : $transition;
+                        &:hover{
+                            background-color : transparent;
+                        }
+                        // the hover of drobdown
+                        &.hasSub{
+                            &::before{
+                                content: '';
+                                display : none !important;
+                            }
+                            &::after{
+                                content: '';
+                                display : none !important;
+                            }
+    
+                        }
+                        &:hover a{
+                            color : $color-active !important;
+                        }
+                        & > a{
+                            padding : 20px 0px;
+                            color : $color-active !important;
+                            display : block;
+                            font-size : 18px;
+                            font-family : $font-family-regular;
+                        }
+                    }
+    
+                    ul{
+                        position : static;
+                        display : none;
+                        background-color : transparent;
+                        opacity : 1 !important;
+                        transition: none !important;
+                        &::after{
+                            display : none;
+                            content: '';
+                        }
+                        li {
+                            display : block;
+                            background-color: rgba(255,255,255,.08);
+                            border-top: 1px solid rgba(255,255,255,0.1);
+                            &::before{
+                                display : none;
+                                content: '';
+                            }
+                            a{
+                                padding: 10px;
+                                color : $color-active;
+                                display : inherit;
+                                font-size : 18px;
+                                font-family : $font-family-regular;
+                                &:hover{
+                                    color : $color-hover !important;
+                                }
+                            }
+                        }
+                    }
+    
+                    .bottom{
+                        position: static;
+                    }
+                }
+            }
         }
     }
 }

@@ -208,3 +208,46 @@
         }
     }
 }
+
+
+
+/*
+** introduction for mobile design
+*/
+@media screen and(max-width : 991px){
+    #homePageIntroduce1{
+        .background{
+            overflow : hidden;
+            .talk{
+                .phone{
+                    display : none;
+                }
+            }
+            #theVideo{
+                div{
+                    width : 90%;
+                    height : 40%;
+                }
+            }
+        }
+    }
+    #homePageIntroduce2{
+        .background{
+            padding : 50px 10px;
+            background:url(/images/introduce/intro2_background.jpg) no-repeat; 
+            background-size:cover;
+            .buttons{
+                text-align : center;
+                .more{
+                    padding : 10px 15px;
+                    margin-right : 10px;
+                }
+                .contact{
+                    margin-left : 10px;
+                    padding : 10px 15px;
+                    margin-right : 0px;
+                }
+            }
+        }
+    } 
+}

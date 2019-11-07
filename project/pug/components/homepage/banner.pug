@@ -1,5 +1,5 @@
-#homepageBanner(
-    style="background:url(/images/banners/homepage_banner.jpg) no-repeat right 0; background-size:cover;") 
+#homepageBanner
+    .overly
     .container-fluid.wow.fadeInUp
         .logo_contact
             a.logo(href="/") 
@@ -14,7 +14,7 @@
                 each val in socialMediaHomepage 
                     li 
                         a(href=val[1]) 
-                            img.img-fluid(src='/images/social/'+val[0] , alt=val[2])
+                            img.img-fluid(src='/images/social/'+val[0] , alt=val[2] , target="_blank")
         .demo 
             h2 Affordable, Reliable and Flexible: VoIP for Modern Enterprises.  
             a(href="contact_us.html") Request A Demo

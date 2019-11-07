@@ -60,3 +60,24 @@
         }
     }
 }
+
+
+/*
+* products design for mobile
+*/
+@media screen and(max-width : 991px){
+    // homepage solutions
+    #homePageSolutions{
+        span{
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom : 30px;
+            display : inline-block;
+            font-family : $font-family;
+            text-align : left !important;
+        }
+        .icon{
+            display : none;
+        }
+    }
+}

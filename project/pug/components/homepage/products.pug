@@ -5,9 +5,9 @@
             each val in productsHomepage
                 .col-md-6.data
                     .row 
-                        .col-md-2 
+                        .col-md-2.col-2 
                             div !{val[0]}
-                        .col-md-10
+                        .col-md-10.col-10
                             h3 
                                 a(href="/products.html#"+val[1])= val[2] 
                             p= val[3] 

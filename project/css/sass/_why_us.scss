@@ -43,6 +43,7 @@
         }
     }
 }
+
 #homePageTrusted {
     margin-top : 40px;
     .background{
@@ -84,6 +85,35 @@
                 &:hover{
                     background-color: $background-color;
                     color : $color-hover;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+** why us mobile design
+*/
+@media screen and (max-width : 991px){
+    #homePageWhyUs{
+        h1{
+            font-size: 70px;
+            line-height: 70px;
+        }
+        // options section or reasons to use
+        .options{
+            p{
+                padding-bottom : 35px;
+            }
+        }
+    }
+    
+    #homePageTrusted {
+        .flex{
+            .data{
+                a{
+                    margin-right : 0px;
                 }
             }
         }

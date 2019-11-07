@@ -19,6 +19,7 @@ $transition : all 0.5s ease-in-out;
 
 $font-family : HelveticaNeue-Thin;
 $font-family-ultra-light : HelveticaNeue-UltraLight;
+$font-family-regular : HelveticaNeue-Regular;
 
 @font-face{
     font-family : 'HelveticaNeue-Thin';
@@ -28,6 +29,11 @@ $font-family-ultra-light : HelveticaNeue-UltraLight;
 @font-face{
   font-family : 'HelveticaNeue-UltraLight';
   src : url('../../fonts/helveticaneue/helveticaneue-ultralight.ttf');
+}
+
+@font-face{
+  font-family : 'HelveticaNeue-Regular';
+  src : url('../../fonts/helveticaneue/helveticaneue-regular.ttf');
 }
 
 @font-face {
@@ -46,4 +52,6 @@ $font-family-ultra-light : HelveticaNeue-UltraLight;
 
 body{
   font-family: $font-family;
+  max-width : 100vw;
+  overflow-x : hidden;
 }
