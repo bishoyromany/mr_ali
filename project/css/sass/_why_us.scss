@@ -1,0 +1,91 @@
+#homePageWhyUs{
+    h1{
+        font-size: 106px;
+        line-height: 106px;
+        font-family: $font-family-ultra-light;
+        margin: 100px 0 60px 0;
+        padding: 0;
+        font-weight: normal;
+        text-align: center;
+        color: $color;
+    }
+    // options section or reasons to use
+    .options{
+        h3{
+            background: $background-hover;
+            color: $color-active;
+            font-size: 40px;
+            line-height: 40px;
+            padding: 15px 5px;
+            position: relative;
+            text-align: center;
+            font-family : $font-family;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: -11px;
+                width: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                height: 0;
+                border-style: solid;
+                border-width: 11px 8px 0 8px;
+                border-color: $background-hover transparent transparent
+            }
+        }
+        p{
+            padding-top : 35px;
+            text-align : left;
+            font-family : $font-family;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+#homePageTrusted {
+    margin-top : 40px;
+    .background{
+        background : url(/images/trusted/trusted_background.jpg) no-repeat fixed center center;
+        background-size : cover;
+        height : 400px;
+    }
+    .flex{
+        display : flex;
+        align-items : center;
+        height : 400px;
+        .data{
+            width:  800px;
+            padding : 10px;
+            margin : 0px auto;
+            max-width:  100%;
+            *{
+                color : $color-active;
+            }
+            h3{
+                font-size: 40px;
+                line-height: 48px;
+                font-family : $font-family;
+            }
+            span{
+                display : block;
+                font-size : 20px;
+            }
+            a{
+                margin-top : 20px;
+                padding : 15px 30px;
+                line-height: 1em;
+                border-radius : 30px;
+                background-color : $color-hover;
+                display : inline-block;
+                margin-right : 40px;
+                text-decoration : none;
+                transition: $transition;
+                &:hover{
+                    background-color: $background-color;
+                    color : $color-hover;
+                }
+            }
+        }
+    }
+}

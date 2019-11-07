@@ -10,6 +10,11 @@
                         a(href="tel:+"+contactNumberURL) #{contactNumber} 
                         span or  
                         a.contact_us_link(href="/contact_us.html") Click Here
+            ul.social.list-unstyled 
+                each val in socialMediaHomepage 
+                    li 
+                        a(href=val[1]) 
+                            img.img-fluid(src='/images/social/'+val[0] , alt=val[2])
         .demo 
             h2 Affordable, Reliable and Flexible: VoIP for Modern Enterprises.  
             a(href="contact_us.html") Request A Demo

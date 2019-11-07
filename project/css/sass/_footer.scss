@@ -1,3 +1,60 @@
 footer{
+    background-color : $footer_background;
+    padding : 0px 0px 40px 0px;
+    .upper{
+        padding-top : 30px;
+        .social{
+            float : right;
+            display : flex;
+            width : 120px;
+            z-index : 8;
+            li{
+                margin-left : 5px;
+                flex : 1;
+                a{
+                    width : 25px;
+                }
+            }
+        }
 
+        .prevacy_policy{
+            margin-bottom : 20px;
+            margin-top : 20px;
+            text-align : right;
+            display : block;
+            color: $color-active;
+            font-size: 15px;
+            text-decoration : none;
+            &:hover{
+                color: $background-hover;
+            }
+        }
+
+        .scroll_top{
+            text-align : right;
+            display : block;
+            color: #ff7230;
+            font-size: 15px;
+            text-decoration : none;
+            &:hover{
+                color: $background-hover;
+            }
+        }
+    }
+
+    .map{
+        a{
+            color :$color-active;
+            transition : $transition;
+            text-decoration : none;
+            margin-bottom : 5px;
+            &:hover{
+                color : $background-hover;
+            }
+        }
+        .header{
+            margin-bottom : 20px;
+            font-size : 1.2em;
+        }
+    }
 }

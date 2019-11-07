@@ -4,11 +4,25 @@ html
     include pug/global/header.pug
     body 
         //- upprt banner
-        include pug/components/homepage/banner.pug
+        #BannerMain
+            include pug/components/homepage/banner.pug
         //- navbar
-        include pug/global/navbar.pug
+        #NavbarMain
+            include pug/global/navbar.pug
         //- introduction section
-        include pug/components/homepage/introduce.pug
-
-
+        #Introduction 
+            include pug/components/homepage/introduce.pug
+        //- why us section
+        #whyUs 
+            include pug/components/homepage/why_us_trusted.pug
+        //- products
+        #productsHome 
+            include pug/components/homepage/products.pug
+        //- news
+        #newsLetters 
+            include pug/components/homepage/news_ketter.pug
+        //- support
+        #support 
+            include pug/components/homepage/support.pug
+            
         include pug/global/footer.pug

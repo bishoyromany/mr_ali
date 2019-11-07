@@ -43,6 +43,7 @@
             .text{
                 width : 100%;
                 height : 100%;
+                max-width: 566px;
                 position : absolute;
                 top : 0px;
                 left : 0px;
@@ -172,10 +173,11 @@
         .buttons{
             margin-top : 30px;
             .more{
-                padding : 10px 30px;
+                padding : 15px 30px;
+                line-height: 1em;
                 border-radius : 30px;
-                background-color : $background-hover;
-                border : 2px solid $background-hover;
+                background-color : $color-hover;
+                border : 2px solid $color-hover;
                 display : inline-block;
                 margin-right : 40px;
                 color : $color-active;
@@ -188,17 +190,18 @@
             }
 
             .contact{
-                padding : 10px 30px;
+                padding : 15px 30px;
                 border-radius : 30px;
+                line-height: 1em;
                 background-color : $background-color;
-                border : 2px solid $background-hover;
+                border : 2px solid $color-hover;
                 display : inline-block;
                 margin-right : 40px;
                 color : $color-hover;
                 text-decoration : none;
                 transition: $transition;
                 &:hover{
-                    background-color: $background-hover;
+                    background-color: $color-hover;
                     color : $color-active;
                 }
             }

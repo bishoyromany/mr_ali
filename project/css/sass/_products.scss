@@ -1,0 +1,62 @@
+// homepage products
+#homePageProducts{
+    padding-top : 40px;
+    padding-bottom : 80px;
+    background :url(/images/introduce/intro2_background.jpg) no-repeat;
+    background-size : cover;
+    h1{
+        font-size : 40px;
+        padding : 40px 0px;
+        font-weight:bold;
+        font-family : Lato;
+    }
+    .options{
+        .data{
+            margin-bottom : 20px;
+            &:hover{
+                svg{
+                    margin-top : -20px;
+                    path{
+                        fill : $background-hover !important;
+                    }
+                }
+            }
+            svg{
+                transition : $transition;
+                path{
+                    transition : $transition;
+                    fill : $color-hover;
+                }
+            }
+
+            h3 , p{
+                font-family : Lato-Regular;
+                a{
+                    color : #000;
+                }
+            }
+        }
+    }
+}
+
+// homepage solutions
+#homePageSolutions{
+    padding : 40px 0px;
+    span{
+        font-size: 82px;
+        line-height: 82px;
+        color: #333;
+        font-family: $font-family-ultra-light;
+        margin: 0 0 60px;
+        padding: 0;
+    }
+    .icon{
+        display : flex;
+        align-items : center;
+        text-align : center;
+        span{
+            flex : 1;
+            margin: 0px !important;
+        }
+    }
+}

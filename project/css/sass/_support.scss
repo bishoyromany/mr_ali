@@ -1,0 +1,28 @@
+/*
+* support section
+*/
+// homepage support
+#homePageSupport {
+    padding-top : 80px;
+    h2{
+        font-family: $font-family;
+        font-size: 40px;
+        padding: 10px 0 10px;
+        margin : 30px 0px;
+    }
+    a{
+        display: inline-block;
+        padding: 28px 10px;
+        background: $background-hover;
+        color: $color-active;
+        text-align: center;
+        font-size: 23px;
+        line-height: 16px;
+        min-width: 250px;
+        transition: $transition;
+        text-decoration : none;
+        &:hover{
+            background: $color-hover;
+        }
+    }
+}

@@ -7,12 +7,13 @@
                 img.wow.bounceInLeft.phone(src="/images/introduce/phone.png")
             .col-md-6.video
                 .mobile_background.wow.bounceInRight
-                    img(src="/images/introduce/Tab_image.png" , alt="Mobile") 
-                    .text.wow.bounceInRight 
-                        .data 
-                            span.see See it yourself!
-                            span.watch Watch The Video 
-                            a#callTheVideo.active(href="#") Click Here
+                    div 
+                        img.img-fluid(src="/images/introduce/Tab_image.png" , alt="Mobile") 
+                        .text.wow.bounceInRight 
+                            .data 
+                                span.see See it yourself!
+                                span.watch Watch The Video 
+                                a#callTheVideo.active(href="#") Click Here
             #theVideo 
                 div 
                     iframe(src=videoIframe, allowfullscreen)

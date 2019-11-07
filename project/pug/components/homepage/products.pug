@@ -1,0 +1,24 @@
+#homePageProducts
+    .container
+        h1 Our Products ?!
+        .row.options.wow.fadeInUp
+            each val in productsHomepage
+                .col-md-6.data
+                    .row 
+                        .col-md-2 
+                            div !{val[0]}
+                        .col-md-10
+                            h3 
+                                a(href="/products.html#"+val[1])= val[2] 
+                            p= val[3] 
+#homePageSolutions 
+    .container 
+        .row
+            .col-md-4.text-left
+                span Solutions to fit every need.
+            .col-md-4.icon
+                span
+                    img(src="/images/products/arrow_right.webp" , alt="Arrow Right") 
+            .col-md-4.text-right
+                span Pricing to fit every budget.
+                    

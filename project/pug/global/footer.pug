@@ -1,2 +1,33 @@
 footer 
+    .container
+        .upper 
+            .row 
+                .col-md-3 
+                    a(href="/")
+                        img.img-fluid(src="/images/logos/footer_logo.png")
+                .col-md-6 
+                .col-md-3
+                    
+                    a.scroll_top(href="#top") Back To Top
+
+                    a.prevacy_policy(href="/privacy-policy") Prevacy Policy
+
+                    ul.social.list-unstyled 
+                        each val in socialMediaHomepage 
+                            li 
+                                a(href=val[1]) 
+                                    img.img-fluid(src='/images/social/'+val[0] , alt=val[2])
+        .map 
+            .row 
+                .col-md-1 
+                - var hasSub = false;
+                each val , index in navbar
+                    - val[2] ? newClass = true : newClass = false;
+                    .col-md-2 
+                        a.header(href=val[1])= val[0] 
+                        if val[2]
+                            ul.list-unstyled 
+                                each ll in val[2]
+                                    li
+                                        a(href=ll[1])= ll[0]
     include ../scripts/scripts.pug

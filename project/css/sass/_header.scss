@@ -16,6 +16,22 @@
             margin-left: 15px;
         }
     }
+
+    .social{
+        float : right;
+        display : flex;
+        width : 120px;
+        z-index : 8;
+        margin-top : 60px;
+        li{
+            margin-right : 5px;
+            flex : 1;
+            a{
+                width : 25px;
+            }
+        }
+    }
+
     .logo_contact{
         text-align : center;
     }

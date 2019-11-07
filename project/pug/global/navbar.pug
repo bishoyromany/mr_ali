@@ -1,25 +1,20 @@
 navbar#navbar
     .container
         ul.list-unstyled 
-            li 
-                div.hasSub
-                    a(href="/") Home
-                    ul.list-unstyled
-                        li 
-                            a(href="#Introduction") Introduction
-                        .clear-fix
-                        //- img(src="/images/navbar/navbar_list_botton.webp", alt="Link" , style="opacity:0;")
-                        span.bottom 
-                            img(src="/images/navbar/navbar_list_botton.webp", alt="Link")
-            li 
-                div 
-                    a(href="/products.html") Products
-            li 
-                div 
-                    a(href="/support.html") Support 
-            li 
-                div
-                    a(href="/why_us.html") Why Us
-            li 
-                div
-                    a(href="/contact_us.html") Contact Us
+            - var newClass = 0;
+            each val , index in navbar
+                - val[2] ? newClass = 'hasSub' : newClass = 0;
+                div.navSubContainer
+                    li 
+                        div(class=newClass)
+                            a(href=val[1])= val[0] 
+
+                            if val[2]
+                                ul.list-unstyled.subNavLinks 
+                                    each ll in val[2]
+                                        li
+                                            a(href=ll[1])= ll[0]
+                                            
+                                    .clear-fix
+                                    span.bottom 
+                                        img(src="/images/navbar/navbar_list_botton.webp", alt="Link")
