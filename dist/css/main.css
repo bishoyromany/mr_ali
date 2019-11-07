@@ -130,12 +130,66 @@ body {
         border-width: 0 0 20px 20px;
         border-color: transparent transparent #fdb414 transparent; }
 
+#ProductsBanner {
+  height: 260px;
+  background: url(/images/banners/products_banner.jpg) no-repeat right 0;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+  #ProductsBanner .logo {
+    float: left; }
+    #ProductsBanner .logo img {
+      border-width: 0px;
+      border: 0px;
+      height: 100%; }
+  #ProductsBanner .social {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 120px;
+    z-index: 8;
+    margin-top: 60px; }
+    #ProductsBanner .social li {
+      margin-right: 5px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      #ProductsBanner .social li a {
+        width: 25px; }
+  #ProductsBanner .logo_contact {
+    text-align: center; }
+  #ProductsBanner .contact_container {
+    margin: 0;
+    padding-top: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right; }
+  #ProductsBanner .contact {
+    display: inline-block;
+    font-size: 20px;
+    text-shadow: 26px 0px 27px #2a313d;
+    color: #333;
+    font-family: Lato;
+    font-weight: 400;
+    margin-right: 140px; }
+    #ProductsBanner .contact span, #ProductsBanner .contact a {
+      color: white;
+      text-decoration: none; }
+    #ProductsBanner .contact .contact_us_link {
+      color: #fdb414;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #ProductsBanner .contact .contact_us_link:hover {
+        color: #2249a1; }
+
 /*
 ** project banners
 */
 @media screen and (max-width: 991px) {
   #homepageBanner {
-    height: 530px;
     background-position: calc(100% + 130px) 85px !important; }
     #homepageBanner .overly {
       position: absolute;
@@ -159,7 +213,11 @@ body {
       font-weight: bold; }
     #homepageBanner .demo a {
       color: #fdb414;
-      background: #2249a1; } }
+      background: #2249a1; }
+  #productsBannerSpacePhone {
+    margin-top: 70px; }
+  #ProductsBanner {
+    display: none; } }
 
 /*
 ** website navbar links
@@ -837,6 +895,96 @@ body {
           -ms-flex: 1;
               flex: 1;
       margin: 0px !important; }
+
+#AllProducts {
+  position: relative; }
+  #AllProducts .product .head {
+    padding: 40px 0 75px; }
+    #AllProducts .product .head .row {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #AllProducts .product .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #AllProducts .product .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .head p {
+      color: #FFF;
+      font-family: HelveticaNeue-Thin;
+      font-size: 22px; }
+  #AllProducts .product .content {
+    padding-bottom: 40px;
+    position: relative; }
+    #AllProducts .product .content h1 {
+      margin: 0;
+      font-size: 62px;
+      line-height: 62px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 80px 0px 40px; }
+      #AllProducts .product .content h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .content .img {
+      width: 150px;
+      position: absolute;
+      left: calc(50% - 75px);
+      top: calc(50% - 20px); }
+    #AllProducts .product .content .text {
+      margin-bottom: 40px;
+      font-family: HelveticaNeue-Thin;
+      font-size: 22px; }
+  #AllProducts .product .purches {
+    padding: 130px 0 75px;
+    text-align: right;
+    margin-bottom: 40px; }
+    #AllProducts .product .purches h2 {
+      color: #FFF;
+      margin: 60px 0 50px;
+      padding: 0;
+      font-size: 39px;
+      line-height: 50px;
+      font-family: HelveticaNeue-Thin;
+      text-align: right;
+      float: right; }
+    #AllProducts .product .purches a {
+      display: inline-block;
+      padding: 28px 10px;
+      background: #fdb414;
+      color: #FFF;
+      text-align: center;
+      font-size: 23px;
+      line-height: 16px;
+      min-width: 250px;
+      text-decoration: none;
+      font-family: HelveticaNeue-Thin;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #AllProducts .product .purches a:hover {
+        background: #2249a1; }
+  #AllProducts .product:last-of-type .purches {
+    margin-bottom: 0px; }
 
 /*
 * products design for mobile

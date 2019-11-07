@@ -1,0 +1,16 @@
+include pug/global/mainVars.pug
+<!DOCTYPE html>
+html 
+    include pug/global/header.pug
+    body 
+        //- upprt banner
+        #BannerMain
+            include pug/components/products/banner.pug
+        //- navbar
+        #NavbarMain
+            include pug/global/navbar.pug
+        //- products
+        #MainProducts 
+            include pug/components/products/products.pug
+            
+        include pug/global/footer.pug

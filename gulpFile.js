@@ -19,14 +19,14 @@ const
  * create html pug task
  */
 gulp.task('pug' , function(){
-    return gulp.src('project/index.pug')
+    return gulp.src('project/*.pug')
     // use pug to convert to html
     /**
      * for not compressed {pretty: true}
      */
     .pipe(pug({pretty : true}))
     // collect all in index file
-    .pipe(concat('index.html'))
+    // .pipe(concat('index.html'))
     // send to dist folder
     .pipe(gulp.dest('dist'))
     // notify
@@ -186,7 +186,7 @@ gulp.task('watch' , function(){
     // listen to live reload data
     livereload.listen();
     // pug
-    gulp.watch('project/index.pug', gulp.series('pug'));
+    gulp.watch('project/*.pug', gulp.series('pug'));
     // watch all folder
     gulp.watch('project/pug/**', gulp.series('pug'));
     // sass

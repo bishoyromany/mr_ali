@@ -1,0 +1,33 @@
+#AllProducts 
+    each val in productsPage 
+        section.product(id = val[0][1])
+            .head(style="background:url(/images/products/"+val[0][2]+") no-repeat center top; background-size:cover;") 
+                .container 
+                    .row 
+                        .col-md-4 
+                            h1= val[0][0]
+                        .col-md-8 
+                            p= val[0][3]
+            .content.container 
+                h1= val[1][0]
+                .img
+                    img.img-fluid(src="/images/products/"+val[1][1] , alt="Image")
+                .row
+                    - var x = 1; 
+                    each v in val[1][2]
+                        if(x == 1)
+                            .col-md-5.text= v 
+                            .col-md-2
+                            - x = 0;
+                        else 
+                            .col-md-5.text= v
+                            - x++; 
+            .purches(style="background:url(/images/products/"+val[2][2]+") no-repeat center top; background-size:cover;") 
+                .container 
+                    .row 
+                        .col-md-5 
+                        .col-md-7
+                            h2= val[2][0]
+                            a(href="contact_us.html")= val[2][1]
+
+

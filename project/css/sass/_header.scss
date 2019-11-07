@@ -113,6 +113,70 @@
     }
 }
 
+// products 
+#ProductsBanner{
+    height : 260px;
+    background:url(/images/banners/products_banner.jpg) no-repeat right 0; 
+    background-size:cover;
+    position : relative;
+    overflow : hidden;
+    .logo{
+        float : left;
+        img{
+            border-width: 0px;
+            border: 0px;
+            height: 100%;
+        }
+    }
+
+    .social{
+        float : right;
+        display : flex;
+        width : 120px;
+        z-index : 8;
+        margin-top : 60px;
+        li{
+            margin-right : 5px;
+            flex : 1;
+            a{
+                width : 25px;
+            }
+        }
+    }
+
+    .logo_contact{
+        text-align : center;
+    }
+    .contact_container{
+        margin: 0;
+        padding-top: 30px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align : right;
+    }
+    .contact{
+        display: inline-block;
+        font-size: 20px;
+        text-shadow: 26px 0px 27px #2a313d;
+        color: #333;
+        font-family: Lato;
+        font-weight: 400;
+        margin-right : 140px;
+        span , a{
+            color : rgb(255, 255, 255);
+            text-decoration : none;
+        }
+        .contact_us_link{
+            color : $background-hover;
+            transition : $transition;
+            &:hover{
+                color : $color-hover;
+            }
+        }
+    }
+}
 
 /*
 ** project banners
@@ -120,7 +184,6 @@
 @media screen and(max-width : 991px){
    // homepage 
     #homepageBanner{
-        height : 530px;
         background-position: calc(100% + 130px) 85px !important;
         .overly{
             position : absolute;
@@ -159,4 +222,12 @@
             }
         }
     } 
+
+    // products
+    #productsBannerSpacePhone{
+        margin-top : 70px;
+    }
+    #ProductsBanner{
+        display : none;
+    }
 }
