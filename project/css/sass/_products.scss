@@ -96,6 +96,19 @@
                 font-family:$font-family;
                 font-size: 22px;
             }
+            &.second{
+                background-color : #f2f2f2;
+                padding: 80px 0;
+                h1{
+                    margin-bottom : 20px;
+                }
+                img{
+                    height : 100%;
+                }
+                *{
+                    color : #333; 
+                }
+            }
         }
 
         .content{
@@ -129,14 +142,37 @@
             .text{
                 margin-bottom : 40px;
                 font-family:$font-family;
-                font-size: 22px;
+                font-size: 18px;
+                border : 1px solid #DDD;
+                border-radius : 10px;
+                padding-top : 15px;
+                padding-bottom : 15px;
+                transition : $transition;
+                &:hover{
+                    box-shadow: 0px 0px 20px #e8e6e6;
+                }
+            }
+
+            .head_data{
+                text-align : center;
+                margin-bottom : 10px;
+                img{
+                    width : 50px;
+                    display : inline-block;
+                    vertical-align: bottom;
+                }                
+                h4{
+                    font-weight : bold;
+                    display : inline-block;
+                    margin : 0px;
+                    font-family : Lato
+                }
             }
         }
 
         .purches{
             padding: 130px 0 75px;
             text-align:right;
-            margin-bottom : 40px;
             h2{
                 color: $color-active;
                 margin: 60px 0 50px;
@@ -167,13 +203,6 @@
 
     }
 
-    .product:last-of-type{
-
-        .purches{
-            margin-bottom : 0px;
-        }
-        
-    }
 
 }
 

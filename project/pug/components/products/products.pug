@@ -1,13 +1,26 @@
 #AllProducts 
+    - var z = 0
     each val in productsPage 
         section.product(id = val[0][1])
-            .head(style="background:url(/images/products/"+val[0][2]+") no-repeat center top; background-size:cover;") 
-                .container 
-                    .row 
-                        .col-md-4 
-                            h1= val[0][0]
-                        .col-md-8 
-                            p= val[0][3]
+            - z++ 
+            if z == 1 
+                .head.wow.fadeInLeft(style="background:url(/images/products/"+val[0][2]+") no-repeat center top; background-size:cover;") 
+                    .container 
+                        .row 
+                            .col-md-4 
+                                h1= val[0][0]
+                            .col-md-8 
+                                p= val[0][3]
+            else 
+                .head.second 
+                    .container 
+                        .row 
+                            .col-md-6.wow.fadeInLeft 
+                                h1= val[0][0]
+                                p= val[0][3]
+                            .col-md-6.wow.fadeInRight  
+                                img.img-fluid(src="/images/products/"+val[0][2]+"" , alt=val[0][0])
+
             .content.container 
                 h1= val[1][0]
                 .img
@@ -16,18 +29,29 @@
                     - var x = 1; 
                     each v in val[1][2]
                         if(x == 1)
-                            .col-md-5.text= v 
+                            .col-md-5.wow.fadeInLeft.text 
+                                .head_data
+                                    img.img-fluid(src="/images/products/"+v[1]+"")
+                                    h4=v[0]
+                                p= v[2]
                             .col-md-2
                             - x = 0;
                         else 
-                            .col-md-5.text= v
+                            .col-md-5.wow.fadeInRight.text 
+                                .head_data
+                                    img.img-fluid(src="/images/products/"+v[1]+"")
+                                    h4=v[0]
+                                p= v[2]
                             - x++; 
-            .purches(style="background:url(/images/products/"+val[2][2]+") no-repeat center top; background-size:cover;") 
+
+            .purches.wow.bounceInUp(style="background:url(/images/products/"+val[2][2]+") no-repeat center top; background-size:cover;") 
                 .container 
                     .row 
                         .col-md-5 
                         .col-md-7
                             h2= val[2][0]
-                            a(href="contact_us.html")= val[2][1]
+                            a(href="contact_us.html")= val[2][1] 
+
+
 
 
