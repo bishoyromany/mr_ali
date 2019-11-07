@@ -928,7 +928,8 @@ body {
       font-size: 22px; }
     #AllProducts .product .head.second {
       background-color: #f2f2f2;
-      padding: 80px 0; }
+      padding: 80px 0;
+      overflow: hidden; }
       #AllProducts .product .head.second h1 {
         margin-bottom: 20px; }
       #AllProducts .product .head.second img {
@@ -1025,7 +1026,64 @@ body {
     font-family: HelveticaNeue-Thin;
     text-align: left !important; }
   #homePageSolutions .icon {
-    display: none; } }
+    display: none; }
+  #AllProducts .product .head {
+    padding: 40px 0 10px;
+    background-position: 70% center !important; }
+    #AllProducts .product .head .row {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #AllProducts .product .head h1 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+      font-weight: bold; }
+    #AllProducts .product .head p {
+      font-size: 18px; }
+    #AllProducts .product .head.second {
+      padding: 80px 0 30px; }
+      #AllProducts .product .head.second img {
+        height: auto; }
+  #AllProducts .product .content {
+    padding-bottom: 40px;
+    position: relative; }
+    #AllProducts .product .content h1 {
+      font-size: 42px;
+      line-height: 42px;
+      font-family: HelveticaNeue-Thin;
+      text-align: center;
+      padding: 80px 15px 40px; }
+      #AllProducts .product .content h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .content .img {
+      display: none; }
+    #AllProducts .product .content .text {
+      margin-right: 15px;
+      margin-left: 15px; }
+  #AllProducts .product .purches {
+    background-position: 0 0 !important;
+    background-size: cover !important;
+    padding: 80px 0;
+    text-align: center; }
+    #AllProducts .product .purches h2 {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center !important;
+      max-width: 100% !important;
+      float: none; }
+    #AllProducts .product .purches a {
+      padding: 22px 10px; } }
 
 #homePageNewsLetters {
   background: url(/images/introduce/intro2_background.jpg) no-repeat;
