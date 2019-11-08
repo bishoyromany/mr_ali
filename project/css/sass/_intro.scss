@@ -234,7 +234,7 @@
     #homePageIntroduce2{
         .background{
             padding : 50px 10px;
-            background:url(/images/introduce/intro2_background.jpg) no-repeat; 
+            background:url(#{$projectUrl}/images/introduce/intro2_background.jpg) no-repeat; 
             background-size:cover;
             .buttons{
                 text-align : center;

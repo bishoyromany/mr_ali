@@ -4,14 +4,14 @@ navbar#navbar
             .row 
                 .col-7
                     a(href="/")
-                        img.img-fluid.logo(src="/images/logos/mobile_logo.webp" , alt="Logo")
+                        img.img-fluid.logo(src=projectUrl+"/images/logos/mobile_logo.webp" , alt="Logo")
                 .col-5.text-right
                     span.drop#showSubNavbar Menu 
-                        img(src="/images/navbar/menu-button.svg")
+                        img(src=projectUrl+"/images/navbar/menu-button.svg")
 
         ul.list-unstyled.linksOfNavbar 
             .closeNavBar 
-                img(src="/images/navbar/close-cross.svg", alt="Close")
+                img(src=projectUrl+"/images/navbar/close-cross.svg", alt="Close")
             - var newClass = 0;
             each val , index in navbar
                 - val[2] ? newClass = 'hasSub' : newClass = 0;
@@ -45,6 +45,6 @@ navbar#navbar
                         each val in socialMediaHomepage 
                             li 
                                 a(href=val[1]) 
-                                    img.img-fluid(src='/images/social/'+val[0] , alt=val[2] , target="_blank")
+                                    img.img-fluid(src=projectUrl+'/images/social/'+val[0] , alt=val[2] , target="_blank")
         .overlyNavbar
         

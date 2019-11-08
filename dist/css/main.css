@@ -754,7 +754,7 @@ body {
       height: 40%; }
   #homePageIntroduce2 .background {
     padding: 50px 10px;
-    background: url(/images/introduce/intro2_background.jpg) no-repeat;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/intro2_background.jpg) no-repeat;
     background-size: cover; }
     #homePageIntroduce2 .background .buttons {
       text-align: center; }
@@ -808,7 +808,7 @@ body {
 #homePageTrusted {
   margin-top: 40px; }
   #homePageTrusted .background {
-    background: url(/images/trusted/trusted_background.jpg) no-repeat fixed center center;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/trusted/trusted_background.jpg) no-repeat fixed center center;
     background-size: cover;
     height: 400px; }
   #homePageTrusted .flex {
@@ -851,7 +851,7 @@ body {
 #whyUsAll {
   position: relative; }
   #whyUsAll .head {
-    background: url("/images/why_us/why_us_background.jpg") no-repeat;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/why_us/why_us_background.jpg) no-repeat;
     background-size: cover;
     padding: 80px 0;
     text-decoration: none;
@@ -1354,7 +1354,7 @@ support page
 #SupportFAQ, #SupportDialingCodes, #SupportRemoteSupport {
   position: relative; }
   #SupportFAQ .head, #SupportDialingCodes .head, #SupportRemoteSupport .head {
-    background: url("/images/support/dialing_codes_background.webp") no-repeat right 0;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/support/dialing_codes_background.webp) no-repeat right 0;
     background-size: cover;
     padding: 80px 0;
     text-decoration: none;
@@ -1425,7 +1425,7 @@ support page
       margin-top: 10px; }
 
 #SupportRemoteSupport .head {
-  background: url("/images/support/remove_support_background.jpg") no-repeat right 0;
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/support/remove_support_background.jpg) no-repeat right 0;
   background-size: cover;
   margin-top: 50px; }
 
@@ -1443,7 +1443,7 @@ support page
 #contactWays {
   position: relative; }
   #contactWays .head {
-    background: url("/images/support/contact_us_background.jpg") no-repeat right 0;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/support/contact_us_background.jpg) no-repeat right 0;
     background-size: cover;
     padding: 80px 0;
     text-decoration: none;

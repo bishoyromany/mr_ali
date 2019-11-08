@@ -4,7 +4,7 @@
         section.product(id = val[0][1])
             - z++ 
             if z == 1 
-                .head.wow.fadeInLeft(style="background:url(/images/products/"+val[0][2]+") no-repeat center top; background-size:cover;") 
+                .head.wow.fadeInLeft(style="background:url("projectUrl+"/images/products/"+val[0][2]+") no-repeat center top; background-size:cover;") 
                     .container 
                         .row 
                             .col-md-4 
@@ -19,7 +19,7 @@
                                 h1= val[0][0]
                                 p= val[0][3]
                             .col-md-6.wow.fadeInRight  
-                                img.img-fluid(src="/images/products/"+val[0][2]+"" , alt=val[0][0])
+                                img.img-fluid(src=projectUrl+"/images/products/"+val[0][2]+"" , alt=val[0][0])
 
             .content.container 
                 h1= val[1][0]

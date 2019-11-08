@@ -1,7 +1,7 @@
 #contactWays{
     position : relative;
     .head{
-        background : url('/images/support/contact_us_background.jpg') no-repeat right 0;
+        background : url(#{$projectUrl}/images/support/contact_us_background.jpg) no-repeat right 0;
         background-size : cover;
         padding: 80px 0 ;
         text-decoration : none;

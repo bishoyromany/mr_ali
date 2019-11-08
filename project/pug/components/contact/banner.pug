@@ -4,7 +4,7 @@
     .container-fluid.wow.fadeInUp
         .logo_contact
             a.logo(href="/") 
-                img(src="/images/logos/mobile_logo.webp", alt="Logo")
+                img(src=projectUrl+"/images/logos/mobile_logo.webp", alt="Logo")
             .contact_container
                 .contact.text-center
                     span Contact us at 
@@ -15,4 +15,4 @@
                 each val in socialMediaHomepage 
                     li 
                         a(href=val[1]) 
-                            img.img-fluid(src='/images/social/'+val[0] , alt=val[2] , target="_blank")
+                            img.img-fluid(src=projectUrl+'/images/social/'+val[0] , alt=val[2] , target="_blank")

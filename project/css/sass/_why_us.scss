@@ -46,7 +46,7 @@
 #homePageTrusted {
     margin-top : 40px;
     .background{
-        background : url(/images/trusted/trusted_background.jpg) no-repeat fixed center center;
+        background : url(#{$projectUrl}/images/trusted/trusted_background.jpg) no-repeat fixed center center;
         background-size : cover;
         height : 400px;
     }
@@ -94,7 +94,7 @@
 #whyUsAll{
     position : relative;
     .head{
-        background : url('/images/why_us/why_us_background.jpg') no-repeat;
+        background : url(#{$projectUrl}/images/why_us/why_us_background.jpg) no-repeat;
         background-size : cover;
         padding: 80px 0 ;
         text-decoration : none;
