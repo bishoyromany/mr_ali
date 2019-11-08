@@ -3,7 +3,7 @@ navbar#navbar
         .mobileNavbar 
             .row 
                 .col-7
-                    a(href="/")
+                    a(href=projectUrl+"/")
                         img.img-fluid.logo(src=projectUrl+"/images/logos/mobile_logo.webp" , alt="Logo")
                 .col-5.text-right
                     span.drop#showSubNavbar Menu 
@@ -30,16 +30,16 @@ navbar#navbar
                                             
                                     .clear-fix
                                     span.bottom 
-                                        img(src="/images/navbar/navbar_list_botton.webp", alt="Link")
+                                        img(src=projectUrl+"/images/navbar/navbar_list_botton.webp", alt="Link")
 
             li.mobileExtraOptions 
                 div.one 
                     .contactAt Contact us at 
                     a(href="tel:"+contactNumberURL)=contactNumber
                     span Or 
-                    a.contact(href="/contact_us.html") Click Here
+                    a.contact(href=projectUrl+"/contact_us.html") Click Here
                 .two 
-                    a(href="/contact_us.html") Remote Support
+                    a(href=projectUrl+"/contact_us.html") Remote Support
                 .three 
                     ul.social.list-unstyled 
                         each val in socialMediaHomepage 
