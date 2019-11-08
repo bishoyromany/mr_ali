@@ -1,0 +1,18 @@
+#ContactBannerSpacePhone
+#ContactBanner
+    .overly
+    .container-fluid.wow.fadeInUp
+        .logo_contact
+            a.logo(href="/") 
+                img(src="/images/logos/mobile_logo.webp", alt="Logo")
+            .contact_container
+                .contact.text-center
+                    span Contact us at 
+                        a(href="tel:+"+contactNumberURL) #{contactNumber} 
+                        span or  
+                        a.contact_us_link(href="/contact_us.html") Click Here
+            ul.social.list-unstyled 
+                each val in socialMediaHomepage 
+                    li 
+                        a(href=val[1]) 
+                            img.img-fluid(src='/images/social/'+val[0] , alt=val[2] , target="_blank")

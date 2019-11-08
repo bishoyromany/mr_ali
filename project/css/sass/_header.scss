@@ -114,7 +114,7 @@
 }
 
 // products 
-#ProductsBanner , #SupportBanner{
+#ProductsBanner , #SupportBanner , #ContactBanner{
     height : 260px;
     background:url(/images/banners/products_banner.jpg) no-repeat right 0; 
     background-size:cover;
@@ -185,6 +185,13 @@
     background:url(/images/banners/support_banner.jpg) no-repeat right 0; 
 }
 
+// contact
+#ContactBanner{
+    height : 247px;
+    overflow : hidden;
+    background:url(/images/banners/contact_banner.jpg) no-repeat right 0;  
+}
+
 /*
 ** project banners
 */
@@ -231,10 +238,10 @@
     } 
 
     // products
-    #productsBannerSpacePhone , #SupportBannerSpacePhone{
+    #productsBannerSpacePhone , #SupportBannerSpacePhone , #ContactBannerSpacePhone{
         margin-top : 70px;
     }
-    #ProductsBanner , #SupportBanner{
+    #ProductsBanner , #SupportBanner , #ContactBanner{
         display : none;
     }
 }

@@ -130,19 +130,19 @@ body {
         border-width: 0 0 20px 20px;
         border-color: transparent transparent #fdb414 transparent; }
 
-#ProductsBanner, #SupportBanner {
+#ProductsBanner, #SupportBanner, #ContactBanner {
   height: 260px;
   background: url(/images/banners/products_banner.jpg) no-repeat right 0;
   background-size: cover;
   position: relative;
   overflow: hidden; }
-  #ProductsBanner .logo, #SupportBanner .logo {
+  #ProductsBanner .logo, #SupportBanner .logo, #ContactBanner .logo {
     float: left; }
-    #ProductsBanner .logo img, #SupportBanner .logo img {
+    #ProductsBanner .logo img, #SupportBanner .logo img, #ContactBanner .logo img {
       border-width: 0px;
       border: 0px;
       height: 100%; }
-  #ProductsBanner .social, #SupportBanner .social {
+  #ProductsBanner .social, #SupportBanner .social, #ContactBanner .social {
     float: right;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,16 +150,16 @@ body {
     width: 120px;
     z-index: 8;
     margin-top: 60px; }
-    #ProductsBanner .social li, #SupportBanner .social li {
+    #ProductsBanner .social li, #SupportBanner .social li, #ContactBanner .social li {
       margin-right: 5px;
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
-      #ProductsBanner .social li a, #SupportBanner .social li a {
+      #ProductsBanner .social li a, #SupportBanner .social li a, #ContactBanner .social li a {
         width: 25px; }
-  #ProductsBanner .logo_contact, #SupportBanner .logo_contact {
+  #ProductsBanner .logo_contact, #SupportBanner .logo_contact, #ContactBanner .logo_contact {
     text-align: center; }
-  #ProductsBanner .contact_container, #SupportBanner .contact_container {
+  #ProductsBanner .contact_container, #SupportBanner .contact_container, #ContactBanner .contact_container {
     margin: 0;
     padding-top: 30px;
     left: 0;
@@ -167,7 +167,7 @@ body {
     top: 0;
     width: 100%;
     text-align: right; }
-  #ProductsBanner .contact, #SupportBanner .contact {
+  #ProductsBanner .contact, #SupportBanner .contact, #ContactBanner .contact {
     display: inline-block;
     font-size: 20px;
     text-shadow: 26px 0px 27px #2a313d;
@@ -175,20 +175,25 @@ body {
     font-family: Lato;
     font-weight: 400;
     margin-right: 140px; }
-    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a {
+    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a, #ContactBanner .contact span, #ContactBanner .contact a {
       color: white;
       text-decoration: none; }
-    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link {
+    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link, #ContactBanner .contact .contact_us_link {
       color: #fdb414;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover {
+      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover, #ContactBanner .contact .contact_us_link:hover {
         color: #2249a1; }
 
 #SupportBanner {
   height: 247px;
   overflow: hidden;
   background: url(/images/banners/support_banner.jpg) no-repeat right 0; }
+
+#ContactBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(/images/banners/contact_banner.jpg) no-repeat right 0; }
 
 /*
 ** project banners
@@ -219,9 +224,9 @@ body {
     #homepageBanner .demo a {
       color: #fdb414;
       background: #2249a1; }
-  #productsBannerSpacePhone, #SupportBannerSpacePhone {
+  #productsBannerSpacePhone, #SupportBannerSpacePhone, #ContactBannerSpacePhone {
     margin-top: 70px; }
-  #ProductsBanner, #SupportBanner {
+  #ProductsBanner, #SupportBanner, #ContactBanner {
     display: none; } }
 
 /*
@@ -1233,6 +1238,122 @@ support page
       margin: 30px 0px; }
     #homePageSupport a, #SupportDialingCodes a {
       margin-bottom: 30px; } }
+
+#contactWays {
+  position: relative; }
+  #contactWays .head {
+    background: url("/images/support/contact_us_background.jpg") no-repeat right 0;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #contactWays .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #contactWays .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #contactWays .contact_ways {
+    padding-top: 50px; }
+    #contactWays .contact_ways .data {
+      text-align: center;
+      border: 1px solid #DDD;
+      padding: 10px;
+      margin-bottom: 40px;
+      height: 350px;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #contactWays .contact_ways .data:hover {
+        -webkit-box-shadow: 0px 0px 32px -12px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 32px -12px rgba(0, 0, 0, 0.75); }
+      #contactWays .contact_ways .data .img-container {
+        padding: 10px 50px;
+        height: 160px;
+        overflow: hidden; }
+      #contactWays .contact_ways .data h3 {
+        font-weight: bold;
+        font-family: HelveticaNeue-UltraLight;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-transform: uppercase; }
+      #contactWays .contact_ways .data a, #contactWays .contact_ways .data span {
+        font-family: HelveticaNeue-Regular;
+        font-size: 30px;
+        color: #fdb414;
+        margin-bottom: 50px;
+        text-decoration: none;
+        display: inline-block;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+        word-break: break-all; }
+        #contactWays .contact_ways .data a:hover, #contactWays .contact_ways .data span:hover {
+          color: #2249a1; }
+      #contactWays .contact_ways .data span {
+        font-size: 20px; }
+  #contactWays .contact_form {
+    margin-bottom: 50px; }
+    #contactWays .contact_form form .form-gruop {
+      margin-bottom: 10px; }
+    #contactWays .contact_form form textarea {
+      max-width: 100%;
+      min-height: 200px; }
+    #contactWays .contact_form form .submit {
+      border-color: #fdb414;
+      font-size: 23px;
+      float: right;
+      clear: both;
+      margin: 20px 0;
+      color: #fdb414;
+      -webkit-appearance: none;
+      border-radius: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background: #fff;
+      padding: 18px 25px;
+      min-width: 328px;
+      font-family: 'Open Sans',sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      line-height: 16px;
+      min-width: 328px;
+      cursor: pointer; }
+      #contactWays .contact_form form .submit:hover {
+        background: #fdb414;
+        color: #FFF; }
+    #contactWays .contact_form form .clear-fix {
+      clear: both; }
+
+/**
+** contact responsive design
+**/
+@media screen and (max-width: 991px) {
+  #contactWays {
+    padding-top: 20px; }
+    #contactWays h2 {
+      margin: 30px 0px; }
+    #contactWays a {
+      margin-bottom: 30px; }
+    #contactWays .contact_ways {
+      padding-top: 50px; }
+      #contactWays .contact_ways .data {
+        height: auto; }
+        #contactWays .contact_ways .data .img-container {
+          height: auto; } }
 
 footer {
   background-color: #1d4ca1;

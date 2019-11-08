@@ -133,4 +133,88 @@ $(document).ready(function(){
         searchCountryRates(this);
     });
 
+
+    /**
+     * validate contact us form
+     */
+    function validateContactForm(el , message , name ,all){
+        var messages = [
+            'First Name Is Required',
+            'Last Name Is Required',
+            'Email Is Required',
+            'Message Is Required',
+        ];
+        if(all){
+            var firstName = $("#contactForm #firstName").val();
+            var lastName = $("#contactForm #lastName").val();
+            var email = $("#contactForm #email").val();
+            var message = $("#contactForm #message").val();
+
+            var x = 0;
+
+            if(firstName.length < 1){
+                $("#contactForm #firstName").addClass("is-invalid");
+                $("#contactForm .firstName").html(messages[0]);
+                x++;
+            }
+
+            if(lastName.length < 1){
+                $("#contactForm #lastName").addClass("is-invalid");
+                $("#contactForm .lastName").html(messages[1]);
+                x++;
+            }
+
+            if(email.length < 1){
+                $("#contactForm #email").addClass("is-invalid");
+                $("#contactForm .email").html(messages[2]);
+                x++;
+            }
+
+            if(message.length < 1){
+                $("#contactForm #message").addClass("is-invalid");
+                $("#contactForm .message").html(messages[3]);
+                x++;
+            }
+
+            return x;
+        }else{
+            var val = $(el).val();
+            if(val.length < 1){
+                $("#contactForm #"+name).addClass("is-invalid");
+                $("#contactForm ."+name).html(messages[message]);
+                return false;
+            }else{
+                $("#contactForm #"+name).removeClass("is-invalid");
+                $("#contactForm ."+name).html('');
+                return true;
+            }
+        }
+    }
+
+    $("#contactForm").submit(function(){
+        var result = validateContactForm(null , null , null , true);
+        if(result > 0){
+            return false;
+        }
+
+        return true;
+    });
+
+    $("#contactForm #firstName").keyup(function(){
+        var val = $(this).val();
+        validateContactForm(this , 0 , 'firstName' , false);
+    });
+
+    $("#contactForm #lastName").keyup(function(){
+        var val = $(this).val();
+        validateContactForm(this , 0 , 'lastName' , false);
+    });
+    $("#contactForm #email").keyup(function(){
+        var val = $(this).val();
+        validateContactForm(this , 0 , 'email' , false);
+    });
+    $("#contactForm #message").keyup(function(){
+        var val = $(this).val();
+        validateContactForm(this , 0 , 'message' , false);
+    });
 });

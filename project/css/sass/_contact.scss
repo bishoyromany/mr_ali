@@ -1,0 +1,146 @@
+#contactWays{
+    position : relative;
+    .head{
+        background : url('/images/support/contact_us_background.jpg') no-repeat right 0;
+        background-size : cover;
+        padding: 80px 0 ;
+        text-decoration : none;
+        display : block;
+        h1{
+            color: $color-active;
+            margin: 0;
+            font-size: 82px;
+            line-height: 82px;
+            font-family:$font-family-ultra-light;
+            padding: 0;
+            &:after{
+                content: '';
+                margin-left: 10px;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent $background-hover transparent;
+            }
+        }
+    }
+
+    .contact_ways{
+        padding-top : 50px;
+        .data{
+            text-align : center;
+            border : 1px solid #DDD;
+            padding : 10px;
+            margin-bottom : 40px;
+            height : 350px;
+            transition: $transition;
+            &:hover{
+                -webkit-box-shadow: 0px 0px 32px -12px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 32px -12px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 32px -12px rgba(0,0,0,0.75);
+            }
+            .img-container{
+                padding : 10px 50px;
+                height : 160px;
+                overflow: hidden;
+            }
+            h3{
+                font-weight: bold;
+                font-family: $font-family-ultra-light;
+                margin-top : 10px;
+                margin-bottom : 30px;
+                text-transform: uppercase;
+            }
+            a , span{
+                font-family: $font-family-regular;
+                font-size : 30px;
+                color : $background-hover;
+                margin-bottom : 50px;
+                text-decoration: none;
+                display : inline-block;
+                transition: $transition;
+                font-weight : bold;
+                word-break: break-all;
+                &:hover{
+                    color : $color-hover;
+                }
+            }
+            span{
+                font-size : 20px;
+            }
+        }
+    }
+
+    .contact_form{
+        margin-bottom : 50px;
+        form{
+            .form-gruop{
+                margin-bottom : 10px;
+            }
+            textarea{
+                max-width : 100%;
+                min-height : 200px;
+            }
+            .submit{
+                border-color: $background-hover;
+                font-size: 23px;
+                float: right;
+                clear : both;
+                margin: 20px 0;
+                color: $background-hover;
+                -webkit-appearance: none;
+                border-radius: 0;
+                transition: $transition;
+                background: #fff;
+                padding: 18px 25px;
+                min-width: 328px;
+                font-family: 'Open Sans',sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 18px;
+                line-height: 16px;
+                min-width: 328px;
+                cursor: pointer;
+                &:hover{
+                    background: $background-hover;
+                    color: $color-active;
+                }
+            }
+            .clear-fix{
+                clear:both;
+            }
+        }
+    }
+}
+
+
+
+/**
+** contact responsive design
+**/
+@media screen and(max-width : 991px){
+    // contact
+    #contactWays{
+        padding-top : 20px;
+        h2{
+            margin : 30px 0px;
+        }
+        a{
+            margin-bottom : 30px;
+        }
+
+        .contact_ways{
+            padding-top : 50px;
+            .data{
+                height : auto;
+                .img-container{
+                    height : auto;
+                }
+            }
+        }
+    }
+}

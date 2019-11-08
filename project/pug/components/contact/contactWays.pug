@@ -1,0 +1,58 @@
+#contactWays 
+    .head.wow.fadeInLeft
+        .container 
+            .row 
+                .col-md-5
+                    h1 Contact Us
+    .contact_ways  
+        .container
+            .row 
+                .col-md-3 
+                    .data
+                        .img-container
+                            img.img-fluid(src="/images/support/contact_us_by_phone.png" , alt="Contact Us By Phone")
+                        h3 By Phone
+                        a(href="tel:"+contactNumberURL)= contactNumber
+                .col-md-3 
+                    .data
+                        .img-container
+                            img.img-fluid(src="/images/support/contacts_us_by_whatsapp.png" , alt="Contact Us Whats App")
+                        h3 By Whats App
+                        a(href="https://wa.me/"+contactNumberURL , target="_blank")= whatAppNumber
+                .col-md-3 
+                    .data
+                        .img-container
+                            img.img-fluid(src="/images/support/contact_us_by_mail.png" , alt="Contact Us Email")
+                        h3 By Email
+                        a(href="mailto:"+emailName , target="_blank")= emailName
+                .col-md-3 
+                    .data
+                        .img-container
+                            img.img-fluid(src="/images/support/contact_us_by_address.png" , alt="Address")
+                        h3 Our Address
+                        span= address
+        .contact_form
+            .container
+                form#contactForm
+                    .form-gruop 
+                        label(for="firstName") First Name* 
+                        input.form-control#firstName(type="text" , placeholder="First Name" , required)
+                        .invalid-feedback.firstName
+                    .form-gruop 
+                        label(for="lastName") Last Name*
+                        input.form-control#lastName(type="text" , placeholder="Last Name" , required)
+                        .invalid-feedback.lastName
+                    .form-gruop 
+                        label(for="email") Email*
+                        input.form-control#email(type="email" , placeholder="Email" , required)
+                        .invalid-feedback.email
+                    .form-gruop 
+                        label(for="phoneNumber") Phone Number
+                        input.form-control#phoneNumber(type="number" , placeholder="Phone Number")
+                        .invalid-feedback.phoneNumber
+                    .form-gruop 
+                        label(for="message") Message*
+                        textarea.form-control#message(type="text" , placeholder="Message" , required)
+                        .invalid-feedback.message
+                    input.submit(type="submit" , value="Submit")
+                    .clear-fix
