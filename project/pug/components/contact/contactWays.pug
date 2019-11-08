@@ -33,7 +33,7 @@
                         span= address
         .contact_form
             .container
-                form#contactForm
+                form#contactForm(action="https://formspree.io/xzbbzlge" , method="POST")
                     .form-gruop 
                         label(for="firstName") First Name* 
                         input.form-control#firstName(type="text" , placeholder="First Name" , required)
@@ -44,7 +44,7 @@
                         .invalid-feedback.lastName
                     .form-gruop 
                         label(for="email") Email*
-                        input.form-control#email(type="email" , placeholder="Email" , required)
+                        input.form-control#email(type="email" , name="_replyto" , placeholder="Email" , required)
                         .invalid-feedback.email
                     .form-gruop 
                         label(for="phoneNumber") Phone Number
@@ -52,7 +52,7 @@
                         .invalid-feedback.phoneNumber
                     .form-gruop 
                         label(for="message") Message*
-                        textarea.form-control#message(type="text" , placeholder="Message" , required)
+                        textarea.form-control#message(type="text" , name="message" , placeholder="Message" , required)
                         .invalid-feedback.message
                     input.submit(type="submit" , value="Submit")
                     .clear-fix
