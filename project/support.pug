@@ -1,0 +1,21 @@
+include pug/global/mainVars.pug
+<!DOCTYPE html>
+html 
+    include pug/global/header.pug
+    body 
+        //- upprt banner
+        #BannerMain
+            include pug/components/support/banner.pug
+        //- navbar
+        #NavbarMain
+            include pug/global/navbar.pug
+        //- FAQ Section
+        #FAQ 
+            include pug/components/support/faq.pug
+        //- dialing codes Section
+        #DialingCodes 
+            include pug/components/support/dialingCodes.pug
+        //- remote support Section
+        #RemoteSupport 
+            include pug/components/support/remoteSupport.pug
+        include pug/global/footer.pug

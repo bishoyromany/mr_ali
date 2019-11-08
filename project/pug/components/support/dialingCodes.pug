@@ -1,0 +1,19 @@
+#SupportDialingCodes
+    .head.wow.fadeInLeft
+        .container 
+            .row 
+                .col-md-4 
+                    h1 Dialing Codes And Rates
+    .container.codes 
+        input.form-control#searchCountryRates(placeholder="Search By Country Or Code Or Rate")
+        table.table.table-hover.table-bordered.table-striped 
+            thead
+                tr.thead-light 
+                    th Country  
+                    th Code
+                    th Rate
+            each val in DialingCodes 
+                tr 
+                    td.country=val[0]
+                    td.code=val[1]
+                    td.rate=val[2]

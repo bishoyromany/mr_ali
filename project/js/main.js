@@ -97,4 +97,40 @@ $(document).ready(function(){
             scrollToId(scrollIds[1] , 500);
         } , 1000);
     }
+
+
+
+    /**
+     * faqs 
+     */
+    $(".showNextFaqNow").click(function(){
+        $(this).toggleClass("opened");
+        $(this).next().slideToggle();
+    });
+
+    /**
+     * rates country search
+     */
+    function searchCountryRates(el){
+        var val = $(el).val().toLowerCase();
+        var targets = $(el).next('table').children('tbody').children('tr');
+        if(val.length > 0){
+            for(var x = 0 ; x < targets.length ; x++){
+                var country = $(targets[x]).children('.country').text().toLowerCase();
+                var code = $(targets[x]).children('.code').text();
+                var rate = $(targets[x]).children('.rate').text();
+                if(val.search(country) > -1 || val.search(code) > -1 || val.search(rate) > -1){
+                    $(targets[x]).show();
+                }else{
+                    $(targets[x]).hide();
+                }
+            }
+        }else{
+            $(el).next('table').children('tbody').children('tr').show();
+        } 
+    }
+    $("#searchCountryRates").keyup(function(){
+        searchCountryRates(this);
+    });
+
 });

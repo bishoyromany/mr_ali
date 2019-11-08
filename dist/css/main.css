@@ -130,19 +130,19 @@ body {
         border-width: 0 0 20px 20px;
         border-color: transparent transparent #fdb414 transparent; }
 
-#ProductsBanner {
+#ProductsBanner, #SupportBanner {
   height: 260px;
   background: url(/images/banners/products_banner.jpg) no-repeat right 0;
   background-size: cover;
   position: relative;
   overflow: hidden; }
-  #ProductsBanner .logo {
+  #ProductsBanner .logo, #SupportBanner .logo {
     float: left; }
-    #ProductsBanner .logo img {
+    #ProductsBanner .logo img, #SupportBanner .logo img {
       border-width: 0px;
       border: 0px;
       height: 100%; }
-  #ProductsBanner .social {
+  #ProductsBanner .social, #SupportBanner .social {
     float: right;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,16 +150,16 @@ body {
     width: 120px;
     z-index: 8;
     margin-top: 60px; }
-    #ProductsBanner .social li {
+    #ProductsBanner .social li, #SupportBanner .social li {
       margin-right: 5px;
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
-      #ProductsBanner .social li a {
+      #ProductsBanner .social li a, #SupportBanner .social li a {
         width: 25px; }
-  #ProductsBanner .logo_contact {
+  #ProductsBanner .logo_contact, #SupportBanner .logo_contact {
     text-align: center; }
-  #ProductsBanner .contact_container {
+  #ProductsBanner .contact_container, #SupportBanner .contact_container {
     margin: 0;
     padding-top: 30px;
     left: 0;
@@ -167,7 +167,7 @@ body {
     top: 0;
     width: 100%;
     text-align: right; }
-  #ProductsBanner .contact {
+  #ProductsBanner .contact, #SupportBanner .contact {
     display: inline-block;
     font-size: 20px;
     text-shadow: 26px 0px 27px #2a313d;
@@ -175,15 +175,20 @@ body {
     font-family: Lato;
     font-weight: 400;
     margin-right: 140px; }
-    #ProductsBanner .contact span, #ProductsBanner .contact a {
+    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a {
       color: white;
       text-decoration: none; }
-    #ProductsBanner .contact .contact_us_link {
+    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link {
       color: #fdb414;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-      #ProductsBanner .contact .contact_us_link:hover {
+      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover {
         color: #2249a1; }
+
+#SupportBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(/images/banners/support_banner.jpg) no-repeat right 0; }
 
 /*
 ** project banners
@@ -214,9 +219,9 @@ body {
     #homepageBanner .demo a {
       color: #fdb414;
       background: #2249a1; }
-  #productsBannerSpacePhone {
+  #productsBannerSpacePhone, #SupportBannerSpacePhone {
     margin-top: 70px; }
-  #ProductsBanner {
+  #ProductsBanner, #SupportBanner {
     display: none; } }
 
 /*
@@ -1138,14 +1143,95 @@ body {
       background: #2249a1; }
 
 /**
+support page 
+*/
+#SupportFAQ, #SupportDialingCodes, #SupportRemoteSupport {
+  position: relative; }
+  #SupportFAQ .head, #SupportDialingCodes .head, #SupportRemoteSupport .head {
+    background: url("/images/support/dialing_codes_background.webp") no-repeat right 0;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #SupportFAQ .head h1, #SupportDialingCodes .head h1, #SupportRemoteSupport .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #SupportFAQ .head h1:after, #SupportDialingCodes .head h1:after, #SupportRemoteSupport .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #SupportFAQ .faqs h3, #SupportDialingCodes .faqs h3, #SupportRemoteSupport .faqs h3 {
+    color: #fdb414;
+    font-weight: bold;
+    font-family: Lato;
+    margin-top: 50px; }
+  #SupportFAQ .faqs .quest, #SupportDialingCodes .faqs .quest, #SupportRemoteSupport .faqs .quest {
+    margin: 2.5px 0px;
+    display: block; }
+    #SupportFAQ .faqs .quest .qhead, #SupportDialingCodes .faqs .quest .qhead, #SupportRemoteSupport .faqs .quest .qhead {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      color: #FFF;
+      background-color: #2249a1;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      font-family: Lato-Regular; }
+      #SupportFAQ .faqs .quest .qhead.opened, #SupportDialingCodes .faqs .quest .qhead.opened, #SupportRemoteSupport .faqs .quest .qhead.opened {
+        background-color: #fdb414; }
+        #SupportFAQ .faqs .quest .qhead.opened img, #SupportDialingCodes .faqs .quest .qhead.opened img, #SupportRemoteSupport .faqs .quest .qhead.opened img {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+      #SupportFAQ .faqs .quest .qhead img, #SupportDialingCodes .faqs .quest .qhead img, #SupportRemoteSupport .faqs .quest .qhead img {
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        right: 10px;
+        width: 25px; }
+    #SupportFAQ .faqs .quest .qan, #SupportDialingCodes .faqs .quest .qan, #SupportRemoteSupport .faqs .quest .qan {
+      padding: 10px;
+      display: none;
+      font-family: Lato-Regular; }
+
+#SupportDialingCodes {
+  position: relative; }
+  #SupportDialingCodes .head {
+    margin-top: 50px; }
+    #SupportDialingCodes .head h1 {
+      font-size: 62px;
+      line-height: 72px; }
+  #SupportDialingCodes .codes {
+    margin-top: 50px; }
+    #SupportDialingCodes .codes table {
+      margin-top: 10px; }
+
+#SupportRemoteSupport .head {
+  background: url("/images/support/remove_support_background.jpg") no-repeat right 0;
+  background-size: cover;
+  margin-top: 50px; }
+
+/**
 ** support responsive design
 **/
 @media screen and (max-width: 991px) {
-  #homePageSupport {
+  #homePageSupport, #SupportDialingCodes {
     padding-top: 20px; }
-    #homePageSupport h2 {
+    #homePageSupport h2, #SupportDialingCodes h2 {
       margin: 30px 0px; }
-    #homePageSupport a {
+    #homePageSupport a, #SupportDialingCodes a {
       margin-bottom: 30px; } }
 
 footer {

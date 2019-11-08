@@ -1,0 +1,17 @@
+#SupportFAQ 
+    .head.wow.fadeInLeft
+        .container 
+            .row 
+                .col-md-4 
+                    h1 FAQ
+    .container.faqs 
+        each val in faq 
+            h3=val[0]
+            each v in val[1]
+                .quest 
+                    .qhead.showNextFaqNow
+                        span !{v[0]}
+                        img(src="/images/support/down_arrow.png" , alt="Arrow Down")
+                    .qan 
+                        p !{v[1]}
+                    
