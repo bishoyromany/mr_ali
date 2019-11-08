@@ -197,6 +197,13 @@ $(document).ready(function(){
             return false;
         }
 
+        var messageValue = $("#message").val();
+        var firstName = $("#firstName").val();
+        var lastName = $("#lastName").val();
+        var phoneNumber = $("#phoneNumber").val();
+
+        // add the new textarea values 
+        $("#message").val(messageValue + " \n " + "First Name : " + firstName + " \n " + "Last Name : " + lastName + " \n " + " Phone Number : " + phoneNumber);
         return true;
     });
 
