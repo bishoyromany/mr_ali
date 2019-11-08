@@ -24,30 +24,30 @@ $font-family-regular : HelveticaNeue-Regular;
 
 @font-face{
     font-family : 'HelveticaNeue-Thin';
-    src : url('../../fonts/helveticaneue/HelveticaNeue Thin.ttf');
+    src : url(#{$projectUrl}../../fonts/helveticaneue/HelveticaNeue Thin.ttf);
 }
 
 @font-face{
   font-family : 'HelveticaNeue-UltraLight';
-  src : url('../../fonts/helveticaneue/helveticaneue-ultralight.ttf');
+  src : url(#{$projectUrl}../../fonts/helveticaneue/helveticaneue-ultralight.ttf);
 }
 
 @font-face{
   font-family : 'HelveticaNeue-Regular';
-  src : url('../../fonts/helveticaneue/helveticaneue-regular.ttf');
+  src : url(#{$projectUrl}../../fonts/helveticaneue/helveticaneue-regular.ttf);
 }
 
 @font-face {
   font-family: 'Lato-Regular';
-  src: url('../../fonts/Lato/Lato-Regular.ttf');
+  src: url(#{$projectUrl}../../fonts/Lato/Lato-Regular.ttf);
 }
 @font-face {
   font-family: 'Lato-Bold';
-  src: url('../../fonts/Lato/Lato-Bold.ttf');
+  src: url(#{$projectUrl}../../fonts/Lato/Lato-Bold.ttf);
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../../fonts/Lato/Lato-Black.ttf');
+  src: url(#{$projectUrl}../../fonts/Lato/Lato-Black.ttf);
 }
   
 

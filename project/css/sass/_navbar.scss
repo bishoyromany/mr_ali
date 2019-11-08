@@ -116,7 +116,7 @@
                                 content: '';
                                 width: 15px;
                                 height: 13px;
-                                background: url(/images/navbar/right-arrow.webp) no-repeat;
+                                background: url(#{$projectUrl}/images/navbar/right-arrow.webp) no-repeat;
                             }
                             a{
                                 padding : 5px 0px 0px 10px;

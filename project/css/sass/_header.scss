@@ -4,7 +4,7 @@
 // homepage 
 #homepageBanner{
     height : 530px;
-    background:url(/images/banners/homepage_banner.jpg) no-repeat right 0; 
+    background:url(#{$projectUrl}/images/banners/homepage_banner.jpg) no-repeat right 0; 
     background-size:cover;
     position : relative;
     .logo{
@@ -116,7 +116,7 @@
 // products 
 #ProductsBanner , #SupportBanner , #ContactBanner , #WhyUsBanner{
     height : 260px;
-    background:url(/images/banners/products_banner.jpg) no-repeat right 0; 
+    background:url(#{$projectUrl}/images/banners/products_banner.jpg) no-repeat right 0; 
     background-size:cover;
     position : relative;
     overflow : hidden;
@@ -182,21 +182,21 @@
 #SupportBanner{
     height : 247px;
     overflow : hidden;
-    background:url(/images/banners/support_banner.jpg) no-repeat right 0; 
+    background:url(#{$projectUrl}/images/banners/support_banner.jpg) no-repeat right 0; 
 }
 
 // contact
 #ContactBanner{
     height : 247px;
     overflow : hidden;
-    background:url(/images/banners/contact_banner.jpg) no-repeat right 0;  
+    background:url(#{$projectUrl}/images/banners/contact_banner.jpg) no-repeat right 0;  
 }
 
 // why us 
 #WhyUsBanner{
     height : 247px;
     overflow : hidden;
-    background:url(/images/banners/why_us_banner.jpg) no-repeat right 0; 
+    background:url(#{$projectUrl}/images/banners/why_us_banner.jpg) no-repeat right 0; 
 }
 
 /*

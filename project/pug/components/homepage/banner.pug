@@ -2,14 +2,14 @@
     .overly
     .container-fluid.wow.fadeInUp
         .logo_contact
-            a.logo(href="/") 
+            a.logo(href=projectUrl+"/") 
                 img(src=projectUrl+"/images/logos/Voice_Logo.png", alt="Voice Logo")
             .contact_container
                 .contact.text-center
                     span Contact us at 
                         a(href="tel:+"+contactNumberURL) #{contactNumber} 
                         span or  
-                        a.contact_us_link(href="/contact_us.html") Click Here
+                        a.contact_us_link(href=projectUrl+"/contact_us.html") Click Here
             ul.social.list-unstyled 
                 each val in socialMediaHomepage 
                     li 
@@ -17,4 +17,4 @@
                             img.img-fluid(src=projectUrl+'/images/social/'+val[0] , alt=val[2] , target="_blank")
         .demo 
             h2 Affordable, Reliable and Flexible: VoIP for Modern Enterprises.  
-            a(href="contact_us.html") Request A Demo
+            a(href=projectUrl+"contact_us.html") Request A Demo

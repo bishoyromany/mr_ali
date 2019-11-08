@@ -6,7 +6,7 @@
     .background{
         min-height : 400px; 
         padding : 60px 30px;
-        background:url(/images/introduce/intro1_background.jpg) no-repeat; 
+        background:url(#{$projectUrl}/images/introduce/intro1_background.jpg) no-repeat; 
         background-size:cover;
         .talk{
             .phone{
@@ -89,7 +89,7 @@
                         color : $color-active;
                     }
                     &:before{
-                        background: url(/images/introduce/play_button.webp) no-repeat;
+                        background: url(#{$projectUrl}/images/introduce/play_button.webp) no-repeat;
                         content: '';
                         width: 56px;
                         height: 65px;
@@ -131,7 +131,7 @@
                     top: -20px;
                     right: -5px;
                     cursor: pointer;
-                    background : url(/images/introduce/times.png);
+                    background : url(#{$projectUrl}/images/introduce/times.png);
                 }   
                 iframe{
                     border-radius : 10px;
@@ -148,7 +148,7 @@
     position : relative;
     .background{
         padding : 75px 150px 100px;
-        background:url(/images/introduce/intro2_background.jpg) no-repeat; 
+        background:url(#{$projectUrl}/images/introduce/intro2_background.jpg) no-repeat; 
         background-size:cover;
         span{
             text-transform: uppercase;

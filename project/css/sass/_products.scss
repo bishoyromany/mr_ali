@@ -2,7 +2,7 @@
 #homePageProducts{
     padding-top : 40px;
     padding-bottom : 80px;
-    background :url(/images/introduce/intro2_background.jpg) no-repeat;
+    background :url(#{$projectUrl}/images/introduce/intro2_background.jpg) no-repeat;
     background-size : cover;
     h1{
         font-size : 40px;

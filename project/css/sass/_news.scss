@@ -1,5 +1,5 @@
 #homePageNewsLetters{
-    background :url(/images/introduce/intro2_background.jpg) no-repeat;
+    background :url(#{$projectUrl}/images/introduce/intro2_background.jpg) no-repeat;
     background-size : cover;
     padding : 60px 0px;
     h1{
