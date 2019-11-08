@@ -130,19 +130,19 @@ body {
         border-width: 0 0 20px 20px;
         border-color: transparent transparent #fdb414 transparent; }
 
-#ProductsBanner, #SupportBanner, #ContactBanner {
+#ProductsBanner, #SupportBanner, #ContactBanner, #WhyUsBanner {
   height: 260px;
   background: url(/images/banners/products_banner.jpg) no-repeat right 0;
   background-size: cover;
   position: relative;
   overflow: hidden; }
-  #ProductsBanner .logo, #SupportBanner .logo, #ContactBanner .logo {
+  #ProductsBanner .logo, #SupportBanner .logo, #ContactBanner .logo, #WhyUsBanner .logo {
     float: left; }
-    #ProductsBanner .logo img, #SupportBanner .logo img, #ContactBanner .logo img {
+    #ProductsBanner .logo img, #SupportBanner .logo img, #ContactBanner .logo img, #WhyUsBanner .logo img {
       border-width: 0px;
       border: 0px;
       height: 100%; }
-  #ProductsBanner .social, #SupportBanner .social, #ContactBanner .social {
+  #ProductsBanner .social, #SupportBanner .social, #ContactBanner .social, #WhyUsBanner .social {
     float: right;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,16 +150,16 @@ body {
     width: 120px;
     z-index: 8;
     margin-top: 60px; }
-    #ProductsBanner .social li, #SupportBanner .social li, #ContactBanner .social li {
+    #ProductsBanner .social li, #SupportBanner .social li, #ContactBanner .social li, #WhyUsBanner .social li {
       margin-right: 5px;
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
-      #ProductsBanner .social li a, #SupportBanner .social li a, #ContactBanner .social li a {
+      #ProductsBanner .social li a, #SupportBanner .social li a, #ContactBanner .social li a, #WhyUsBanner .social li a {
         width: 25px; }
-  #ProductsBanner .logo_contact, #SupportBanner .logo_contact, #ContactBanner .logo_contact {
+  #ProductsBanner .logo_contact, #SupportBanner .logo_contact, #ContactBanner .logo_contact, #WhyUsBanner .logo_contact {
     text-align: center; }
-  #ProductsBanner .contact_container, #SupportBanner .contact_container, #ContactBanner .contact_container {
+  #ProductsBanner .contact_container, #SupportBanner .contact_container, #ContactBanner .contact_container, #WhyUsBanner .contact_container {
     margin: 0;
     padding-top: 30px;
     left: 0;
@@ -167,7 +167,7 @@ body {
     top: 0;
     width: 100%;
     text-align: right; }
-  #ProductsBanner .contact, #SupportBanner .contact, #ContactBanner .contact {
+  #ProductsBanner .contact, #SupportBanner .contact, #ContactBanner .contact, #WhyUsBanner .contact {
     display: inline-block;
     font-size: 20px;
     text-shadow: 26px 0px 27px #2a313d;
@@ -175,14 +175,14 @@ body {
     font-family: Lato;
     font-weight: 400;
     margin-right: 140px; }
-    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a, #ContactBanner .contact span, #ContactBanner .contact a {
+    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a, #ContactBanner .contact span, #ContactBanner .contact a, #WhyUsBanner .contact span, #WhyUsBanner .contact a {
       color: white;
       text-decoration: none; }
-    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link, #ContactBanner .contact .contact_us_link {
+    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link, #ContactBanner .contact .contact_us_link, #WhyUsBanner .contact .contact_us_link {
       color: #fdb414;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover, #ContactBanner .contact .contact_us_link:hover {
+      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover, #ContactBanner .contact .contact_us_link:hover, #WhyUsBanner .contact .contact_us_link:hover {
         color: #2249a1; }
 
 #SupportBanner {
@@ -194,6 +194,11 @@ body {
   height: 247px;
   overflow: hidden;
   background: url(/images/banners/contact_banner.jpg) no-repeat right 0; }
+
+#WhyUsBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(/images/banners/why_us_banner.jpg) no-repeat right 0; }
 
 /*
 ** project banners
@@ -224,9 +229,9 @@ body {
     #homepageBanner .demo a {
       color: #fdb414;
       background: #2249a1; }
-  #productsBannerSpacePhone, #SupportBannerSpacePhone, #ContactBannerSpacePhone {
-    margin-top: 70px; }
-  #ProductsBanner, #SupportBanner, #ContactBanner {
+  #productsBannerSpacePhone, #SupportBannerSpacePhone, #ContactBannerSpacePhone, #WhyUsBannerSpacePhone {
+    margin-top: 67px; }
+  #ProductsBanner, #SupportBanner, #ContactBanner, #WhyUsBanner {
     display: none; } }
 
 /*
@@ -843,6 +848,157 @@ body {
           background-color: #fff;
           color: #2249a1; }
 
+#whyUsAll {
+  position: relative; }
+  #whyUsAll .head {
+    background: url("/images/why_us/why_us_background.jpg") no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #whyUsAll .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #whyUsAll .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #whyUsAll .features .all {
+    position: relative;
+    padding: 10px 0px 0px; }
+    #whyUsAll .features .all .pretty_icon {
+      position: absolute;
+      width: 50%;
+      top: 0%;
+      opacity: 0.2;
+      z-index: 0; }
+    #whyUsAll .features .all .header {
+      z-index: 2;
+      margin-bottom: 60px; }
+      #whyUsAll .features .all .header h1 {
+        font-size: 2.8125rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.0625rem;
+        font-family: HelveticaNeue-Thin;
+        margin: 60px 0px 30px; }
+        #whyUsAll .features .all .header h1:after {
+          content: '';
+          margin-left: 10px;
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 20px 20px;
+          border-color: transparent transparent #fdb414 transparent; }
+      #whyUsAll .features .all .header p {
+        position: relative;
+        margin: 0;
+        padding: 0.625rem 0;
+        letter-spacing: 0.0125rem;
+        font-size: 17px; }
+    #whyUsAll .features .all .options {
+      text-align: center;
+      z-index: 2;
+      padding: 20px; }
+      #whyUsAll .features .all .options .img-container {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        padding: 20px;
+        border: 2px solid #DDD;
+        margin: 10px auto; }
+      #whyUsAll .features .all .options h3 {
+        font-size: 28px;
+        font-family: HelveticaNeue-Thin;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top: 20px; }
+      #whyUsAll .features .all .options p {
+        font-size: 18px; }
+      #whyUsAll .features .all .options .data {
+        padding-bottom: 50px; }
+        #whyUsAll .features .all .options .data.lined:after {
+          content: '';
+          right: -25%;
+          width: 50%;
+          height: 2px;
+          background: #b0babf;
+          position: absolute;
+          top: 58px; }
+    #whyUsAll .features .all .extra_features {
+      z-index: 2;
+      background: #00d4ff;
+      background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f3f3f3), color-stop(50%, #2249a1));
+      background: linear-gradient(90deg, #f3f3f3 50%, #2249a1 50%);
+      padding: 50px 0px; }
+      #whyUsAll .features .all .extra_features .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      #whyUsAll .features .all .extra_features .left_side {
+        padding: 0px 40px 0px 0px; }
+        #whyUsAll .features .all .extra_features .left_side:after {
+          content: '';
+          margin-left: 10px;
+          display: inline-block;
+          position: absolute;
+          right: -20px;
+          top: calc(50% - 20px);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 40px 40px;
+          border-color: transparent transparent #f3f3f3 transparent;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+        #whyUsAll .features .all .extra_features .left_side h3 {
+          font-size: 1.8125rem;
+          text-transform: uppercase;
+          letter-spacing: 0.0625rem;
+          font-family: HelveticaNeue-Thin;
+          margin-bottom: 40px; }
+          #whyUsAll .features .all .extra_features .left_side h3:after {
+            content: '';
+            margin-left: 10px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 20px 20px;
+            border-color: transparent transparent #fdb414 transparent; }
+      #whyUsAll .features .all .extra_features ul {
+        margin-left: 35px;
+        margin-top: 20px; }
+        #whyUsAll .features .all .extra_features ul li {
+          color: #FFF;
+          margin: 0px 0px 20px; }
+  #whyUsAll .features .all:nth-of-type(even) {
+    background-color: #f2f2f2; }
+    #whyUsAll .features .all:nth-of-type(even) .pretty_icon {
+      left: 0px; }
+    #whyUsAll .features .all:nth-of-type(even) .header .row .col-md-6:nth-of-type(1) {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+  #whyUsAll .features .all:nth-of-type(odd) .pretty_icon {
+    right: 0px; }
+
 /*
 ** why us mobile design
 */
@@ -1103,21 +1259,24 @@ body {
     margin-bottom: 40px; }
   #homePageNewsLetters .data {
     margin-bottom: 20px; }
-    #homePageNewsLetters .data a {
+    #homePageNewsLetters .data .border {
+      border: 1px solid #ddd;
+      padding: 10px; }
+    #homePageNewsLetters .data div {
       text-decoration: none; }
-      #homePageNewsLetters .data a .img-container {
+      #homePageNewsLetters .data div .img-container {
         height: 268px;
         width: 100%;
         overflow: hidden; }
-        #homePageNewsLetters .data a .img-container img {
+        #homePageNewsLetters .data div .img-container img {
           height: 100%;
           width: 100%;
           -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out; }
-          #homePageNewsLetters .data a .img-container img:hover {
+          #homePageNewsLetters .data div .img-container img:hover {
             -webkit-transform: scale(1.1);
                     transform: scale(1.1); }
-      #homePageNewsLetters .data a .title {
+      #homePageNewsLetters .data div .title {
         margin: 10px 0px;
         font-family: Lato-Bold;
         color: #333; }

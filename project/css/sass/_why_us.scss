@@ -43,7 +43,6 @@
         }
     }
 }
-
 #homePageTrusted {
     margin-top : 40px;
     .background{
@@ -91,6 +90,199 @@
     }
 }
 
+// why us page
+#whyUsAll{
+    position : relative;
+    .head{
+        background : url('/images/why_us/why_us_background.jpg') no-repeat;
+        background-size : cover;
+        padding: 80px 0 ;
+        text-decoration : none;
+        display : block;
+        h1{
+            color: $color-active;
+            margin: 0;
+            font-size: 82px;
+            line-height: 82px;
+            font-family:$font-family-ultra-light;
+            padding: 0;
+            &:after{
+                content: '';
+                margin-left: 10px;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent $background-hover transparent;
+            }
+        }
+    }
+
+    .features{
+        .all{
+            position: relative;
+            padding : 10px 0px 0px;
+            .pretty_icon{
+                position : absolute;
+                width : 50%;
+                top : 0%;
+                opacity : 0.2;
+                z-index : 0;
+            }
+
+            .header{
+                z-index : 2;
+                margin-bottom : 60px;
+                h1{
+                    font-size: 2.8125rem;
+                    line-height: 3.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.0625rem;
+                    font-family : $font-family;
+                    margin : 60px 0px 30px;
+                    &:after{
+                        content: '';
+                        margin-left: 10px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 0 20px 20px;
+                        border-color: transparent transparent $background-hover transparent;
+                    }
+                }
+                p{
+                    position: relative;
+                    margin: 0;
+                    padding: 0.625rem 0;
+                    letter-spacing: 0.0125rem;
+                    font-size : 17px;
+                }
+            }
+    
+            .options{
+                text-align : center;
+                z-index : 2;
+                padding : 20px;
+                .img-container{
+                    width : 100px;
+                    height : 100px;
+                    border-radius : 100%;
+                    padding : 20px;
+                    border : 2px solid #DDD;
+                    margin : 10px auto;
+                }
+                h3{
+                    font-size : 28px;
+                    font-family : $font-family;
+                    text-transform: uppercase;
+                    margin-bottom : 30px;
+                    margin-top : 20px;
+                }
+                p{
+                    font-size : 18px;
+                }
+                .data{
+                    padding-bottom : 50px;
+                    &.lined{
+                        &:after{
+                            content : '';
+                            right: -25%;
+                            width: 50%;
+                            height: 2px;
+                            background: #b0babf;
+                            position: absolute;
+                            top: 58px;
+                        }
+                    }
+                }
+            }
+
+            .extra_features{
+                z-index : 2;
+                background: rgb(0,212,255);
+                background: linear-gradient(90deg, rgb(243, 243, 243) 50%, $color-hover 50%);
+                padding : 50px 0px;
+                .row{
+                    align-items: center;
+                }
+
+                .left_side{
+                    padding : 0px 40px 0px 0px;
+                    &:after{
+                        content: '';
+                        margin-left: 10px;
+                        display: inline-block;
+                        position: absolute;
+                        right : -20px;
+                        top: calc(50% - 20px);
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 0 40px 40px;
+                        border-color: transparent transparent rgb(243, 243, 243) transparent;
+                        transform : rotate(-45deg);
+                    }
+                    h3{
+                        font-size: 1.8125rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.0625rem;
+                        font-family : $font-family;
+                        margin-bottom : 40px;
+                        &:after{
+                            content: '';
+                            margin-left: 10px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 0 20px 20px;
+                            border-color: transparent transparent $background-hover transparent;
+                        }
+                    }
+                }
+
+                ul{
+                    margin-left: 35px;
+                    margin-top: 20px;
+                    li{
+                        color : $color-active;
+                        margin: 0px 0px 20px;
+                    }
+                }
+            }
+
+        }
+
+        .all:nth-of-type(even){
+            background-color : #f2f2f2;
+            .pretty_icon{
+                left : 0px;
+            }
+            .header{
+                .row {
+                    .col-md-6:nth-of-type(1){
+                        order : 2;
+                    }
+                }
+            }
+        }
+
+        .all:nth-of-type(odd){
+            .pretty_icon{
+                right : 0px;
+            }
+        }
+
+    }
+}
 
 /*
 ** why us mobile design

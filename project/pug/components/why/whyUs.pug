@@ -1,0 +1,46 @@
+#whyUsAll 
+    .head.wow.fadeInLeft
+        .container 
+            .row 
+                .col-md-4 
+                    h1 Why Us
+    .features 
+        each val in whyUs
+            .all
+                .container
+                    .pretty_icon 
+                        img.img-fluid(src="/images/why_us/"+val[6])
+                    .header 
+                        .row
+                            .col-md-6
+                                h1=val[0] 
+                                p=val[1] 
+                            .col-md-6
+                    .options 
+                        .row 
+                            - var x = 0;
+                            - var className = 'last';
+                            each v in val[2] 
+                                - x++ 
+                                if x == 1 || x == 2 
+                                    -className = 'lined';
+                                else 
+                                    -className = 'last';
+                                    -x = 0;
+                                .col-md-4 
+                                    .data(class=className)
+                                        .img-container 
+                                            img.img-fluid(src="/images/why_us/"+v[0]) 
+                                        h3=v[1]
+                                        p=v[2]
+                .extra_features 
+                    .container 
+                        .row 
+                            .col-md-6
+                                .left_side 
+                                    h3=val[3]
+                                    p= val[4]
+                            .col-md-6 
+                                ul 
+                                    each e in val[5]
+                                        li=e

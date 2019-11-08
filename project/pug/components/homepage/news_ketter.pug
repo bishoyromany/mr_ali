@@ -4,7 +4,8 @@
         .row.wow.bounceInUp
             each val in newsLetterHomepage 
                 .col-md-4.data
-                    a(href=val[1]) 
+                    div.border 
                         .img-container 
                             img.img-fluid(src='/'+val[2] , alt=val[0])
-                        .title= val[0]
+                        .title.border= val[0]
+                        .content.border= val[1]
