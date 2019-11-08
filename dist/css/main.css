@@ -1009,7 +1009,49 @@ body {
   #homePageWhyUs .options p {
     padding-bottom: 35px; }
   #homePageTrusted .flex .data a {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  #whyUsAll .features .all {
+    overflow: hidden; }
+    #whyUsAll .features .all .pretty_icon {
+      position: absolute;
+      width: 50%;
+      top: 0%;
+      opacity: 0.2;
+      z-index: 0; }
+    #whyUsAll .features .all .header {
+      margin-bottom: 20px; }
+      #whyUsAll .features .all .header h1 {
+        font-size: 2.5rem; }
+    #whyUsAll .features .all .options .data.lined:after {
+      display: none; }
+    #whyUsAll .features .all .extra_features {
+      background: transparent;
+      background: transparent;
+      padding: 0px; }
+      #whyUsAll .features .all .extra_features .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #whyUsAll .features .all .extra_features .row .col-md-6:nth-of-type(1) {
+          background-color: #f3f3f3;
+          padding-top: 20px;
+          padding-bottom: 20px; }
+        #whyUsAll .features .all .extra_features .row .col-md-6:nth-of-type(2) {
+          background-color: #2249a1;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      #whyUsAll .features .all .extra_features .left_side {
+        padding: 0px 0px 0px 0px; }
+        #whyUsAll .features .all .extra_features .left_side:after {
+          display: none; }
+      #whyUsAll .features .all .extra_features ul {
+        margin-left: 0px; }
+  #whyUsAll .features .all:nth-of-type(even) .pretty_icon {
+    right: 0px;
+    left: auto; }
+  #whyUsAll .features .all:nth-of-type(odd) .pretty_icon {
+    right: 0px; } }
 
 #homePageProducts {
   padding-top: 40px;

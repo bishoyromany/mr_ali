@@ -8,7 +8,7 @@
         each val in whyUs
             .all
                 .container
-                    .pretty_icon 
+                    .pretty_icon.wow.bounceIn
                         img.img-fluid(src="/images/why_us/"+val[6])
                     .header 
                         .row
@@ -16,7 +16,7 @@
                                 h1=val[0] 
                                 p=val[1] 
                             .col-md-6
-                    .options 
+                    .options.wow.bounceInUp
                         .row 
                             - var x = 0;
                             - var className = 'last';
@@ -36,11 +36,11 @@
                 .extra_features 
                     .container 
                         .row 
-                            .col-md-6
+                            .col-md-6.wow.fadeInLeft
                                 .left_side 
                                     h3=val[3]
                                     p= val[4]
-                            .col-md-6 
+                            .col-md-6.wow.fadeInRight
                                 ul 
                                     each e in val[5]
                                         li=e
