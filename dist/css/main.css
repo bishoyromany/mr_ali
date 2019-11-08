@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: 'HelveticaNeue-Thin';
-  src: url("../../fonts/helveticaneue/HelveticaNeue Thin.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/helveticaneue/HelveticaNeue-Thin.ttf); }
 
 @font-face {
   font-family: 'HelveticaNeue-UltraLight';
-  src: url("../../fonts/helveticaneue/helveticaneue-ultralight.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/helveticaneue/helveticaneue-ultralight.ttf); }
 
 @font-face {
   font-family: 'HelveticaNeue-Regular';
-  src: url("../../fonts/helveticaneue/helveticaneue-regular.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/helveticaneue/helveticaneue-regular.ttf); }
 
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("../../fonts/Lato/Lato-Regular.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/Lato/Lato-Regular.ttf); }
 
 @font-face {
   font-family: 'Lato-Bold';
-  src: url("../../fonts/Lato/Lato-Bold.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/Lato/Lato-Bold.ttf); }
 
 @font-face {
   font-family: 'Lato';
-  src: url("../../fonts/Lato/Lato-Black.ttf"); }
+  src: url(https://bishoyromany.github.io/mr_ali/dist//fonts/Lato/Lato-Black.ttf); }
 
 body {
   font-family: HelveticaNeue-Thin;
@@ -36,7 +36,7 @@ body {
 **/
 #homepageBanner {
   height: 530px;
-  background: url(/images/banners/homepage_banner.jpg) no-repeat right 0;
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/banners/homepage_banner.jpg) no-repeat right 0;
   background-size: cover;
   position: relative; }
   #homepageBanner .logo {
@@ -132,7 +132,7 @@ body {
 
 #ProductsBanner, #SupportBanner, #ContactBanner, #WhyUsBanner {
   height: 260px;
-  background: url(/images/banners/products_banner.jpg) no-repeat right 0;
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/banners/products_banner.jpg) no-repeat right 0;
   background-size: cover;
   position: relative;
   overflow: hidden; }
@@ -188,17 +188,17 @@ body {
 #SupportBanner {
   height: 247px;
   overflow: hidden;
-  background: url(/images/banners/support_banner.jpg) no-repeat right 0; }
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/banners/support_banner.jpg) no-repeat right 0; }
 
 #ContactBanner {
   height: 247px;
   overflow: hidden;
-  background: url(/images/banners/contact_banner.jpg) no-repeat right 0; }
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/banners/contact_banner.jpg) no-repeat right 0; }
 
 #WhyUsBanner {
   height: 247px;
   overflow: hidden;
-  background: url(/images/banners/why_us_banner.jpg) no-repeat right 0; }
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/banners/why_us_banner.jpg) no-repeat right 0; }
 
 /*
 ** project banners
@@ -338,7 +338,7 @@ body {
               content: '';
               width: 15px;
               height: 13px;
-              background: url(/images/navbar/right-arrow.webp) no-repeat; }
+              background: url(https://bishoyromany.github.io/mr_ali/dist//images/navbar/right-arrow.webp) no-repeat; }
             #navbar > div > ul > div > li ul li a {
               padding: 5px 0px 0px 10px;
               margin: 0px;
@@ -561,7 +561,7 @@ body {
   #homePageIntroduce1 .background {
     min-height: 400px;
     padding: 60px 30px;
-    background: url(/images/introduce/intro1_background.jpg) no-repeat;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/intro1_background.jpg) no-repeat;
     background-size: cover; }
     #homePageIntroduce1 .background .talk .phone {
       position: absolute;
@@ -638,7 +638,7 @@ body {
           #homePageIntroduce1 .background .mobile_background .text a:hover {
             color: #FFF; }
           #homePageIntroduce1 .background .mobile_background .text a:before {
-            background: url(/images/introduce/play_button.webp) no-repeat;
+            background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/play_button.webp) no-repeat;
             content: '';
             width: 56px;
             height: 65px;
@@ -679,7 +679,7 @@ body {
           top: -20px;
           right: -5px;
           cursor: pointer;
-          background: url(/images/introduce/times.png); }
+          background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/times.png); }
         #homePageIntroduce1 .background #theVideo div iframe {
           border-radius: 10px;
           border: none;
@@ -690,7 +690,7 @@ body {
   position: relative; }
   #homePageIntroduce2 .background {
     padding: 75px 150px 100px;
-    background: url(/images/introduce/intro2_background.jpg) no-repeat;
+    background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/intro2_background.jpg) no-repeat;
     background-size: cover; }
     #homePageIntroduce2 .background span {
       text-transform: uppercase;
@@ -1056,7 +1056,7 @@ body {
 #homePageProducts {
   padding-top: 40px;
   padding-bottom: 80px;
-  background: url(/images/introduce/intro2_background.jpg) no-repeat;
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/intro2_background.jpg) no-repeat;
   background-size: cover; }
   #homePageProducts h1 {
     font-size: 40px;
@@ -1294,7 +1294,7 @@ body {
       padding: 22px 10px; } }
 
 #homePageNewsLetters {
-  background: url(/images/introduce/intro2_background.jpg) no-repeat;
+  background: url(https://bishoyromany.github.io/mr_ali/dist//images/introduce/intro2_background.jpg) no-repeat;
   background-size: cover;
   padding: 60px 0px; }
   #homePageNewsLetters h1 {
