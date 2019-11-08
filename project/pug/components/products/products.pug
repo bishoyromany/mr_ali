@@ -24,14 +24,14 @@
             .content.container 
                 h1= val[1][0]
                 .img
-                    img.img-fluid(src="/images/products/"+val[1][1] , alt="Image")
+                    img.img-fluid(src=projectUrl+"/images/products/"+val[1][1] , alt="Image")
                 .row
                     - var x = 1; 
                     each v in val[1][2]
                         if(x == 1)
                             .col-md-5.wow.fadeInLeft.text 
                                 .head_data
-                                    img.img-fluid(src="/images/products/"+v[1]+"")
+                                    img.img-fluid(src=projectUrl+"/images/products/"+v[1]+"")
                                     h4=v[0]
                                 p= v[2]
                             .col-md-2
@@ -39,12 +39,12 @@
                         else 
                             .col-md-5.wow.fadeInRight.text 
                                 .head_data
-                                    img.img-fluid(src="/images/products/"+v[1]+"")
+                                    img.img-fluid(src=projectUrl+"/images/products/"+v[1]+"")
                                     h4=v[0]
                                 p= v[2]
                             - x++; 
 
-            .purches.wow.bounceInUp(style="background:url(/images/products/"+val[2][2]+") no-repeat center top; background-size:cover;") 
+            .purches.wow.bounceInUp(style="background:url("+projectUrl+"/images/products/"+val[2][2]+") no-repeat center top; background-size:cover;") 
                 .container 
                     .row 
                         .col-md-5 
