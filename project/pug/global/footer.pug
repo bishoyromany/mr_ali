@@ -6,7 +6,7 @@ if paymentMethods.show == 1
                 img(src=projectUrl+"/images/payment_methods/credit-card.svg" , alt="Payment Secure")
             .row 
                 each val in paymentMethods.methods 
-                    .col-md-3 
+                    .col-md-1.col-6 
                         .img-container
                             img.img-fluid(src=projectUrl+"/images/payment_methods/"+val.icon , alt=val.title)
 
@@ -16,7 +16,7 @@ footer
             .row 
                 .col-md-3.col-6
                     a(href=projectUrl+"/")
-                        img.img-fluid(src=projectUrl+"/images/logos/footer_logo.png")
+                        img.img-fluid(src=projectUrl+"/images/logos/logo.png")
                 .col-md-6.col-1 
                 .col-md-3.col-5
                     

@@ -371,7 +371,7 @@ body {
     position: fixed !important;
     z-index: 100;
     background-color: #2249a1;
-    top: 0px;
+    top: -1px;
     left: 0px;
     width: 100%;
     z-index: 10000000; }
@@ -379,6 +379,8 @@ body {
       display: block;
       min-height: 40px;
       width: 100%; }
+      #navbar .mobileNavbar .logo {
+        padding: 16px 0px; }
       #navbar .mobileNavbar .row {
         -webkit-box-align: center;
             -ms-flex-align: center;
@@ -1627,12 +1629,12 @@ support page
       margin-left: 10px;
       width: 40px;
       vertical-align: text-top; }
-  #paymentMethods .row .col-md-3 {
-    border: 1px solid #ddd; }
-    #paymentMethods .row .col-md-3 .img-container {
-      padding: 30px;
-      width: 100%;
-      height: 100%;
+  #paymentMethods .row .col-md-1 {
+    border: 1px solid #ddd;
+    text-align: center; }
+    #paymentMethods .row .col-md-1 .img-container {
+      width: 50px;
+      height: 40px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1641,12 +1643,17 @@ support page
               align-items: center;
       opacity: 0.8;
       -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      #paymentMethods .row .col-md-3 .img-container:hover {
+      transition: all 0.5s ease-in-out;
+      margin: 0px auto; }
+      #paymentMethods .row .col-md-1 .img-container:hover {
         opacity: 1; }
-      #paymentMethods .row .col-md-3 .img-container img {
+      #paymentMethods .row .col-md-1 .img-container img {
         vertical-align: middle;
-        width: 100%; }
+        width: 100%;
+        height: 100%;
+        max-width: 50px;
+        max-height: 30px;
+        margin: 0px auto; }
 
 footer {
   background-color: #1d4ca1;

@@ -169,7 +169,7 @@
         position : fixed !important;
         z-index : 100;
         background-color : $color-hover;
-        top : 0px;
+        top : -1px;
         left : 0px;
         width : 100%;
         z-index: 10000000;
@@ -177,6 +177,9 @@
             display : block;
             min-height : 40px;
             width : 100%;
+            .logo{
+                padding : 16px 0px;
+            }
             .row{
                 align-items: center;
                 .drop{
