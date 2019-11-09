@@ -1,3 +1,15 @@
+//- payment methods
+if paymentMethods.show == 1 
+    #paymentMethods 
+        .container
+            h3.text-center=paymentMethods.title 
+                img(src=projectUrl+"/images/payment_methods/credit-card.svg" , alt="Payment Secure")
+            .row 
+                each val in paymentMethods.methods 
+                    .col-md-3 
+                        .img-container
+                            img.img-fluid(src=projectUrl+"/images/payment_methods/"+val.icon , alt=val.title)
+
 footer 
     .container
         .upper 

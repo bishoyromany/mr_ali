@@ -1,4 +1,20 @@
 $(document).ready(function(){
+
+    (function () {
+        var options = {
+            facebook: "1629986620602076", // Facebook page ID
+            whatsapp: "+1 (800) 123-4567", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,facebook", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+
     /**
      * run wow library
      */
@@ -134,6 +150,55 @@ $(document).ready(function(){
     });
 
 
+    /**custom
+     * select box for contact us
+     */
+    $("#countrySelector").click(function(){
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass("it_down_now");
+    });
+    $(".countryData").click(function(){
+        var value = $(this).attr('value');
+        var dialing = $(this).data('dialing');
+        var allHTML = $(this).html();
+        $("#countrySelector").attr('value' , value);
+        $("#countrySelector").attr('data-dialing' , dialing);
+        $("#countrySelector").html(allHTML);
+        $(this).parent().slideToggle();
+        $("#countrySelector").toggleClass("it_down_now");
+    });
+
+    /**
+     * @param {target element} el 
+     */
+    function searchCountryRates(el){
+        var val = $(el).val().toLowerCase();
+        var targets = $(el).parent().nextAll('li');
+        if(val.length > 0){
+            for(var x = 0 ; x < targets.length ; x++){
+                var country = $(targets[x]).attr('value').toLowerCase();
+                var code = $(targets[x]).data('code').toLowerCase();
+                var dialing = $(targets[x]).data('dialing');
+
+                if(val.search(country) > -1 || val == code || parseInt(val) == parseInt(dialing)){
+                    $(targets[x]).show();
+                    console.log("show it");
+                }else{
+                    $(targets[x]).hide();
+                    console.log("hide it");
+                }
+            }
+        }else{
+            $(el).parent().nextAll('li').show();
+        } 
+    }
+
+
+    $("#searchCountryInput").keyup(function(){
+        searchCountryRates(this);
+    });
+
+
     /**
      * validate contact us form
      */
@@ -143,12 +208,14 @@ $(document).ready(function(){
             'Last Name Is Required',
             'Email Is Required',
             'Message Is Required',
+            'Please Choose A Country',
         ];
         if(all){
             var firstName = $("#contactForm #firstName").val();
             var lastName = $("#contactForm #lastName").val();
             var email = $("#contactForm #email").val();
             var message = $("#contactForm #message").val();
+            var country = $("#contactForm #countrySelector").attr("value");
 
             var x = 0;
 
@@ -176,6 +243,12 @@ $(document).ready(function(){
                 x++;
             }
 
+            if(country.length < 1){
+                $("#contactForm #countrySelector").addClass("is-invalid");
+                $("#contactForm .countrySelector").html(messages[4]);
+                x++;
+            }
+
             return x;
         }else{
             var val = $(el).val();
@@ -191,7 +264,8 @@ $(document).ready(function(){
         }
     }
 
-    $("#contactForm").submit(function(){
+    $("#contactForm").submit(function(e){
+        // e.preventDefault();
         var result = validateContactForm(null , null , null , true);
         if(result > 0){
             return false;
@@ -201,9 +275,18 @@ $(document).ready(function(){
         var firstName = $("#firstName").val();
         var lastName = $("#lastName").val();
         var phoneNumber = $("#phoneNumber").val();
-
+        var country = $("#countrySelector").attr('value');
+        var dialing = $("#countrySelector").attr('data-dialing');
+        var allNums = phoneNumber.split('');
+        if(allNums[0] == 0){
+            allNums[0] = dialing;
+            phoneNumber = allNums.join('');
+        }else{
+            phoneNumber = dialing+phoneNumber;
+        }
         // add the new textarea values 
-        $("#message").val(messageValue + " \n " + "First Name : " + firstName + " \n " + "Last Name : " + lastName + " \n " + " Phone Number : " + phoneNumber);
+        $("#message").val(messageValue + " \n " + "First Name : " + firstName + " \n " + "Last Name : " + lastName + " \n " + " Phone Number : " + phoneNumber + " \n " + " Country : " + country);
+        
         return true;
     });
 

@@ -198,7 +198,7 @@ gulp.task('watch' , function(){
     // js libs
     gulp.watch('project/js/libs/*.js', gulp.series('jsLibs'));
     // images
-    gulp.watch('project/images/**' , gulp.series('image'));
+    // gulp.watch('project/images/**' , gulp.series('image'));
     // fonts
     gulp.watch('project/fonts/**' , gulp.series('fonts'));
     /**

@@ -1,3 +1,21 @@
+//- get countries json 
+include countries.pug
+- 
+    let allCountries = [];
+    for(var x = 0 ; x < countries.length ; x++){
+        var code = countries[x].name;
+        countriesDialing.map(function(item){
+            if(code == item.name){
+                allCountries.push({
+                    "code" : countries[x].alpha3 , 
+                    "icon" : countries[x].file_url,
+                    "name" : countries[x].name,
+                    "dialing" : item.dial_code
+                });
+            }
+        });
+    }
+
 #contactWays 
     .head.wow.fadeInLeft
         .container 
@@ -33,6 +51,7 @@
                         span= address
         .contact_form
             .container
+                //- https://formspree.io/mvoogjwb
                 form#contactForm(action="https://formspree.io/mvoogjwb" , method="POST")
                     .form-gruop 
                         label(for="firstName") First Name* 
@@ -43,13 +62,30 @@
                         input.form-control#lastName(type="text" , placeholder="Last Name" , required)
                         .invalid-feedback.lastName
                     .form-gruop 
-                        label(for="email") Email*
+                        label(for="email") Email* 
                         input.form-control#email(type="email" , name="_replyto" , placeholder="Email" , required)
                         .invalid-feedback.email
+                    
+                    .form-group 
+                        label(for="Country") Country*
+                        ul#Country(name="country") 
+                            li.selected#countrySelector(value="" , data-dialing="") Select Country
+                            ul.list-unstyled
+                                li.searchCountry 
+                                    input#searchCountryInput.form-control(placeholder="Search Country")
+                                each val in allCountries 
+                                    li.item.countryData(value=val.name , data-code=val.code , data-dialing=val.dialing) #{val.name} ( #{val.code} ) #{val.dialing}
+                                        img.img-fluid(src=val.icon)
+
+                        .invalid-feedback.countrySelector(style="display:block;")
+                    
                     .form-gruop 
                         label(for="phoneNumber") Phone Number
+                            small.form-text.text-muted(style="display:inline-block;margin-right:20px;") please enter number without country code
                         input.form-control#phoneNumber(type="number" , placeholder="Phone Number")
                         .invalid-feedback.phoneNumber
+
+
                     .form-gruop 
                         label(for="message") Message*
                         textarea.form-control#message(type="text" , name="message" , placeholder="Message" , required)
