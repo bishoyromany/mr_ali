@@ -2,12 +2,9 @@ $(document).ready(function(){
 
     (function () {
         var options = {
-            facebook: "1629986620602076", // Facebook page ID
             whatsapp: "+1 (800) 123-4567", // WhatsApp number
             call_to_action: "Message us", // Call to action
-            button_color: "#129BF4", // Color of button
             position: "right", // Position may be 'right' or 'left'
-            order: "whatsapp,facebook", // Order of buttons
         };
         var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -202,50 +199,56 @@ $(document).ready(function(){
     /**
      * validate contact us form
      */
+
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
     function validateContactForm(el , message , name ,all){
         var messages = [
-            'First Name Is Required',
-            'Last Name Is Required',
-            'Email Is Required',
+            'Name Is Required',
+            'Valid Email Is Required',
             'Message Is Required',
             'Please Choose A Country',
+            'Please Choose A Valid Department',
         ];
         if(all){
-            var firstName = $("#contactForm #firstName").val();
-            var lastName = $("#contactForm #lastName").val();
+            var userName = $("#contactForm #userName").val();
+            var department = $("#contactForm #SupportSectionSelector").val();
             var email = $("#contactForm #email").val();
             var message = $("#contactForm #message").val();
             var country = $("#contactForm #countrySelector").attr("value");
 
             var x = 0;
 
-            if(firstName.length < 1){
-                $("#contactForm #firstName").addClass("is-invalid");
-                $("#contactForm .firstName").html(messages[0]);
+            if(userName.length < 1){
+                $("#contactForm #userName").addClass("is-invalid");
+                $("#contactForm .userName").html(messages[0]);
                 x++;
             }
 
-            if(lastName.length < 1){
-                $("#contactForm #lastName").addClass("is-invalid");
-                $("#contactForm .lastName").html(messages[1]);
+            if(department.length < 1){
+                $("#contactForm #SupportSectionSelector").addClass("is-invalid");
+                $("#contactForm .selectPart").html(messages[4]);
                 x++;
             }
 
-            if(email.length < 1){
+            if(email.length < 1 || !validateEmail(email)){
                 $("#contactForm #email").addClass("is-invalid");
-                $("#contactForm .email").html(messages[2]);
+                $("#contactForm .email").html(messages[1]);
                 x++;
             }
 
             if(message.length < 1){
                 $("#contactForm #message").addClass("is-invalid");
-                $("#contactForm .message").html(messages[3]);
+                $("#contactForm .message").html(messages[2]);
                 x++;
             }
 
             if(country.length < 1){
                 $("#contactForm #countrySelector").addClass("is-invalid");
-                $("#contactForm .countrySelector").html(messages[4]);
+                $("#contactForm .countrySelector").html(messages[3]);
                 x++;
             }
 
@@ -257,6 +260,13 @@ $(document).ready(function(){
                 $("#contactForm ."+name).html(messages[message]);
                 return false;
             }else{
+                if(name=="email"){
+                    if(!validateEmail(val)){
+                        $("#contactForm #"+name).addClass("is-invalid");
+                        $("#contactForm ."+name).html(messages[message]);
+                        return false;
+                    }
+                }
                 $("#contactForm #"+name).removeClass("is-invalid");
                 $("#contactForm ."+name).html('');
                 return true;
@@ -272,8 +282,8 @@ $(document).ready(function(){
         }
 
         var messageValue = $("#message").val();
-        var firstName = $("#firstName").val();
-        var lastName = $("#lastName").val();
+        var department = $("#SupportSectionSelector").val();
+        var userName = $("#userName").val();
         var phoneNumber = $("#phoneNumber").val();
         var country = $("#countrySelector").attr('value');
         var dialing = $("#countrySelector").attr('data-dialing');
@@ -285,26 +295,28 @@ $(document).ready(function(){
             phoneNumber = dialing+phoneNumber;
         }
         // add the new textarea values 
-        $("#message").val(messageValue + " \n " + "First Name : " + firstName + " \n " + "Last Name : " + lastName + " \n " + " Phone Number : " + phoneNumber + " \n " + " Country : " + country);
+        $("#message").val(messageValue + " \n " + "Name : " + userName + " \n " + "Department : " + department + " \n " + " Phone Number : " + phoneNumber + " \n " + " Country : " + country);
         
         return true;
     });
 
-    $("#contactForm #firstName").keyup(function(){
+    $("#contactForm #userName").keyup(function(){
         var val = $(this).val();
-        validateContactForm(this , 0 , 'firstName' , false);
+        validateContactForm(this , 0 , 'userName' , false);
     });
 
     $("#contactForm #lastName").keyup(function(){
         var val = $(this).val();
         validateContactForm(this , 0 , 'lastName' , false);
     });
+
+
     $("#contactForm #email").keyup(function(){
         var val = $(this).val();
-        validateContactForm(this , 0 , 'email' , false);
+        validateContactForm(this , 1 , 'email' , false);
     });
     $("#contactForm #message").keyup(function(){
         var val = $(this).val();
-        validateContactForm(this , 0 , 'message' , false);
+        validateContactForm(this , 1 , 'message' , false);
     });
 });

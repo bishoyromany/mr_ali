@@ -13,3 +13,10 @@ html
         #ContactWays 
             include pug/components/contact/contactWays.pug
         include pug/global/footer.pug
+        script. 
+            var onloadCallback = function() {
+                grecaptcha.render('re_captcha', {
+                'sitekey' : '6Lefb7QUAAAAAGBy7RZzHljlecIHk-MVBqIU7vN4'
+                });
+            };
+        script(src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=expli" , async , defer)

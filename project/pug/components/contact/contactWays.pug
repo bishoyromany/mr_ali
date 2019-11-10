@@ -22,7 +22,7 @@ include countries.pug
             .row 
                 .col-md-5
                     h1 Contact Us
-    .contact_ways  
+    //-.contact_ways  
         .container
             .row 
                 .col-md-3 
@@ -49,18 +49,29 @@ include countries.pug
                             img.img-fluid(src=projectUrl+"/images/support/contact_us_by_address.png" , alt="Address")
                         h3 Our Address
                         span= address
-        .contact_form
+
+    .contact_form
             .container
                 //- https://formspree.io/mvoogjwb
                 form#contactForm(action="https://formspree.io/mvoogjwb" , method="POST")
                     .form-gruop 
-                        label(for="firstName") First Name* 
-                        input.form-control#firstName(type="text" , placeholder="First Name" , required)
-                        .invalid-feedback.firstName
+                        .row 
+                            .col-md-4 
+                            .col-md-4
+                                select.form-control#SupportSectionSelector(required) 
+                                    option(selected , disabled , value="") Select Department:
+                                    option(value="Sales") Sales
+                                    option(value="Support") Support
+                                    option(value="Billing") Billing
+                                    option(value="Complain") Complain
+                            .col-md-4
+                        .invalid-feedback.selectPart
+
                     .form-gruop 
-                        label(for="lastName") Last Name*
-                        input.form-control#lastName(type="text" , placeholder="Last Name" , required)
-                        .invalid-feedback.lastName
+                        label(for="userName") Name* 
+                        input.form-control#userName(type="text" , placeholder="Name" , required)
+                        .invalid-feedback.userName
+                        
                     .form-gruop 
                         label(for="email") Email* 
                         input.form-control#email(type="email" , name="_replyto" , placeholder="Email" , required)
@@ -81,8 +92,7 @@ include countries.pug
                     
                     .form-gruop 
                         label(for="phoneNumber") Phone Number
-                            small.form-text.text-muted(style="display:inline-block;margin-right:20px;") please enter number without country code
-                        input.form-control#phoneNumber(type="number" , placeholder="Phone Number")
+                        input.form-control#phoneNumber(type="number" , placeholder="Please enter number without country code")
                         .invalid-feedback.phoneNumber
 
 
@@ -90,5 +100,9 @@ include countries.pug
                         label(for="message") Message*
                         textarea.form-control#message(type="text" , name="message" , placeholder="Message" , required)
                         .invalid-feedback.message
+
+                    .form-group 
+                        #re_captcha
+
                     input.submit(type="submit" , value="Submit")
                     .clear-fix

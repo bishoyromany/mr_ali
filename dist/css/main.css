@@ -1507,7 +1507,8 @@ support page
       #contactWays .contact_ways .data span {
         font-size: 20px; }
   #contactWays .contact_form {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-top: 50px; }
     #contactWays .contact_form form .form-gruop {
       margin-bottom: 10px; }
     #contactWays .contact_form form textarea {
@@ -1516,9 +1517,8 @@ support page
     #contactWays .contact_form form .submit {
       border-color: #fdb414;
       font-size: 23px;
-      float: right;
       clear: both;
-      margin: 20px 0;
+      margin: 20px auto;
       color: #fdb414;
       -webkit-appearance: none;
       border-radius: 0;
@@ -1534,7 +1534,8 @@ support page
       font-size: 18px;
       line-height: 16px;
       min-width: 328px;
-      cursor: pointer; }
+      cursor: pointer;
+      display: block; }
       #contactWays .contact_form form .submit:hover {
         background: #fdb414;
         color: #FFF; }

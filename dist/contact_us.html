@@ -124,297 +124,281 @@
             </div>
           </div>
         </div>
-        <div class="contact_ways"> 
+        <div class="contact_form">
           <div class="container">
-            <div class="row"> 
-              <div class="col-md-3"> 
-                <div class="data">
-                  <div class="img-container"><img class="img-fluid" src="/images/support/contact_us_by_phone.png" alt="Contact Us By Phone"/></div>
-                  <h3>By Phone</h3><a href="tel:1111111111">111-111-1111</a>
+            <form id="contactForm" action="https://formspree.io/mvoogjwb" method="POST">
+              <div class="form-gruop"> 
+                <div class="row"> 
+                  <div class="col-md-4"> </div>
+                  <div class="col-md-4">
+                    <select class="form-control" id="SupportSectionSelector" required="required"> 
+                      <option selected="selected" disabled="disabled" value="">Select Department:</option>
+                      <option value="Sales">Sales</option>
+                      <option value="Support">Support</option>
+                      <option value="Billing">Billing</option>
+                      <option value="Complain">Complain</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4"></div>
                 </div>
+                <div class="invalid-feedback selectPart"></div>
               </div>
-              <div class="col-md-3"> 
-                <div class="data">
-                  <div class="img-container"><img class="img-fluid" src="/images/support/contacts_us_by_whatsapp.png" alt="Contact Us Whats App"/></div>
-                  <h3>By Whats App</h3><a href="https://wa.me/1111111111" target="_blank">01111111111</a>
-                </div>
+              <div class="form-gruop"> 
+                <label for="userName">Name* </label>
+                <input class="form-control" id="userName" type="text" placeholder="Name" required="required"/>
+                <div class="invalid-feedback userName"></div>
               </div>
-              <div class="col-md-3"> 
-                <div class="data">
-                  <div class="img-container"><img class="img-fluid" src="/images/support/contact_us_by_mail.png" alt="Contact Us Email"/></div>
-                  <h3>By Email</h3><a href="mailto:email@gmail.com" target="_blank">email@gmail.com</a>
-                </div>
+              <div class="form-gruop"> 
+                <label for="email">Email* </label>
+                <input class="form-control" id="email" type="email" name="_replyto" placeholder="Email" required="required"/>
+                <div class="invalid-feedback email"></div>
               </div>
-              <div class="col-md-3"> 
-                <div class="data">
-                  <div class="img-container"><img class="img-fluid" src="/images/support/contact_us_by_address.png" alt="Address"/></div>
-                  <h3>Our Address</h3><span>P.O. Box 43083 Cascade Burnaby, BC V5G 4S2 Canada</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact_form">
-            <div class="container">
-              <form id="contactForm" action="https://formspree.io/mvoogjwb" method="POST">
-                <div class="form-gruop"> 
-                  <label for="firstName">First Name* </label>
-                  <input class="form-control" id="firstName" type="text" placeholder="First Name" required="required"/>
-                  <div class="invalid-feedback firstName"></div>
-                </div>
-                <div class="form-gruop"> 
-                  <label for="lastName">Last Name*</label>
-                  <input class="form-control" id="lastName" type="text" placeholder="Last Name" required="required"/>
-                  <div class="invalid-feedback lastName"></div>
-                </div>
-                <div class="form-gruop"> 
-                  <label for="email">Email* </label>
-                  <input class="form-control" id="email" type="email" name="_replyto" placeholder="Email" required="required"/>
-                  <div class="invalid-feedback email"></div>
-                </div>
-                <div class="form-group"> 
-                  <label for="Country">Country*</label>
-                  <ul id="Country" name="country"> 
-                    <li class="selected" id="countrySelector" value="" data-dialing="">Select Country</li>
-                    <ul class="list-unstyled">
-                      <li class="searchCountry"> 
-                        <input class="form-control" id="searchCountryInput" placeholder="Search Country"/>
-                      </li>
-                      <li class="item countryData" value="Afghanistan" data-code="AFG" data-dialing="+93">Afghanistan ( AFG ) +93<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"/></li>
-                      <li class="item countryData" value="Albania" data-code="ALB" data-dialing="+355">Albania ( ALB ) +355<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"/></li>
-                      <li class="item countryData" value="Algeria" data-code="DZA" data-dialing="+213">Algeria ( DZA ) +213<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"/></li>
-                      <li class="item countryData" value="Andorra" data-code="AND" data-dialing="+376">Andorra ( AND ) +376<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg"/></li>
-                      <li class="item countryData" value="Angola" data-code="AGO" data-dialing="+244">Angola ( AGO ) +244<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg"/></li>
-                      <li class="item countryData" value="Anguilla" data-code="AIA" data-dialing="+1 264">Anguilla ( AIA ) +1 264<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"/></li>
-                      <li class="item countryData" value="Antigua and Barbuda" data-code="ATG" data-dialing="+1268">Antigua and Barbuda ( ATG ) +1268<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"/></li>
-                      <li class="item countryData" value="Argentina" data-code="ARG" data-dialing="+54">Argentina ( ARG ) +54<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"/></li>
-                      <li class="item countryData" value="Armenia" data-code="ARM" data-dialing="+374">Armenia ( ARM ) +374<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg"/></li>
-                      <li class="item countryData" value="Aruba" data-code="ABW" data-dialing="+297">Aruba ( ABW ) +297<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg"/></li>
-                      <li class="item countryData" value="Australia" data-code="AUS" data-dialing="+61">Australia ( AUS ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"/></li>
-                      <li class="item countryData" value="Austria" data-code="AUT" data-dialing="+43">Austria ( AUT ) +43<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"/></li>
-                      <li class="item countryData" value="Azerbaijan" data-code="AZE" data-dialing="+994">Azerbaijan ( AZE ) +994<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"/></li>
-                      <li class="item countryData" value="Bahamas" data-code="BHS" data-dialing="+1 242">Bahamas ( BHS ) +1 242<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"/></li>
-                      <li class="item countryData" value="Bahrain" data-code="BHR" data-dialing="+973">Bahrain ( BHR ) +973<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"/></li>
-                      <li class="item countryData" value="Bangladesh" data-code="BGD" data-dialing="+880">Bangladesh ( BGD ) +880<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"/></li>
-                      <li class="item countryData" value="Barbados" data-code="BRB" data-dialing="+1 246">Barbados ( BRB ) +1 246<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"/></li>
-                      <li class="item countryData" value="Belarus" data-code="BLR" data-dialing="+375">Belarus ( BLR ) +375<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"/></li>
-                      <li class="item countryData" value="Belgium" data-code="BEL" data-dialing="+32">Belgium ( BEL ) +32<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg"/></li>
-                      <li class="item countryData" value="Belize" data-code="BLZ" data-dialing="+501">Belize ( BLZ ) +501<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"/></li>
-                      <li class="item countryData" value="Benin" data-code="BEN" data-dialing="+229">Benin ( BEN ) +229<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg"/></li>
-                      <li class="item countryData" value="Bermuda" data-code="BMU" data-dialing="+1 441">Bermuda ( BMU ) +1 441<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg"/></li>
-                      <li class="item countryData" value="Bhutan" data-code="BTN" data-dialing="+975">Bhutan ( BTN ) +975<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg"/></li>
-                      <li class="item countryData" value="Bosnia and Herzegovina" data-code="BIH" data-dialing="+387">Bosnia and Herzegovina ( BIH ) +387<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"/></li>
-                      <li class="item countryData" value="Botswana" data-code="BWA" data-dialing="+267">Botswana ( BWA ) +267<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg"/></li>
-                      <li class="item countryData" value="Brazil" data-code="BRA" data-dialing="+55">Brazil ( BRA ) +55<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"/></li>
-                      <li class="item countryData" value="British Indian Ocean Territory" data-code="IOT" data-dialing="+246">British Indian Ocean Territory ( IOT ) +246<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_the_British_Indian_Ocean_Territory.svg"/></li>
-                      <li class="item countryData" value="Brunei Darussalam" data-code="BRN" data-dialing="+673">Brunei Darussalam ( BRN ) +673<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg"/></li>
-                      <li class="item countryData" value="Bulgaria" data-code="BGR" data-dialing="+359">Bulgaria ( BGR ) +359<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"/></li>
-                      <li class="item countryData" value="Burkina Faso" data-code="BFA" data-dialing="+226">Burkina Faso ( BFA ) +226<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg"/></li>
-                      <li class="item countryData" value="Burundi" data-code="BDI" data-dialing="+257">Burundi ( BDI ) +257<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"/></li>
-                      <li class="item countryData" value="Cambodia" data-code="KHM" data-dialing="+855">Cambodia ( KHM ) +855<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"/></li>
-                      <li class="item countryData" value="Cameroon" data-code="CMR" data-dialing="+237">Cameroon ( CMR ) +237<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg"/></li>
-                      <li class="item countryData" value="Canada" data-code="CAN" data-dialing="+1">Canada ( CAN ) +1<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"/></li>
-                      <li class="item countryData" value="Cape Verde" data-code="CPV" data-dialing="+238">Cape Verde ( CPV ) +238<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"/></li>
-                      <li class="item countryData" value="Cayman Islands" data-code="CYM" data-dialing="+ 345">Cayman Islands ( CYM ) + 345<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg"/></li>
-                      <li class="item countryData" value="Central African Republic" data-code="CAF" data-dialing="+236">Central African Republic ( CAF ) +236<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"/></li>
-                      <li class="item countryData" value="Chad" data-code="TCD" data-dialing="+235">Chad ( TCD ) +235<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"/></li>
-                      <li class="item countryData" value="Chile" data-code="CHL" data-dialing="+56">Chile ( CHL ) +56<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"/></li>
-                      <li class="item countryData" value="China" data-code="CHN" data-dialing="+86">China ( CHN ) +86<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"/></li>
-                      <li class="item countryData" value="Christmas Island" data-code="CXR" data-dialing="+61">Christmas Island ( CXR ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg"/></li>
-                      <li class="item countryData" value="Cocos (Keeling) Islands" data-code="CCK" data-dialing="+61">Cocos (Keeling) Islands ( CCK ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg"/></li>
-                      <li class="item countryData" value="Colombia" data-code="COL" data-dialing="+57">Colombia ( COL ) +57<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"/></li>
-                      <li class="item countryData" value="Comoros" data-code="COM" data-dialing="+269">Comoros ( COM ) +269<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg"/></li>
-                      <li class="item countryData" value="Congo" data-code="COG" data-dialing="+242">Congo ( COG ) +242<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"/></li>
-                      <li class="item countryData" value="Cook Islands" data-code="COK" data-dialing="+682">Cook Islands ( COK ) +682<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"/></li>
-                      <li class="item countryData" value="Costa Rica" data-code="CRI" data-dialing="+506">Costa Rica ( CRI ) +506<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg"/></li>
-                      <li class="item countryData" value="Croatia" data-code="HRV" data-dialing="+385">Croatia ( HRV ) +385<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"/></li>
-                      <li class="item countryData" value="Cuba" data-code="CUB" data-dialing="+53">Cuba ( CUB ) +53<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"/></li>
-                      <li class="item countryData" value="Cyprus" data-code="CYP" data-dialing="+537">Cyprus ( CYP ) +537<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"/></li>
-                      <li class="item countryData" value="Czech Republic" data-code="CZE" data-dialing="+420">Czech Republic ( CZE ) +420<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"/></li>
-                      <li class="item countryData" value="Denmark" data-code="DNK" data-dialing="+45">Denmark ( DNK ) +45<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"/></li>
-                      <li class="item countryData" value="Djibouti" data-code="DJI" data-dialing="+253">Djibouti ( DJI ) +253<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg"/></li>
-                      <li class="item countryData" value="Dominica" data-code="DMA" data-dialing="+1 767">Dominica ( DMA ) +1 767<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"/></li>
-                      <li class="item countryData" value="Dominican Republic" data-code="DOM" data-dialing="+1 849">Dominican Republic ( DOM ) +1 849<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"/></li>
-                      <li class="item countryData" value="Ecuador" data-code="ECU" data-dialing="+593">Ecuador ( ECU ) +593<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"/></li>
-                      <li class="item countryData" value="Egypt" data-code="EGY" data-dialing="+20">Egypt ( EGY ) +20<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"/></li>
-                      <li class="item countryData" value="El Salvador" data-code="SLV" data-dialing="+503">El Salvador ( SLV ) +503<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"/></li>
-                      <li class="item countryData" value="Equatorial Guinea" data-code="GNQ" data-dialing="+240">Equatorial Guinea ( GNQ ) +240<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg"/></li>
-                      <li class="item countryData" value="Eritrea" data-code="ERI" data-dialing="+291">Eritrea ( ERI ) +291<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg"/></li>
-                      <li class="item countryData" value="Estonia" data-code="EST" data-dialing="+372">Estonia ( EST ) +372<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg"/></li>
-                      <li class="item countryData" value="Ethiopia" data-code="ETH" data-dialing="+251">Ethiopia ( ETH ) +251<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg"/></li>
-                      <li class="item countryData" value="Falkland Islands (Malvinas)" data-code="FLK" data-dialing="+500">Falkland Islands (Malvinas) ( FLK ) +500<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"/></li>
-                      <li class="item countryData" value="Faroe Islands" data-code="FRO" data-dialing="+298">Faroe Islands ( FRO ) +298<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"/></li>
-                      <li class="item countryData" value="Fiji" data-code="FJI" data-dialing="+679">Fiji ( FJI ) +679<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg"/></li>
-                      <li class="item countryData" value="Finland" data-code="FIN" data-dialing="+358">Finland ( FIN ) +358<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"/></li>
-                      <li class="item countryData" value="France" data-code="FRA" data-dialing="+33">France ( FRA ) +33<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
-                      <li class="item countryData" value="French Guiana" data-code="GUF" data-dialing="+594">French Guiana ( GUF ) +594<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_French_Guiana.svg"/></li>
-                      <li class="item countryData" value="French Polynesia" data-code="PYF" data-dialing="+689">French Polynesia ( PYF ) +689<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg"/></li>
-                      <li class="item countryData" value="Gabon" data-code="GAB" data-dialing="+241">Gabon ( GAB ) +241<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg"/></li>
-                      <li class="item countryData" value="Gambia" data-code="GMB" data-dialing="+220">Gambia ( GMB ) +220<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"/></li>
-                      <li class="item countryData" value="Georgia" data-code="GEO" data-dialing="+995">Georgia ( GEO ) +995<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg"/></li>
-                      <li class="item countryData" value="Germany" data-code="DEU" data-dialing="+49">Germany ( DEU ) +49<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"/></li>
-                      <li class="item countryData" value="Ghana" data-code="GHA" data-dialing="+233">Ghana ( GHA ) +233<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg"/></li>
-                      <li class="item countryData" value="Gibraltar" data-code="GIB" data-dialing="+350">Gibraltar ( GIB ) +350<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg"/></li>
-                      <li class="item countryData" value="Greece" data-code="GRC" data-dialing="+30">Greece ( GRC ) +30<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"/></li>
-                      <li class="item countryData" value="Greenland" data-code="GRL" data-dialing="+299">Greenland ( GRL ) +299<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"/></li>
-                      <li class="item countryData" value="Grenada" data-code="GRD" data-dialing="+1 473">Grenada ( GRD ) +1 473<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"/></li>
-                      <li class="item countryData" value="Guadeloupe" data-code="GLP" data-dialing="+590">Guadeloupe ( GLP ) +590<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg"/></li>
-                      <li class="item countryData" value="Guam" data-code="GUM" data-dialing="+1 671">Guam ( GUM ) +1 671<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg"/></li>
-                      <li class="item countryData" value="Guatemala" data-code="GTM" data-dialing="+502">Guatemala ( GTM ) +502<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"/></li>
-                      <li class="item countryData" value="Guernsey" data-code="GGY" data-dialing="+44">Guernsey ( GGY ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"/></li>
-                      <li class="item countryData" value="Guinea" data-code="GIN" data-dialing="+224">Guinea ( GIN ) +224<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg"/></li>
-                      <li class="item countryData" value="Guinea-Bissau" data-code="GNB" data-dialing="+245">Guinea-Bissau ( GNB ) +245<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg"/></li>
-                      <li class="item countryData" value="Guyana" data-code="GUY" data-dialing="+595">Guyana ( GUY ) +595<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"/></li>
-                      <li class="item countryData" value="Haiti" data-code="HTI" data-dialing="+509">Haiti ( HTI ) +509<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"/></li>
-                      <li class="item countryData" value="Holy See (Vatican City State)" data-code="VAT" data-dialing="+379">Holy See (Vatican City State) ( VAT ) +379<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg"/></li>
-                      <li class="item countryData" value="Honduras" data-code="HND" data-dialing="+504">Honduras ( HND ) +504<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"/></li>
-                      <li class="item countryData" value="Hong Kong" data-code="HKG" data-dialing="+852">Hong Kong ( HKG ) +852<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg"/></li>
-                      <li class="item countryData" value="Hungary" data-code="HUN" data-dialing="+36">Hungary ( HUN ) +36<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"/></li>
-                      <li class="item countryData" value="Iceland" data-code="ISL" data-dialing="+354">Iceland ( ISL ) +354<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"/></li>
-                      <li class="item countryData" value="India" data-code="IND" data-dialing="+91">India ( IND ) +91<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"/></li>
-                      <li class="item countryData" value="Indonesia" data-code="IDN" data-dialing="+62">Indonesia ( IDN ) +62<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"/></li>
-                      <li class="item countryData" value="Iraq" data-code="IRQ" data-dialing="+964">Iraq ( IRQ ) +964<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg"/></li>
-                      <li class="item countryData" value="Ireland" data-code="IRL" data-dialing="+353">Ireland ( IRL ) +353<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"/></li>
-                      <li class="item countryData" value="Isle of Man" data-code="IMN" data-dialing="+44">Isle of Man ( IMN ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg"/></li>
-                      <li class="item countryData" value="Israel" data-code="ISR" data-dialing="+972">Israel ( ISR ) +972<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"/></li>
-                      <li class="item countryData" value="Israel" data-code="ISR" data-dialing="+972">Israel ( ISR ) +972<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"/></li>
-                      <li class="item countryData" value="Italy" data-code="ITA" data-dialing="+39">Italy ( ITA ) +39<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"/></li>
-                      <li class="item countryData" value="Jamaica" data-code="JAM" data-dialing="+1 876">Jamaica ( JAM ) +1 876<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"/></li>
-                      <li class="item countryData" value="Japan" data-code="JPN" data-dialing="+81">Japan ( JPN ) +81<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"/></li>
-                      <li class="item countryData" value="Jersey" data-code="JEY" data-dialing="+44">Jersey ( JEY ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"/></li>
-                      <li class="item countryData" value="Jordan" data-code="JOR" data-dialing="+962">Jordan ( JOR ) +962<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"/></li>
-                      <li class="item countryData" value="Kazakhstan" data-code="KAZ" data-dialing="+7 7">Kazakhstan ( KAZ ) +7 7<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg"/></li>
-                      <li class="item countryData" value="Kenya" data-code="KEN" data-dialing="+254">Kenya ( KEN ) +254<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"/></li>
-                      <li class="item countryData" value="Kiribati" data-code="KIR" data-dialing="+686">Kiribati ( KIR ) +686<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg"/></li>
-                      <li class="item countryData" value="Kuwait" data-code="KWT" data-dialing="+965">Kuwait ( KWT ) +965<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg"/></li>
-                      <li class="item countryData" value="Kyrgyzstan" data-code="KGZ" data-dialing="+996">Kyrgyzstan ( KGZ ) +996<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg"/></li>
-                      <li class="item countryData" value="Lao People's Democratic Republic" data-code="LAO" data-dialing="+856">Lao People's Democratic Republic ( LAO ) +856<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg"/></li>
-                      <li class="item countryData" value="Latvia" data-code="LVA" data-dialing="+371">Latvia ( LVA ) +371<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg"/></li>
-                      <li class="item countryData" value="Lebanon" data-code="LBN" data-dialing="+961">Lebanon ( LBN ) +961<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"/></li>
-                      <li class="item countryData" value="Lesotho" data-code="LSO" data-dialing="+266">Lesotho ( LSO ) +266<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg"/></li>
-                      <li class="item countryData" value="Liberia" data-code="LBR" data-dialing="+231">Liberia ( LBR ) +231<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg"/></li>
-                      <li class="item countryData" value="Liechtenstein" data-code="LIE" data-dialing="+423">Liechtenstein ( LIE ) +423<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"/></li>
-                      <li class="item countryData" value="Lithuania" data-code="LTU" data-dialing="+370">Lithuania ( LTU ) +370<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg"/></li>
-                      <li class="item countryData" value="Luxembourg" data-code="LUX" data-dialing="+352">Luxembourg ( LUX ) +352<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg"/></li>
-                      <li class="item countryData" value="Macao" data-code="MAC" data-dialing="+853">Macao ( MAC ) +853<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"/></li>
-                      <li class="item countryData" value="Madagascar" data-code="MDG" data-dialing="+261">Madagascar ( MDG ) +261<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"/></li>
-                      <li class="item countryData" value="Malawi" data-code="MWI" data-dialing="+265">Malawi ( MWI ) +265<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"/></li>
-                      <li class="item countryData" value="Malaysia" data-code="MYS" data-dialing="+60">Malaysia ( MYS ) +60<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"/></li>
-                      <li class="item countryData" value="Maldives" data-code="MDV" data-dialing="+960">Maldives ( MDV ) +960<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"/></li>
-                      <li class="item countryData" value="Mali" data-code="MLI" data-dialing="+223">Mali ( MLI ) +223<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg"/></li>
-                      <li class="item countryData" value="Malta" data-code="MLT" data-dialing="+356">Malta ( MLT ) +356<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg"/></li>
-                      <li class="item countryData" value="Marshall Islands" data-code="MHL" data-dialing="+692">Marshall Islands ( MHL ) +692<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg"/></li>
-                      <li class="item countryData" value="Martinique" data-code="MTQ" data-dialing="+596">Martinique ( MTQ ) +596<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_Martinique.svg"/></li>
-                      <li class="item countryData" value="Mauritania" data-code="MRT" data-dialing="+222">Mauritania ( MRT ) +222<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg"/></li>
-                      <li class="item countryData" value="Mauritius" data-code="MUS" data-dialing="+230">Mauritius ( MUS ) +230<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg"/></li>
-                      <li class="item countryData" value="Mayotte" data-code="MYT" data-dialing="+262">Mayotte ( MYT ) +262<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
-                      <li class="item countryData" value="Mexico" data-code="MEX" data-dialing="+52">Mexico ( MEX ) +52<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"/></li>
-                      <li class="item countryData" value="Monaco" data-code="MCO" data-dialing="+377">Monaco ( MCO ) +377<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg"/></li>
-                      <li class="item countryData" value="Mongolia" data-code="MNG" data-dialing="+976">Mongolia ( MNG ) +976<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"/></li>
-                      <li class="item countryData" value="Montenegro" data-code="MNE" data-dialing="+382">Montenegro ( MNE ) +382<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg"/></li>
-                      <li class="item countryData" value="Montserrat" data-code="MSR" data-dialing="+1664">Montserrat ( MSR ) +1664<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg"/></li>
-                      <li class="item countryData" value="Morocco" data-code="MAR" data-dialing="+212">Morocco ( MAR ) +212<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"/></li>
-                      <li class="item countryData" value="Mozambique" data-code="MOZ" data-dialing="+258">Mozambique ( MOZ ) +258<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"/></li>
-                      <li class="item countryData" value="Myanmar" data-code="MMR" data-dialing="+95">Myanmar ( MMR ) +95<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"/></li>
-                      <li class="item countryData" value="Namibia" data-code="NAM" data-dialing="+264">Namibia ( NAM ) +264<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg"/></li>
-                      <li class="item countryData" value="Nauru" data-code="NRU" data-dialing="+674">Nauru ( NRU ) +674<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg"/></li>
-                      <li class="item countryData" value="Nepal" data-code="NPL" data-dialing="+977">Nepal ( NPL ) +977<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"/></li>
-                      <li class="item countryData" value="Netherlands" data-code="NLD" data-dialing="+31">Netherlands ( NLD ) +31<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"/></li>
-                      <li class="item countryData" value="New Caledonia" data-code="NCL" data-dialing="+687">New Caledonia ( NCL ) +687<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_New_Caledonia.svg"/></li>
-                      <li class="item countryData" value="New Zealand" data-code="NZL" data-dialing="+64">New Zealand ( NZL ) +64<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"/></li>
-                      <li class="item countryData" value="Nicaragua" data-code="NIC" data-dialing="+505">Nicaragua ( NIC ) +505<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"/></li>
-                      <li class="item countryData" value="Niger" data-code="NER" data-dialing="+227">Niger ( NER ) +227<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"/></li>
-                      <li class="item countryData" value="Nigeria" data-code="NGA" data-dialing="+234">Nigeria ( NGA ) +234<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"/></li>
-                      <li class="item countryData" value="Niue" data-code="NIU" data-dialing="+683">Niue ( NIU ) +683<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"/></li>
-                      <li class="item countryData" value="Norfolk Island" data-code="NFK" data-dialing="+672">Norfolk Island ( NFK ) +672<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg"/></li>
-                      <li class="item countryData" value="Northern Mariana Islands" data-code="MNP" data-dialing="+1 670">Northern Mariana Islands ( MNP ) +1 670<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg"/></li>
-                      <li class="item countryData" value="Norway" data-code="NOR" data-dialing="+47">Norway ( NOR ) +47<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"/></li>
-                      <li class="item countryData" value="Oman" data-code="OMN" data-dialing="+968">Oman ( OMN ) +968<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg"/></li>
-                      <li class="item countryData" value="Pakistan" data-code="PAK" data-dialing="+92">Pakistan ( PAK ) +92<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"/></li>
-                      <li class="item countryData" value="Palau" data-code="PLW" data-dialing="+680">Palau ( PLW ) +680<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg"/></li>
-                      <li class="item countryData" value="Panama" data-code="PAN" data-dialing="+507">Panama ( PAN ) +507<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"/></li>
-                      <li class="item countryData" value="Papua New Guinea" data-code="PNG" data-dialing="+675">Papua New Guinea ( PNG ) +675<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg"/></li>
-                      <li class="item countryData" value="Paraguay" data-code="PRY" data-dialing="+595">Paraguay ( PRY ) +595<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"/></li>
-                      <li class="item countryData" value="Peru" data-code="PER" data-dialing="+51">Peru ( PER ) +51<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"/></li>
-                      <li class="item countryData" value="Philippines" data-code="PHL" data-dialing="+63">Philippines ( PHL ) +63<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"/></li>
-                      <li class="item countryData" value="Pitcairn" data-code="PCN" data-dialing="+872">Pitcairn ( PCN ) +872<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg"/></li>
-                      <li class="item countryData" value="Poland" data-code="POL" data-dialing="+48">Poland ( POL ) +48<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"/></li>
-                      <li class="item countryData" value="Portugal" data-code="PRT" data-dialing="+351">Portugal ( PRT ) +351<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"/></li>
-                      <li class="item countryData" value="Puerto Rico" data-code="PRI" data-dialing="+1 939">Puerto Rico ( PRI ) +1 939<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg"/></li>
-                      <li class="item countryData" value="Qatar" data-code="QAT" data-dialing="+974">Qatar ( QAT ) +974<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg"/></li>
-                      <li class="item countryData" value="Réunion" data-code="REU" data-dialing="+262">Réunion ( REU ) +262<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
-                      <li class="item countryData" value="Romania" data-code="ROU" data-dialing="+40">Romania ( ROU ) +40<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"/></li>
-                      <li class="item countryData" value="Rwanda" data-code="RWA" data-dialing="+250">Rwanda ( RWA ) +250<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"/></li>
-                      <li class="item countryData" value="Saint Barthélemy" data-code="BLM" data-dialing="+590">Saint Barthélemy ( BLM ) +590<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
-                      <li class="item countryData" value="Saint Kitts and Nevis" data-code="KNA" data-dialing="+1 869">Saint Kitts and Nevis ( KNA ) +1 869<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"/></li>
-                      <li class="item countryData" value="Saint Lucia" data-code="LCA" data-dialing="+1 758">Saint Lucia ( LCA ) +1 758<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"/></li>
-                      <li class="item countryData" value="Saint Pierre and Miquelon" data-code="SPM" data-dialing="+508">Saint Pierre and Miquelon ( SPM ) +508<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg"/></li>
-                      <li class="item countryData" value="Saint Vincent and the Grenadines" data-code="VCT" data-dialing="+1 784">Saint Vincent and the Grenadines ( VCT ) +1 784<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"/></li>
-                      <li class="item countryData" value="Samoa" data-code="WSM" data-dialing="+685">Samoa ( WSM ) +685<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg"/></li>
-                      <li class="item countryData" value="San Marino" data-code="SMR" data-dialing="+378">San Marino ( SMR ) +378<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg"/></li>
-                      <li class="item countryData" value="Sao Tome and Principe" data-code="STP" data-dialing="+239">Sao Tome and Principe ( STP ) +239<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg"/></li>
-                      <li class="item countryData" value="Saudi Arabia" data-code="SAU" data-dialing="+966">Saudi Arabia ( SAU ) +966<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"/></li>
-                      <li class="item countryData" value="Senegal" data-code="SEN" data-dialing="+221">Senegal ( SEN ) +221<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"/></li>
-                      <li class="item countryData" value="Serbia" data-code="SRB" data-dialing="+381">Serbia ( SRB ) +381<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"/></li>
-                      <li class="item countryData" value="Seychelles" data-code="SYC" data-dialing="+248">Seychelles ( SYC ) +248<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg"/></li>
-                      <li class="item countryData" value="Sierra Leone" data-code="SLE" data-dialing="+232">Sierra Leone ( SLE ) +232<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg"/></li>
-                      <li class="item countryData" value="Singapore" data-code="SGP" data-dialing="+65">Singapore ( SGP ) +65<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"/></li>
-                      <li class="item countryData" value="Slovakia" data-code="SVK" data-dialing="+421">Slovakia ( SVK ) +421<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"/></li>
-                      <li class="item countryData" value="Slovenia" data-code="SVN" data-dialing="+386">Slovenia ( SVN ) +386<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"/></li>
-                      <li class="item countryData" value="Solomon Islands" data-code="SLB" data-dialing="+677">Solomon Islands ( SLB ) +677<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg"/></li>
-                      <li class="item countryData" value="Somalia" data-code="SOM" data-dialing="+252">Somalia ( SOM ) +252<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg"/></li>
-                      <li class="item countryData" value="South Africa" data-code="ZAF" data-dialing="+27">South Africa ( ZAF ) +27<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"/></li>
-                      <li class="item countryData" value="South Georgia and the South Sandwich Islands" data-code="SGS" data-dialing="+500">South Georgia and the South Sandwich Islands ( SGS ) +500<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg"/></li>
-                      <li class="item countryData" value="Spain" data-code="ESP" data-dialing="+34">Spain ( ESP ) +34<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"/></li>
-                      <li class="item countryData" value="Sri Lanka" data-code="LKA" data-dialing="+94">Sri Lanka ( LKA ) +94<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg"/></li>
-                      <li class="item countryData" value="Sudan" data-code="SDN" data-dialing="+249">Sudan ( SDN ) +249<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"/></li>
-                      <li class="item countryData" value="Suriname" data-code="SUR" data-dialing="+597">Suriname ( SUR ) +597<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"/></li>
-                      <li class="item countryData" value="Swaziland" data-code="SWZ" data-dialing="+268">Swaziland ( SWZ ) +268<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Swaziland.svg"/></li>
-                      <li class="item countryData" value="Sweden" data-code="SWE" data-dialing="+46">Sweden ( SWE ) +46<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"/></li>
-                      <li class="item countryData" value="Switzerland" data-code="CHE" data-dialing="+41">Switzerland ( CHE ) +41<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"/></li>
-                      <li class="item countryData" value="Syrian Arab Republic" data-code="SYR" data-dialing="+963">Syrian Arab Republic ( SYR ) +963<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg"/></li>
-                      <li class="item countryData" value="Tajikistan" data-code="TJK" data-dialing="+992">Tajikistan ( TJK ) +992<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg"/></li>
-                      <li class="item countryData" value="Thailand" data-code="THA" data-dialing="+66">Thailand ( THA ) +66<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"/></li>
-                      <li class="item countryData" value="Timor-Leste" data-code="TLS" data-dialing="+670">Timor-Leste ( TLS ) +670<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"/></li>
-                      <li class="item countryData" value="Togo" data-code="TGO" data-dialing="+228">Togo ( TGO ) +228<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"/></li>
-                      <li class="item countryData" value="Tokelau" data-code="TKL" data-dialing="+690">Tokelau ( TKL ) +690<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"/></li>
-                      <li class="item countryData" value="Tonga" data-code="TON" data-dialing="+676">Tonga ( TON ) +676<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg"/></li>
-                      <li class="item countryData" value="Trinidad and Tobago" data-code="TTO" data-dialing="+1 868">Trinidad and Tobago ( TTO ) +1 868<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"/></li>
-                      <li class="item countryData" value="Tunisia" data-code="TUN" data-dialing="+216">Tunisia ( TUN ) +216<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"/></li>
-                      <li class="item countryData" value="Turkey" data-code="TUR" data-dialing="+90">Turkey ( TUR ) +90<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"/></li>
-                      <li class="item countryData" value="Turkmenistan" data-code="TKM" data-dialing="+993">Turkmenistan ( TKM ) +993<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"/></li>
-                      <li class="item countryData" value="Turks and Caicos Islands" data-code="TCA" data-dialing="+1 649">Turks and Caicos Islands ( TCA ) +1 649<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"/></li>
-                      <li class="item countryData" value="Tuvalu" data-code="TUV" data-dialing="+688">Tuvalu ( TUV ) +688<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg"/></li>
-                      <li class="item countryData" value="Uganda" data-code="UGA" data-dialing="+256">Uganda ( UGA ) +256<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg"/></li>
-                      <li class="item countryData" value="Ukraine" data-code="UKR" data-dialing="+380">Ukraine ( UKR ) +380<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"/></li>
-                      <li class="item countryData" value="United Arab Emirates" data-code="ARE" data-dialing="+971">United Arab Emirates ( ARE ) +971<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"/></li>
-                      <li class="item countryData" value="United Kingdom" data-code="GBR" data-dialing="+44">United Kingdom ( GBR ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"/></li>
-                      <li class="item countryData" value="United States" data-code="USA" data-dialing="+1">United States ( USA ) +1<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"/></li>
-                      <li class="item countryData" value="Uruguay" data-code="URY" data-dialing="+598">Uruguay ( URY ) +598<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"/></li>
-                      <li class="item countryData" value="Uzbekistan" data-code="UZB" data-dialing="+998">Uzbekistan ( UZB ) +998<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg"/></li>
-                      <li class="item countryData" value="Vanuatu" data-code="VUT" data-dialing="+678">Vanuatu ( VUT ) +678<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg"/></li>
-                      <li class="item countryData" value="Viet Nam" data-code="VNM" data-dialing="+84">Viet Nam ( VNM ) +84<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"/></li>
-                      <li class="item countryData" value="Wallis and Futuna" data-code="WLF" data-dialing="+681">Wallis and Futuna ( WLF ) +681<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg"/></li>
-                      <li class="item countryData" value="Yemen" data-code="YEM" data-dialing="+967">Yemen ( YEM ) +967<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg"/></li>
-                      <li class="item countryData" value="Zambia" data-code="ZMB" data-dialing="+260">Zambia ( ZMB ) +260<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"/></li>
-                      <li class="item countryData" value="Zimbabwe" data-code="ZWE" data-dialing="+263">Zimbabwe ( ZWE ) +263<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"/></li>
-                    </ul>
+              <div class="form-group"> 
+                <label for="Country">Country*</label>
+                <ul id="Country" name="country"> 
+                  <li class="selected" id="countrySelector" value="" data-dialing="">Select Country</li>
+                  <ul class="list-unstyled">
+                    <li class="searchCountry"> 
+                      <input class="form-control" id="searchCountryInput" placeholder="Search Country"/>
+                    </li>
+                    <li class="item countryData" value="Afghanistan" data-code="AFG" data-dialing="+93">Afghanistan ( AFG ) +93<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg"/></li>
+                    <li class="item countryData" value="Albania" data-code="ALB" data-dialing="+355">Albania ( ALB ) +355<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"/></li>
+                    <li class="item countryData" value="Algeria" data-code="DZA" data-dialing="+213">Algeria ( DZA ) +213<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"/></li>
+                    <li class="item countryData" value="Andorra" data-code="AND" data-dialing="+376">Andorra ( AND ) +376<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg"/></li>
+                    <li class="item countryData" value="Angola" data-code="AGO" data-dialing="+244">Angola ( AGO ) +244<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg"/></li>
+                    <li class="item countryData" value="Anguilla" data-code="AIA" data-dialing="+1 264">Anguilla ( AIA ) +1 264<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg"/></li>
+                    <li class="item countryData" value="Antigua and Barbuda" data-code="ATG" data-dialing="+1268">Antigua and Barbuda ( ATG ) +1268<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg"/></li>
+                    <li class="item countryData" value="Argentina" data-code="ARG" data-dialing="+54">Argentina ( ARG ) +54<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"/></li>
+                    <li class="item countryData" value="Armenia" data-code="ARM" data-dialing="+374">Armenia ( ARM ) +374<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg"/></li>
+                    <li class="item countryData" value="Aruba" data-code="ABW" data-dialing="+297">Aruba ( ABW ) +297<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg"/></li>
+                    <li class="item countryData" value="Australia" data-code="AUS" data-dialing="+61">Australia ( AUS ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"/></li>
+                    <li class="item countryData" value="Austria" data-code="AUT" data-dialing="+43">Austria ( AUT ) +43<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"/></li>
+                    <li class="item countryData" value="Azerbaijan" data-code="AZE" data-dialing="+994">Azerbaijan ( AZE ) +994<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"/></li>
+                    <li class="item countryData" value="Bahamas" data-code="BHS" data-dialing="+1 242">Bahamas ( BHS ) +1 242<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg"/></li>
+                    <li class="item countryData" value="Bahrain" data-code="BHR" data-dialing="+973">Bahrain ( BHR ) +973<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"/></li>
+                    <li class="item countryData" value="Bangladesh" data-code="BGD" data-dialing="+880">Bangladesh ( BGD ) +880<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg"/></li>
+                    <li class="item countryData" value="Barbados" data-code="BRB" data-dialing="+1 246">Barbados ( BRB ) +1 246<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg"/></li>
+                    <li class="item countryData" value="Belarus" data-code="BLR" data-dialing="+375">Belarus ( BLR ) +375<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg"/></li>
+                    <li class="item countryData" value="Belgium" data-code="BEL" data-dialing="+32">Belgium ( BEL ) +32<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg"/></li>
+                    <li class="item countryData" value="Belize" data-code="BLZ" data-dialing="+501">Belize ( BLZ ) +501<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg"/></li>
+                    <li class="item countryData" value="Benin" data-code="BEN" data-dialing="+229">Benin ( BEN ) +229<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg"/></li>
+                    <li class="item countryData" value="Bermuda" data-code="BMU" data-dialing="+1 441">Bermuda ( BMU ) +1 441<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg"/></li>
+                    <li class="item countryData" value="Bhutan" data-code="BTN" data-dialing="+975">Bhutan ( BTN ) +975<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg"/></li>
+                    <li class="item countryData" value="Bosnia and Herzegovina" data-code="BIH" data-dialing="+387">Bosnia and Herzegovina ( BIH ) +387<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg"/></li>
+                    <li class="item countryData" value="Botswana" data-code="BWA" data-dialing="+267">Botswana ( BWA ) +267<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg"/></li>
+                    <li class="item countryData" value="Brazil" data-code="BRA" data-dialing="+55">Brazil ( BRA ) +55<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"/></li>
+                    <li class="item countryData" value="British Indian Ocean Territory" data-code="IOT" data-dialing="+246">British Indian Ocean Territory ( IOT ) +246<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_the_British_Indian_Ocean_Territory.svg"/></li>
+                    <li class="item countryData" value="Brunei Darussalam" data-code="BRN" data-dialing="+673">Brunei Darussalam ( BRN ) +673<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg"/></li>
+                    <li class="item countryData" value="Bulgaria" data-code="BGR" data-dialing="+359">Bulgaria ( BGR ) +359<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg"/></li>
+                    <li class="item countryData" value="Burkina Faso" data-code="BFA" data-dialing="+226">Burkina Faso ( BFA ) +226<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg"/></li>
+                    <li class="item countryData" value="Burundi" data-code="BDI" data-dialing="+257">Burundi ( BDI ) +257<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg"/></li>
+                    <li class="item countryData" value="Cambodia" data-code="KHM" data-dialing="+855">Cambodia ( KHM ) +855<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg"/></li>
+                    <li class="item countryData" value="Cameroon" data-code="CMR" data-dialing="+237">Cameroon ( CMR ) +237<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg"/></li>
+                    <li class="item countryData" value="Canada" data-code="CAN" data-dialing="+1">Canada ( CAN ) +1<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"/></li>
+                    <li class="item countryData" value="Cape Verde" data-code="CPV" data-dialing="+238">Cape Verde ( CPV ) +238<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"/></li>
+                    <li class="item countryData" value="Cayman Islands" data-code="CYM" data-dialing="+ 345">Cayman Islands ( CYM ) + 345<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg"/></li>
+                    <li class="item countryData" value="Central African Republic" data-code="CAF" data-dialing="+236">Central African Republic ( CAF ) +236<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg"/></li>
+                    <li class="item countryData" value="Chad" data-code="TCD" data-dialing="+235">Chad ( TCD ) +235<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"/></li>
+                    <li class="item countryData" value="Chile" data-code="CHL" data-dialing="+56">Chile ( CHL ) +56<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"/></li>
+                    <li class="item countryData" value="China" data-code="CHN" data-dialing="+86">China ( CHN ) +86<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"/></li>
+                    <li class="item countryData" value="Christmas Island" data-code="CXR" data-dialing="+61">Christmas Island ( CXR ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg"/></li>
+                    <li class="item countryData" value="Cocos (Keeling) Islands" data-code="CCK" data-dialing="+61">Cocos (Keeling) Islands ( CCK ) +61<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg"/></li>
+                    <li class="item countryData" value="Colombia" data-code="COL" data-dialing="+57">Colombia ( COL ) +57<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"/></li>
+                    <li class="item countryData" value="Comoros" data-code="COM" data-dialing="+269">Comoros ( COM ) +269<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg"/></li>
+                    <li class="item countryData" value="Congo" data-code="COG" data-dialing="+242">Congo ( COG ) +242<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg"/></li>
+                    <li class="item countryData" value="Cook Islands" data-code="COK" data-dialing="+682">Cook Islands ( COK ) +682<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"/></li>
+                    <li class="item countryData" value="Costa Rica" data-code="CRI" data-dialing="+506">Costa Rica ( CRI ) +506<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg"/></li>
+                    <li class="item countryData" value="Croatia" data-code="HRV" data-dialing="+385">Croatia ( HRV ) +385<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"/></li>
+                    <li class="item countryData" value="Cuba" data-code="CUB" data-dialing="+53">Cuba ( CUB ) +53<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg"/></li>
+                    <li class="item countryData" value="Cyprus" data-code="CYP" data-dialing="+537">Cyprus ( CYP ) +537<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"/></li>
+                    <li class="item countryData" value="Czech Republic" data-code="CZE" data-dialing="+420">Czech Republic ( CZE ) +420<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"/></li>
+                    <li class="item countryData" value="Denmark" data-code="DNK" data-dialing="+45">Denmark ( DNK ) +45<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"/></li>
+                    <li class="item countryData" value="Djibouti" data-code="DJI" data-dialing="+253">Djibouti ( DJI ) +253<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg"/></li>
+                    <li class="item countryData" value="Dominica" data-code="DMA" data-dialing="+1 767">Dominica ( DMA ) +1 767<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg"/></li>
+                    <li class="item countryData" value="Dominican Republic" data-code="DOM" data-dialing="+1 849">Dominican Republic ( DOM ) +1 849<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"/></li>
+                    <li class="item countryData" value="Ecuador" data-code="ECU" data-dialing="+593">Ecuador ( ECU ) +593<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg"/></li>
+                    <li class="item countryData" value="Egypt" data-code="EGY" data-dialing="+20">Egypt ( EGY ) +20<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"/></li>
+                    <li class="item countryData" value="El Salvador" data-code="SLV" data-dialing="+503">El Salvador ( SLV ) +503<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"/></li>
+                    <li class="item countryData" value="Equatorial Guinea" data-code="GNQ" data-dialing="+240">Equatorial Guinea ( GNQ ) +240<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg"/></li>
+                    <li class="item countryData" value="Eritrea" data-code="ERI" data-dialing="+291">Eritrea ( ERI ) +291<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg"/></li>
+                    <li class="item countryData" value="Estonia" data-code="EST" data-dialing="+372">Estonia ( EST ) +372<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg"/></li>
+                    <li class="item countryData" value="Ethiopia" data-code="ETH" data-dialing="+251">Ethiopia ( ETH ) +251<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg"/></li>
+                    <li class="item countryData" value="Falkland Islands (Malvinas)" data-code="FLK" data-dialing="+500">Falkland Islands (Malvinas) ( FLK ) +500<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg"/></li>
+                    <li class="item countryData" value="Faroe Islands" data-code="FRO" data-dialing="+298">Faroe Islands ( FRO ) +298<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg"/></li>
+                    <li class="item countryData" value="Fiji" data-code="FJI" data-dialing="+679">Fiji ( FJI ) +679<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg"/></li>
+                    <li class="item countryData" value="Finland" data-code="FIN" data-dialing="+358">Finland ( FIN ) +358<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"/></li>
+                    <li class="item countryData" value="France" data-code="FRA" data-dialing="+33">France ( FRA ) +33<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
+                    <li class="item countryData" value="French Guiana" data-code="GUF" data-dialing="+594">French Guiana ( GUF ) +594<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_French_Guiana.svg"/></li>
+                    <li class="item countryData" value="French Polynesia" data-code="PYF" data-dialing="+689">French Polynesia ( PYF ) +689<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg"/></li>
+                    <li class="item countryData" value="Gabon" data-code="GAB" data-dialing="+241">Gabon ( GAB ) +241<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg"/></li>
+                    <li class="item countryData" value="Gambia" data-code="GMB" data-dialing="+220">Gambia ( GMB ) +220<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg"/></li>
+                    <li class="item countryData" value="Georgia" data-code="GEO" data-dialing="+995">Georgia ( GEO ) +995<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg"/></li>
+                    <li class="item countryData" value="Germany" data-code="DEU" data-dialing="+49">Germany ( DEU ) +49<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg"/></li>
+                    <li class="item countryData" value="Ghana" data-code="GHA" data-dialing="+233">Ghana ( GHA ) +233<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg"/></li>
+                    <li class="item countryData" value="Gibraltar" data-code="GIB" data-dialing="+350">Gibraltar ( GIB ) +350<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg"/></li>
+                    <li class="item countryData" value="Greece" data-code="GRC" data-dialing="+30">Greece ( GRC ) +30<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"/></li>
+                    <li class="item countryData" value="Greenland" data-code="GRL" data-dialing="+299">Greenland ( GRL ) +299<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"/></li>
+                    <li class="item countryData" value="Grenada" data-code="GRD" data-dialing="+1 473">Grenada ( GRD ) +1 473<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg"/></li>
+                    <li class="item countryData" value="Guadeloupe" data-code="GLP" data-dialing="+590">Guadeloupe ( GLP ) +590<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Guadeloupe_%28local%29.svg"/></li>
+                    <li class="item countryData" value="Guam" data-code="GUM" data-dialing="+1 671">Guam ( GUM ) +1 671<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg"/></li>
+                    <li class="item countryData" value="Guatemala" data-code="GTM" data-dialing="+502">Guatemala ( GTM ) +502<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg"/></li>
+                    <li class="item countryData" value="Guernsey" data-code="GGY" data-dialing="+44">Guernsey ( GGY ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"/></li>
+                    <li class="item countryData" value="Guinea" data-code="GIN" data-dialing="+224">Guinea ( GIN ) +224<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg"/></li>
+                    <li class="item countryData" value="Guinea-Bissau" data-code="GNB" data-dialing="+245">Guinea-Bissau ( GNB ) +245<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg"/></li>
+                    <li class="item countryData" value="Guyana" data-code="GUY" data-dialing="+595">Guyana ( GUY ) +595<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg"/></li>
+                    <li class="item countryData" value="Haiti" data-code="HTI" data-dialing="+509">Haiti ( HTI ) +509<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg"/></li>
+                    <li class="item countryData" value="Holy See (Vatican City State)" data-code="VAT" data-dialing="+379">Holy See (Vatican City State) ( VAT ) +379<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg"/></li>
+                    <li class="item countryData" value="Honduras" data-code="HND" data-dialing="+504">Honduras ( HND ) +504<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg"/></li>
+                    <li class="item countryData" value="Hong Kong" data-code="HKG" data-dialing="+852">Hong Kong ( HKG ) +852<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg"/></li>
+                    <li class="item countryData" value="Hungary" data-code="HUN" data-dialing="+36">Hungary ( HUN ) +36<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"/></li>
+                    <li class="item countryData" value="Iceland" data-code="ISL" data-dialing="+354">Iceland ( ISL ) +354<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"/></li>
+                    <li class="item countryData" value="India" data-code="IND" data-dialing="+91">India ( IND ) +91<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"/></li>
+                    <li class="item countryData" value="Indonesia" data-code="IDN" data-dialing="+62">Indonesia ( IDN ) +62<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"/></li>
+                    <li class="item countryData" value="Iraq" data-code="IRQ" data-dialing="+964">Iraq ( IRQ ) +964<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg"/></li>
+                    <li class="item countryData" value="Ireland" data-code="IRL" data-dialing="+353">Ireland ( IRL ) +353<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"/></li>
+                    <li class="item countryData" value="Isle of Man" data-code="IMN" data-dialing="+44">Isle of Man ( IMN ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg"/></li>
+                    <li class="item countryData" value="Israel" data-code="ISR" data-dialing="+972">Israel ( ISR ) +972<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"/></li>
+                    <li class="item countryData" value="Israel" data-code="ISR" data-dialing="+972">Israel ( ISR ) +972<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg"/></li>
+                    <li class="item countryData" value="Italy" data-code="ITA" data-dialing="+39">Italy ( ITA ) +39<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"/></li>
+                    <li class="item countryData" value="Jamaica" data-code="JAM" data-dialing="+1 876">Jamaica ( JAM ) +1 876<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"/></li>
+                    <li class="item countryData" value="Japan" data-code="JPN" data-dialing="+81">Japan ( JPN ) +81<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"/></li>
+                    <li class="item countryData" value="Jersey" data-code="JEY" data-dialing="+44">Jersey ( JEY ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"/></li>
+                    <li class="item countryData" value="Jordan" data-code="JOR" data-dialing="+962">Jordan ( JOR ) +962<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg"/></li>
+                    <li class="item countryData" value="Kazakhstan" data-code="KAZ" data-dialing="+7 7">Kazakhstan ( KAZ ) +7 7<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg"/></li>
+                    <li class="item countryData" value="Kenya" data-code="KEN" data-dialing="+254">Kenya ( KEN ) +254<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg"/></li>
+                    <li class="item countryData" value="Kiribati" data-code="KIR" data-dialing="+686">Kiribati ( KIR ) +686<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg"/></li>
+                    <li class="item countryData" value="Kuwait" data-code="KWT" data-dialing="+965">Kuwait ( KWT ) +965<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg"/></li>
+                    <li class="item countryData" value="Kyrgyzstan" data-code="KGZ" data-dialing="+996">Kyrgyzstan ( KGZ ) +996<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg"/></li>
+                    <li class="item countryData" value="Lao People's Democratic Republic" data-code="LAO" data-dialing="+856">Lao People's Democratic Republic ( LAO ) +856<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg"/></li>
+                    <li class="item countryData" value="Latvia" data-code="LVA" data-dialing="+371">Latvia ( LVA ) +371<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg"/></li>
+                    <li class="item countryData" value="Lebanon" data-code="LBN" data-dialing="+961">Lebanon ( LBN ) +961<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg"/></li>
+                    <li class="item countryData" value="Lesotho" data-code="LSO" data-dialing="+266">Lesotho ( LSO ) +266<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg"/></li>
+                    <li class="item countryData" value="Liberia" data-code="LBR" data-dialing="+231">Liberia ( LBR ) +231<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg"/></li>
+                    <li class="item countryData" value="Liechtenstein" data-code="LIE" data-dialing="+423">Liechtenstein ( LIE ) +423<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg"/></li>
+                    <li class="item countryData" value="Lithuania" data-code="LTU" data-dialing="+370">Lithuania ( LTU ) +370<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg"/></li>
+                    <li class="item countryData" value="Luxembourg" data-code="LUX" data-dialing="+352">Luxembourg ( LUX ) +352<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg"/></li>
+                    <li class="item countryData" value="Macao" data-code="MAC" data-dialing="+853">Macao ( MAC ) +853<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"/></li>
+                    <li class="item countryData" value="Madagascar" data-code="MDG" data-dialing="+261">Madagascar ( MDG ) +261<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg"/></li>
+                    <li class="item countryData" value="Malawi" data-code="MWI" data-dialing="+265">Malawi ( MWI ) +265<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg"/></li>
+                    <li class="item countryData" value="Malaysia" data-code="MYS" data-dialing="+60">Malaysia ( MYS ) +60<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg"/></li>
+                    <li class="item countryData" value="Maldives" data-code="MDV" data-dialing="+960">Maldives ( MDV ) +960<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"/></li>
+                    <li class="item countryData" value="Mali" data-code="MLI" data-dialing="+223">Mali ( MLI ) +223<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg"/></li>
+                    <li class="item countryData" value="Malta" data-code="MLT" data-dialing="+356">Malta ( MLT ) +356<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg"/></li>
+                    <li class="item countryData" value="Marshall Islands" data-code="MHL" data-dialing="+692">Marshall Islands ( MHL ) +692<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg"/></li>
+                    <li class="item countryData" value="Martinique" data-code="MTQ" data-dialing="+596">Martinique ( MTQ ) +596<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_Martinique.svg"/></li>
+                    <li class="item countryData" value="Mauritania" data-code="MRT" data-dialing="+222">Mauritania ( MRT ) +222<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg"/></li>
+                    <li class="item countryData" value="Mauritius" data-code="MUS" data-dialing="+230">Mauritius ( MUS ) +230<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg"/></li>
+                    <li class="item countryData" value="Mayotte" data-code="MYT" data-dialing="+262">Mayotte ( MYT ) +262<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
+                    <li class="item countryData" value="Mexico" data-code="MEX" data-dialing="+52">Mexico ( MEX ) +52<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"/></li>
+                    <li class="item countryData" value="Monaco" data-code="MCO" data-dialing="+377">Monaco ( MCO ) +377<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg"/></li>
+                    <li class="item countryData" value="Mongolia" data-code="MNG" data-dialing="+976">Mongolia ( MNG ) +976<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"/></li>
+                    <li class="item countryData" value="Montenegro" data-code="MNE" data-dialing="+382">Montenegro ( MNE ) +382<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg"/></li>
+                    <li class="item countryData" value="Montserrat" data-code="MSR" data-dialing="+1664">Montserrat ( MSR ) +1664<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg"/></li>
+                    <li class="item countryData" value="Morocco" data-code="MAR" data-dialing="+212">Morocco ( MAR ) +212<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"/></li>
+                    <li class="item countryData" value="Mozambique" data-code="MOZ" data-dialing="+258">Mozambique ( MOZ ) +258<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg"/></li>
+                    <li class="item countryData" value="Myanmar" data-code="MMR" data-dialing="+95">Myanmar ( MMR ) +95<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"/></li>
+                    <li class="item countryData" value="Namibia" data-code="NAM" data-dialing="+264">Namibia ( NAM ) +264<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg"/></li>
+                    <li class="item countryData" value="Nauru" data-code="NRU" data-dialing="+674">Nauru ( NRU ) +674<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg"/></li>
+                    <li class="item countryData" value="Nepal" data-code="NPL" data-dialing="+977">Nepal ( NPL ) +977<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"/></li>
+                    <li class="item countryData" value="Netherlands" data-code="NLD" data-dialing="+31">Netherlands ( NLD ) +31<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"/></li>
+                    <li class="item countryData" value="New Caledonia" data-code="NCL" data-dialing="+687">New Caledonia ( NCL ) +687<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_New_Caledonia.svg"/></li>
+                    <li class="item countryData" value="New Zealand" data-code="NZL" data-dialing="+64">New Zealand ( NZL ) +64<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"/></li>
+                    <li class="item countryData" value="Nicaragua" data-code="NIC" data-dialing="+505">Nicaragua ( NIC ) +505<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"/></li>
+                    <li class="item countryData" value="Niger" data-code="NER" data-dialing="+227">Niger ( NER ) +227<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"/></li>
+                    <li class="item countryData" value="Nigeria" data-code="NGA" data-dialing="+234">Nigeria ( NGA ) +234<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"/></li>
+                    <li class="item countryData" value="Niue" data-code="NIU" data-dialing="+683">Niue ( NIU ) +683<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"/></li>
+                    <li class="item countryData" value="Norfolk Island" data-code="NFK" data-dialing="+672">Norfolk Island ( NFK ) +672<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg"/></li>
+                    <li class="item countryData" value="Northern Mariana Islands" data-code="MNP" data-dialing="+1 670">Northern Mariana Islands ( MNP ) +1 670<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg"/></li>
+                    <li class="item countryData" value="Norway" data-code="NOR" data-dialing="+47">Norway ( NOR ) +47<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"/></li>
+                    <li class="item countryData" value="Oman" data-code="OMN" data-dialing="+968">Oman ( OMN ) +968<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg"/></li>
+                    <li class="item countryData" value="Pakistan" data-code="PAK" data-dialing="+92">Pakistan ( PAK ) +92<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"/></li>
+                    <li class="item countryData" value="Palau" data-code="PLW" data-dialing="+680">Palau ( PLW ) +680<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg"/></li>
+                    <li class="item countryData" value="Panama" data-code="PAN" data-dialing="+507">Panama ( PAN ) +507<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"/></li>
+                    <li class="item countryData" value="Papua New Guinea" data-code="PNG" data-dialing="+675">Papua New Guinea ( PNG ) +675<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg"/></li>
+                    <li class="item countryData" value="Paraguay" data-code="PRY" data-dialing="+595">Paraguay ( PRY ) +595<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg"/></li>
+                    <li class="item countryData" value="Peru" data-code="PER" data-dialing="+51">Peru ( PER ) +51<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg"/></li>
+                    <li class="item countryData" value="Philippines" data-code="PHL" data-dialing="+63">Philippines ( PHL ) +63<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"/></li>
+                    <li class="item countryData" value="Pitcairn" data-code="PCN" data-dialing="+872">Pitcairn ( PCN ) +872<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg"/></li>
+                    <li class="item countryData" value="Poland" data-code="POL" data-dialing="+48">Poland ( POL ) +48<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg"/></li>
+                    <li class="item countryData" value="Portugal" data-code="PRT" data-dialing="+351">Portugal ( PRT ) +351<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"/></li>
+                    <li class="item countryData" value="Puerto Rico" data-code="PRI" data-dialing="+1 939">Puerto Rico ( PRI ) +1 939<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg"/></li>
+                    <li class="item countryData" value="Qatar" data-code="QAT" data-dialing="+974">Qatar ( QAT ) +974<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg"/></li>
+                    <li class="item countryData" value="Réunion" data-code="REU" data-dialing="+262">Réunion ( REU ) +262<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
+                    <li class="item countryData" value="Romania" data-code="ROU" data-dialing="+40">Romania ( ROU ) +40<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"/></li>
+                    <li class="item countryData" value="Rwanda" data-code="RWA" data-dialing="+250">Rwanda ( RWA ) +250<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"/></li>
+                    <li class="item countryData" value="Saint Barthélemy" data-code="BLM" data-dialing="+590">Saint Barthélemy ( BLM ) +590<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"/></li>
+                    <li class="item countryData" value="Saint Kitts and Nevis" data-code="KNA" data-dialing="+1 869">Saint Kitts and Nevis ( KNA ) +1 869<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg"/></li>
+                    <li class="item countryData" value="Saint Lucia" data-code="LCA" data-dialing="+1 758">Saint Lucia ( LCA ) +1 758<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg"/></li>
+                    <li class="item countryData" value="Saint Pierre and Miquelon" data-code="SPM" data-dialing="+508">Saint Pierre and Miquelon ( SPM ) +508<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_Saint-Pierre_and_Miquelon.svg"/></li>
+                    <li class="item countryData" value="Saint Vincent and the Grenadines" data-code="VCT" data-dialing="+1 784">Saint Vincent and the Grenadines ( VCT ) +1 784<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg"/></li>
+                    <li class="item countryData" value="Samoa" data-code="WSM" data-dialing="+685">Samoa ( WSM ) +685<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg"/></li>
+                    <li class="item countryData" value="San Marino" data-code="SMR" data-dialing="+378">San Marino ( SMR ) +378<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg"/></li>
+                    <li class="item countryData" value="Sao Tome and Principe" data-code="STP" data-dialing="+239">Sao Tome and Principe ( STP ) +239<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg"/></li>
+                    <li class="item countryData" value="Saudi Arabia" data-code="SAU" data-dialing="+966">Saudi Arabia ( SAU ) +966<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"/></li>
+                    <li class="item countryData" value="Senegal" data-code="SEN" data-dialing="+221">Senegal ( SEN ) +221<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"/></li>
+                    <li class="item countryData" value="Serbia" data-code="SRB" data-dialing="+381">Serbia ( SRB ) +381<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"/></li>
+                    <li class="item countryData" value="Seychelles" data-code="SYC" data-dialing="+248">Seychelles ( SYC ) +248<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg"/></li>
+                    <li class="item countryData" value="Sierra Leone" data-code="SLE" data-dialing="+232">Sierra Leone ( SLE ) +232<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg"/></li>
+                    <li class="item countryData" value="Singapore" data-code="SGP" data-dialing="+65">Singapore ( SGP ) +65<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"/></li>
+                    <li class="item countryData" value="Slovakia" data-code="SVK" data-dialing="+421">Slovakia ( SVK ) +421<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"/></li>
+                    <li class="item countryData" value="Slovenia" data-code="SVN" data-dialing="+386">Slovenia ( SVN ) +386<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"/></li>
+                    <li class="item countryData" value="Solomon Islands" data-code="SLB" data-dialing="+677">Solomon Islands ( SLB ) +677<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg"/></li>
+                    <li class="item countryData" value="Somalia" data-code="SOM" data-dialing="+252">Somalia ( SOM ) +252<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg"/></li>
+                    <li class="item countryData" value="South Africa" data-code="ZAF" data-dialing="+27">South Africa ( ZAF ) +27<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"/></li>
+                    <li class="item countryData" value="South Georgia and the South Sandwich Islands" data-code="SGS" data-dialing="+500">South Georgia and the South Sandwich Islands ( SGS ) +500<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg"/></li>
+                    <li class="item countryData" value="Spain" data-code="ESP" data-dialing="+34">Spain ( ESP ) +34<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg"/></li>
+                    <li class="item countryData" value="Sri Lanka" data-code="LKA" data-dialing="+94">Sri Lanka ( LKA ) +94<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg"/></li>
+                    <li class="item countryData" value="Sudan" data-code="SDN" data-dialing="+249">Sudan ( SDN ) +249<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"/></li>
+                    <li class="item countryData" value="Suriname" data-code="SUR" data-dialing="+597">Suriname ( SUR ) +597<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"/></li>
+                    <li class="item countryData" value="Swaziland" data-code="SWZ" data-dialing="+268">Swaziland ( SWZ ) +268<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Swaziland.svg"/></li>
+                    <li class="item countryData" value="Sweden" data-code="SWE" data-dialing="+46">Sweden ( SWE ) +46<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"/></li>
+                    <li class="item countryData" value="Switzerland" data-code="CHE" data-dialing="+41">Switzerland ( CHE ) +41<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"/></li>
+                    <li class="item countryData" value="Syrian Arab Republic" data-code="SYR" data-dialing="+963">Syrian Arab Republic ( SYR ) +963<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg"/></li>
+                    <li class="item countryData" value="Tajikistan" data-code="TJK" data-dialing="+992">Tajikistan ( TJK ) +992<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg"/></li>
+                    <li class="item countryData" value="Thailand" data-code="THA" data-dialing="+66">Thailand ( THA ) +66<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"/></li>
+                    <li class="item countryData" value="Timor-Leste" data-code="TLS" data-dialing="+670">Timor-Leste ( TLS ) +670<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"/></li>
+                    <li class="item countryData" value="Togo" data-code="TGO" data-dialing="+228">Togo ( TGO ) +228<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"/></li>
+                    <li class="item countryData" value="Tokelau" data-code="TKL" data-dialing="+690">Tokelau ( TKL ) +690<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"/></li>
+                    <li class="item countryData" value="Tonga" data-code="TON" data-dialing="+676">Tonga ( TON ) +676<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg"/></li>
+                    <li class="item countryData" value="Trinidad and Tobago" data-code="TTO" data-dialing="+1 868">Trinidad and Tobago ( TTO ) +1 868<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"/></li>
+                    <li class="item countryData" value="Tunisia" data-code="TUN" data-dialing="+216">Tunisia ( TUN ) +216<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"/></li>
+                    <li class="item countryData" value="Turkey" data-code="TUR" data-dialing="+90">Turkey ( TUR ) +90<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"/></li>
+                    <li class="item countryData" value="Turkmenistan" data-code="TKM" data-dialing="+993">Turkmenistan ( TKM ) +993<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"/></li>
+                    <li class="item countryData" value="Turks and Caicos Islands" data-code="TCA" data-dialing="+1 649">Turks and Caicos Islands ( TCA ) +1 649<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"/></li>
+                    <li class="item countryData" value="Tuvalu" data-code="TUV" data-dialing="+688">Tuvalu ( TUV ) +688<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg"/></li>
+                    <li class="item countryData" value="Uganda" data-code="UGA" data-dialing="+256">Uganda ( UGA ) +256<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg"/></li>
+                    <li class="item countryData" value="Ukraine" data-code="UKR" data-dialing="+380">Ukraine ( UKR ) +380<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"/></li>
+                    <li class="item countryData" value="United Arab Emirates" data-code="ARE" data-dialing="+971">United Arab Emirates ( ARE ) +971<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"/></li>
+                    <li class="item countryData" value="United Kingdom" data-code="GBR" data-dialing="+44">United Kingdom ( GBR ) +44<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"/></li>
+                    <li class="item countryData" value="United States" data-code="USA" data-dialing="+1">United States ( USA ) +1<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"/></li>
+                    <li class="item countryData" value="Uruguay" data-code="URY" data-dialing="+598">Uruguay ( URY ) +598<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"/></li>
+                    <li class="item countryData" value="Uzbekistan" data-code="UZB" data-dialing="+998">Uzbekistan ( UZB ) +998<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg"/></li>
+                    <li class="item countryData" value="Vanuatu" data-code="VUT" data-dialing="+678">Vanuatu ( VUT ) +678<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg"/></li>
+                    <li class="item countryData" value="Viet Nam" data-code="VNM" data-dialing="+84">Viet Nam ( VNM ) +84<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"/></li>
+                    <li class="item countryData" value="Wallis and Futuna" data-code="WLF" data-dialing="+681">Wallis and Futuna ( WLF ) +681<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Wallis_and_Futuna.svg"/></li>
+                    <li class="item countryData" value="Yemen" data-code="YEM" data-dialing="+967">Yemen ( YEM ) +967<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg"/></li>
+                    <li class="item countryData" value="Zambia" data-code="ZMB" data-dialing="+260">Zambia ( ZMB ) +260<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg"/></li>
+                    <li class="item countryData" value="Zimbabwe" data-code="ZWE" data-dialing="+263">Zimbabwe ( ZWE ) +263<img class="img-fluid" src="//upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"/></li>
                   </ul>
-                  <div class="invalid-feedback countrySelector" style="display:block;"></div>
-                </div>
-                <div class="form-gruop"> 
-                  <label for="phoneNumber">Phone Number<small class="form-text text-muted" style="display:inline-block;margin-right:20px;">please enter number without country code</small></label>
-                  <input class="form-control" id="phoneNumber" type="number" placeholder="Phone Number"/>
-                  <div class="invalid-feedback phoneNumber"></div>
-                </div>
-                <div class="form-gruop"> 
-                  <label for="message">Message*</label>
-                  <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" required="required"></textarea>
-                  <div class="invalid-feedback message"></div>
-                </div>
-                <input class="submit" type="submit" value="Submit"/>
-                <div class="clear-fix"></div>
-              </form>
-            </div>
+                </ul>
+                <div class="invalid-feedback countrySelector" style="display:block;"></div>
+              </div>
+              <div class="form-gruop"> 
+                <label for="phoneNumber">Phone Number</label>
+                <input class="form-control" id="phoneNumber" type="number" placeholder="Please enter number without country code"/>
+                <div class="invalid-feedback phoneNumber"></div>
+              </div>
+              <div class="form-gruop"> 
+                <label for="message">Message*</label>
+                <textarea class="form-control" id="message" type="text" name="message" placeholder="Message" required="required"></textarea>
+                <div class="invalid-feedback message"></div>
+              </div>
+              <div class="form-group"> 
+                <div id="re_captcha"></div>
+              </div>
+              <input class="submit" type="submit" value="Submit"/>
+              <div class="clear-fix"></div>
+            </form>
           </div>
         </div>
       </div>
@@ -519,5 +503,13 @@
       <script src="/js/main.js"></script>
       <script src="http://localhost:35729/livereload.js"></script>
     </footer>
+    <script>
+      var onloadCallback = function() {
+          grecaptcha.render('re_captcha', {
+          'sitekey' : '6Lefb7QUAAAAAGBy7RZzHljlecIHk-MVBqIU7vN4'
+          });
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=expli" async="async" defer="defer"></script>
   </body>
 </html>
