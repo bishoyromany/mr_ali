@@ -4,63 +4,41 @@
 
 @font-face {
   font-family: 'HelveticaNeue-Thin';
-  src: url("../../fonts/helveticaneue/HelveticaNeue Thin.ttf"); }
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/helveticaneue/HelveticaNeue-Thin.ttf); }
 
 @font-face {
   font-family: 'HelveticaNeue-UltraLight';
-  src: url("../../fonts/helveticaneue/helveticaneue-ultralight.ttf"); }
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/helveticaneue/helveticaneue-ultralight.ttf); }
+
+@font-face {
+  font-family: 'HelveticaNeue-Regular';
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/helveticaneue/helveticaneue-regular.ttf); }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/Lato/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/Lato/Lato-Bold.ttf); }
 
 @font-face {
   font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url("../../fonts/Lato/Lato-Italic.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: url("../../fonts/Lato/Lato-BoldItalic.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 900;
-  src: url("../../fonts/Lato/Lato-BlackItalic.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../../fonts/Lato/Lato-Light.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/Lato/Lato-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/Lato/Lato-Bold.ttf"); }
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: url("../../fonts/Lato/Lato-Black.ttf"); }
+  src: url(https://bishoyromany.github.io/static_vpn_company_webiste/fonts/Lato/Lato-Black.ttf); }
 
 body {
   font-family: HelveticaNeue-Thin;
-  height: 400vh; }
+  max-width: 100vw;
+  overflow-x: hidden; }
 
 /**
 ** project banners
 **/
 #homepageBanner {
-  height: 530px; }
+  height: 530px;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/banners/homepage_banner.jpg) no-repeat right 0;
+  background-size: cover;
+  position: relative; }
   #homepageBanner .logo {
     float: left; }
     #homepageBanner .logo img {
@@ -71,6 +49,21 @@ body {
       height: auto;
       margin-top: 25px;
       margin-left: 15px; }
+  #homepageBanner .social {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 180px;
+    z-index: 8;
+    margin-top: 60px; }
+    #homepageBanner .social li {
+      margin-right: 5px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      #homepageBanner .social li a {
+        width: 25px; }
   #homepageBanner .logo_contact {
     text-align: center; }
   #homepageBanner .contact_container {
@@ -137,123 +130,430 @@ body {
         border-width: 0 0 20px 20px;
         border-color: transparent transparent #fdb414 transparent; }
 
+#ProductsBanner, #SupportBanner, #ContactBanner, #WhyUsBanner {
+  height: 260px;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/banners/products_banner.jpg) no-repeat right 0;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+  #ProductsBanner .logo, #SupportBanner .logo, #ContactBanner .logo, #WhyUsBanner .logo {
+    float: left; }
+    #ProductsBanner .logo img, #SupportBanner .logo img, #ContactBanner .logo img, #WhyUsBanner .logo img {
+      border-width: 0px;
+      border: 0px;
+      height: 100%; }
+  #ProductsBanner .social, #SupportBanner .social, #ContactBanner .social, #WhyUsBanner .social {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 180px;
+    z-index: 8;
+    margin-top: 60px; }
+    #ProductsBanner .social li, #SupportBanner .social li, #ContactBanner .social li, #WhyUsBanner .social li {
+      margin-right: 5px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      #ProductsBanner .social li a, #SupportBanner .social li a, #ContactBanner .social li a, #WhyUsBanner .social li a {
+        width: 25px; }
+  #ProductsBanner .logo_contact, #SupportBanner .logo_contact, #ContactBanner .logo_contact, #WhyUsBanner .logo_contact {
+    text-align: center; }
+  #ProductsBanner .contact_container, #SupportBanner .contact_container, #ContactBanner .contact_container, #WhyUsBanner .contact_container {
+    margin: 0;
+    padding-top: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: right; }
+  #ProductsBanner .contact, #SupportBanner .contact, #ContactBanner .contact, #WhyUsBanner .contact {
+    display: inline-block;
+    font-size: 20px;
+    text-shadow: 26px 0px 27px #2a313d;
+    color: #333;
+    font-family: Lato;
+    font-weight: 400;
+    margin-right: 140px; }
+    #ProductsBanner .contact span, #ProductsBanner .contact a, #SupportBanner .contact span, #SupportBanner .contact a, #ContactBanner .contact span, #ContactBanner .contact a, #WhyUsBanner .contact span, #WhyUsBanner .contact a {
+      color: white;
+      text-decoration: none; }
+    #ProductsBanner .contact .contact_us_link, #SupportBanner .contact .contact_us_link, #ContactBanner .contact .contact_us_link, #WhyUsBanner .contact .contact_us_link {
+      color: #fdb414;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #ProductsBanner .contact .contact_us_link:hover, #SupportBanner .contact .contact_us_link:hover, #ContactBanner .contact .contact_us_link:hover, #WhyUsBanner .contact .contact_us_link:hover {
+        color: #2249a1; }
+
+#SupportBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/banners/support_banner.jpg) no-repeat right 0; }
+
+#ContactBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/banners/contact_banner.jpg) no-repeat right 0; }
+
+#WhyUsBanner {
+  height: 247px;
+  overflow: hidden;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/banners/why_us_banner.jpg) no-repeat right 0; }
+
+/*
+** project banners
+*/
+@media screen and (max-width: 991px) {
+  #homepageBanner {
+    background-position: calc(100% + 130px) 85px !important; }
+    #homepageBanner .overly {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      background-color: rgba(255, 255, 255, 0.267); }
+    #homepageBanner .logo {
+      display: none; }
+    #homepageBanner .social {
+      display: none; }
+    #homepageBanner .logo_contact {
+      display: none; }
+    #homepageBanner .contact_container {
+      display: none; }
+    #homepageBanner .contact {
+      display: none; }
+    #homepageBanner .demo h2 {
+      color: #000;
+      font-weight: bold; }
+    #homepageBanner .demo a {
+      color: #fdb414;
+      background: #2249a1; }
+  #productsBannerSpacePhone, #SupportBannerSpacePhone, #ContactBannerSpacePhone, #WhyUsBannerSpacePhone {
+    margin-top: 67px; }
+  #ProductsBanner, #SupportBanner, #ContactBanner, #WhyUsBanner {
+    display: none; } }
+
 /*
 ** website navbar links
 */
 #navbar {
   background-color: #fff;
   display: block; }
+  #navbar .mobileNavbar {
+    display: none; }
   #navbar > div > ul {
     margin: 0px;
     padding: 0px; }
-    #navbar > div > ul > li {
-      display: inline-block;
-      position: relative;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-      #navbar > div > ul > li:hover {
-        z-index: 11; }
-      #navbar > div > ul > li > div {
+    #navbar > div > ul > div {
+      display: inline-block; }
+      #navbar > div > ul > div > li {
+        display: inline-block;
+        position: relative;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
-        #navbar > div > ul > li > div.hasSub::before {
-          content: '';
-          background: #fdb414;
+        #navbar > div > ul > div > li:hover {
+          z-index: 11; }
+        #navbar > div > ul > div > li:hover ul {
+          top: 80px !important; }
+        #navbar > div > ul > div > li > div {
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+          #navbar > div > ul > div > li > div.hasSub::before {
+            content: '';
+            background: #fdb414;
+            position: absolute;
+            top: -20px;
+            left: -35px;
+            right: -35px;
+            display: block;
+            height: 20px;
+            opacity: 0;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out; }
+          #navbar > div > ul > div > li > div.hasSub::after {
+            position: absolute;
+            right: -54px;
+            top: -20px;
+            width: 0;
+            content: '';
+            height: 0;
+            border-style: solid;
+            border-width: 20px 0 0 20px;
+            border-color: transparent transparent transparent #c08709;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            opacity: 0; }
+          #navbar > div > ul > div > li > div.hasSub:hover ul {
+            opacity: 1 !important; }
+          #navbar > div > ul > div > li > div.hasSub:hover .bottom {
+            opacity: 1 !important; }
+          #navbar > div > ul > div > li > div:hover {
+            background: #fdb414; }
+            #navbar > div > ul > div > li > div:hover::after, #navbar > div > ul > div > li > div:hover::before {
+              opacity: 1 !important; }
+          #navbar > div > ul > div > li > div:hover a {
+            color: #FFF !important; }
+          #navbar > div > ul > div > li > div > a {
+            padding: 40px 35px;
+            color: #182752;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 23px;
+            font-family: HelveticaNeue-Thin;
+            font-weight: normal;
+            line-height: normal;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out; }
+        #navbar > div > ul > div > li ul {
           position: absolute;
-          top: -20px;
-          left: -35px;
-          right: -35px;
-          display: block;
-          height: 20px;
+          top: 80px;
+          left: 0px;
+          width: 100%;
           opacity: 0;
           -webkit-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out; }
-        #navbar > div > ul > li > div.hasSub::after {
-          position: absolute;
-          right: -54px;
-          top: -20px;
-          width: 0;
-          content: '';
-          height: 0;
-          border-style: solid;
-          border-width: 20px 0 0 20px;
-          border-color: transparent transparent transparent #c08709;
-          -webkit-transition: all 0.5s ease-in-out;
           transition: all 0.5s ease-in-out;
-          opacity: 0; }
-        #navbar > div > ul > li > div.hasSub:hover ul {
-          opacity: 1 !important; }
-        #navbar > div > ul > li > div.hasSub:hover .bottom {
-          opacity: 1 !important; }
-        #navbar > div > ul > li > div:hover {
+          padding-bottom: 20px;
           background: #fdb414; }
-          #navbar > div > ul > li > div:hover::after, #navbar > div > ul > li > div:hover::before {
-            opacity: 1 !important; }
-        #navbar > div > ul > li > div:hover a {
-          color: #FFF !important; }
-        #navbar > div > ul > li > div > a {
-          padding: 40px 35px;
-          color: #182752;
-          display: inline-block;
-          text-decoration: none;
-          font-size: 23px;
-          font-family: HelveticaNeue-Thin;
-          font-weight: normal;
-          line-height: normal;
-          -webkit-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out; }
-      #navbar > div > ul > li ul {
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        width: 100%;
-        opacity: 0;
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        padding-bottom: 20px;
-        background: #fdb414; }
-        #navbar > div > ul > li ul::after {
-          z-index: -1;
-          background: #fdb414;
-          left: -35px;
-          right: -35px;
-          bottom: 0;
-          margin: auto;
-          content: '';
-          position: absolute;
-          top: -100px; }
-        #navbar > div > ul > li ul li {
-          display: block;
-          background-color: #fdb414;
-          position: relative; }
-          #navbar > div > ul > li ul li::before {
-            position: absolute;
-            left: 0px;
-            top: 0px;
+          #navbar > div > ul > div > li ul::after {
+            z-index: -1;
+            background: #fdb414;
+            left: -35px;
+            right: -35px;
             bottom: 0;
             margin: auto;
             content: '';
-            width: 15px;
-            height: 13px;
-            background: url(/images/navbar/right-arrow.webp) no-repeat; }
-          #navbar > div > ul > li ul li a {
-            padding: 10px;
-            margin: 0px;
-            color: #FFF;
-            font-size: 18px;
-            margin-left: 20px; }
-            #navbar > div > ul > li ul li a:hover {
-              color: #2249a1 !important; }
-        #navbar > div > ul > li ul img {
-          width: 100%; }
-      #navbar > div > ul > li .bottom {
-        -webkit-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        left: -35px;
-        right: -35px;
-        top: 100%;
+            position: absolute;
+            top: -100px; }
+          #navbar > div > ul > div > li ul li {
+            display: block;
+            background-color: #fdb414;
+            position: relative; }
+            #navbar > div > ul > div > li ul li::before {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              bottom: 0;
+              margin: auto;
+              content: '';
+              width: 15px;
+              height: 13px;
+              background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/navbar/right-arrow.webp) no-repeat; }
+            #navbar > div > ul > div > li ul li a {
+              padding: 5px 0px 0px 10px;
+              margin: 0px;
+              color: #FFF;
+              font-size: 18px;
+              margin-left: 20px;
+              display: inherit; }
+              #navbar > div > ul > div > li ul li a:hover {
+                color: #2249a1 !important; }
+          #navbar > div > ul > div > li ul img {
+            width: 100%; }
+        #navbar > div > ul > div > li .bottom {
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          left: -35px;
+          right: -35px;
+          top: 100%;
+          position: absolute;
+          margin: auto; }
+  #navbar.fixed-top .subNavLinks {
+    top: -300px; }
+  #navbar .closeNavBar, #navbar .toggleSubNavLinks, #navbar .mobileExtraOptions, #navbar .overlyNavbar {
+    display: none; }
+
+/*
+** website navbar for mobile design
+*/
+@media screen and (max-width: 991px) {
+  #navbar {
+    position: fixed !important;
+    z-index: 100;
+    background-color: #2249a1;
+    top: -1px;
+    left: 0px;
+    width: 100%;
+    z-index: 10000000; }
+    #navbar .mobileNavbar {
+      display: block;
+      min-height: 40px;
+      width: 100%; }
+      #navbar .mobileNavbar .logo {
+        padding: 16px 0px; }
+      #navbar .mobileNavbar .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #navbar .mobileNavbar .row .drop {
+          color: #FFF;
+          cursor: pointer;
+          text-transform: uppercase;
+          text-align: right;
+          font-size: 20px;
+          font-family: HelveticaNeue-Thin; }
+          #navbar .mobileNavbar .row .drop img {
+            margin-left: 5px;
+            width: 30px; }
+    #navbar .overlyNavbar {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.192);
+      top: 0px;
+      left: 0px;
+      display: none; }
+      #navbar .overlyNavbar.show {
+        display: block; }
+    #navbar .linksOfNavbar {
+      position: fixed;
+      right: -100vw;
+      top: 0px;
+      background-color: #2249a1;
+      z-index: 100000;
+      width: 90%;
+      height: 100vh;
+      overflow: auto;
+      text-align: center;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #navbar .linksOfNavbar.showNavBarMobile {
+        right: 0px; }
+      #navbar .linksOfNavbar .closeNavBar {
+        text-align: right;
+        padding: 10px 20px;
+        display: block; }
+        #navbar .linksOfNavbar .closeNavBar img {
+          width: 15px;
+          cursor: pointer; }
+      #navbar .linksOfNavbar .toggleSubNavLinks {
+        display: block !important;
+        cursor: pointer;
         position: absolute;
-        margin: auto; }
+        top: 10px;
+        right: 0px;
+        width: 65px !important;
+        min-width: 55px !important;
+        height: 45px !important;
+        padding: 0 !important; }
+        #navbar .linksOfNavbar .toggleSubNavLinks span {
+          width: 15px;
+          height: 1px;
+          background-color: #fff;
+          display: block;
+          position: relative;
+          top: 50%;
+          margin: 0 auto !important;
+          -webkit-transition-duration: .2s;
+          transition-duration: .2s; }
+          #navbar .linksOfNavbar .toggleSubNavLinks span:after {
+            width: 15px;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+            position: absolute;
+            content: ''; }
+        #navbar .linksOfNavbar .toggleSubNavLinks.clicked_it span:after {
+          -webkit-transform: rotate(-180deg) !important;
+          transform: rotate(-180deg) !important;
+          -webkit-transition-duration: .2s;
+          transition-duration: .2s; }
+      #navbar .linksOfNavbar .mobileExtraOptions {
+        display: block;
+        color: #FFF;
+        font-family: HelveticaNeue-Regular;
+        text-shadow: 26px 0px 27px #2a313d; }
+        #navbar .linksOfNavbar .mobileExtraOptions * {
+          margin: 5px 0px; }
+        #navbar .linksOfNavbar .mobileExtraOptions .one {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          #navbar .linksOfNavbar .mobileExtraOptions .one a {
+            display: block;
+            color: #FFF;
+            text-decoration: none; }
+            #navbar .linksOfNavbar .mobileExtraOptions .one a.contact {
+              color: #fdb414; }
+        #navbar .linksOfNavbar .mobileExtraOptions .two {
+          padding: 10px 20px; }
+          #navbar .linksOfNavbar .mobileExtraOptions .two a {
+            text-decoration: none;
+            width: 100%;
+            display: block;
+            border: 1px solid #FFF;
+            color: #FFF;
+            font-size: 20px;
+            height: 38px;
+            line-height: 20px;
+            min-width: 130px;
+            text-align: center;
+            padding: 7px 0; }
+        #navbar .linksOfNavbar .mobileExtraOptions ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          max-width: 180px;
+          margin: 0px auto; }
+          #navbar .linksOfNavbar .mobileExtraOptions ul li {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+            margin: 0px 5px; }
+      #navbar .linksOfNavbar > div {
+        display: block; }
+        #navbar .linksOfNavbar > div > li {
+          display: block;
+          position: relative;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          #navbar .linksOfNavbar > div > li > div {
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out; }
+            #navbar .linksOfNavbar > div > li > div:hover {
+              background-color: transparent; }
+            #navbar .linksOfNavbar > div > li > div.hasSub::before {
+              content: '';
+              display: none !important; }
+            #navbar .linksOfNavbar > div > li > div.hasSub::after {
+              content: '';
+              display: none !important; }
+            #navbar .linksOfNavbar > div > li > div:hover a {
+              color: #FFF !important; }
+            #navbar .linksOfNavbar > div > li > div > a {
+              padding: 20px 0px;
+              color: #FFF !important;
+              display: block;
+              font-size: 18px;
+              font-family: HelveticaNeue-Regular; }
+          #navbar .linksOfNavbar > div > li ul {
+            position: static;
+            display: none;
+            background-color: transparent;
+            opacity: 1 !important;
+            -webkit-transition: none !important;
+            transition: none !important; }
+            #navbar .linksOfNavbar > div > li ul::after {
+              display: none;
+              content: ''; }
+            #navbar .linksOfNavbar > div > li ul li {
+              display: block;
+              background-color: rgba(255, 255, 255, 0.08);
+              border-top: 1px solid rgba(255, 255, 255, 0.1); }
+              #navbar .linksOfNavbar > div > li ul li::before {
+                display: none;
+                content: ''; }
+              #navbar .linksOfNavbar > div > li ul li a {
+                padding: 10px;
+                color: #FFF;
+                display: inherit;
+                font-size: 18px;
+                font-family: HelveticaNeue-Regular; }
+                #navbar .linksOfNavbar > div > li ul li a:hover {
+                  color: #2249a1 !important; }
+          #navbar .linksOfNavbar > div > li .bottom {
+            position: static; } }
 
 /*
 * this file contains all introduce options
@@ -263,7 +563,7 @@ body {
   #homePageIntroduce1 .background {
     min-height: 400px;
     padding: 60px 30px;
-    background: url(/images/introduce/intro1_background.jpg) no-repeat;
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/intro1_background.jpg) no-repeat;
     background-size: cover; }
     #homePageIntroduce1 .background .talk .phone {
       position: absolute;
@@ -293,6 +593,7 @@ body {
       #homePageIntroduce1 .background .mobile_background .text {
         width: 100%;
         height: 100%;
+        max-width: 566px;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -339,7 +640,7 @@ body {
           #homePageIntroduce1 .background .mobile_background .text a:hover {
             color: #FFF; }
           #homePageIntroduce1 .background .mobile_background .text a:before {
-            background: url(/images/introduce/play_button.webp) no-repeat;
+            background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/play_button.webp) no-repeat;
             content: '';
             width: 56px;
             height: 65px;
@@ -380,7 +681,7 @@ body {
           top: -20px;
           right: -5px;
           cursor: pointer;
-          background: url(/images/introduce/times.png); }
+          background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/times.png); }
         #homePageIntroduce1 .background #theVideo div iframe {
           border-radius: 10px;
           border: none;
@@ -391,7 +692,7 @@ body {
   position: relative; }
   #homePageIntroduce2 .background {
     padding: 75px 150px 100px;
-    background: url(/images/introduce/intro2_background.jpg) no-repeat;
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/intro2_background.jpg) no-repeat;
     background-size: cover; }
     #homePageIntroduce2 .background span {
       text-transform: uppercase;
@@ -412,10 +713,11 @@ body {
     #homePageIntroduce2 .background .buttons {
       margin-top: 30px; }
       #homePageIntroduce2 .background .buttons .more {
-        padding: 10px 30px;
+        padding: 15px 30px;
+        line-height: 1em;
         border-radius: 30px;
-        background-color: #fdb414;
-        border: 2px solid #fdb414;
+        background-color: #2249a1;
+        border: 2px solid #2249a1;
         display: inline-block;
         margin-right: 40px;
         color: #FFF;
@@ -426,10 +728,11 @@ body {
           background-color: #fff;
           color: #2249a1; }
       #homePageIntroduce2 .background .buttons .contact {
-        padding: 10px 30px;
+        padding: 15px 30px;
         border-radius: 30px;
+        line-height: 1em;
         background-color: #fff;
-        border: 2px solid #fdb414;
+        border: 2px solid #2249a1;
         display: inline-block;
         margin-right: 40px;
         color: #2249a1;
@@ -437,7 +740,980 @@ body {
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
         #homePageIntroduce2 .background .buttons .contact:hover {
-          background-color: #fdb414;
+          background-color: #2249a1;
           color: #FFF; }
+
+/*
+** introduction for mobile design
+*/
+@media screen and (max-width: 991px) {
+  #homePageIntroduce1 .background {
+    overflow: hidden; }
+    #homePageIntroduce1 .background .talk .phone {
+      display: none; }
+    #homePageIntroduce1 .background #theVideo div {
+      width: 90%;
+      height: 40%; }
+  #homePageIntroduce2 .background {
+    padding: 50px 10px;
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/intro2_background.jpg) no-repeat;
+    background-size: cover; }
+    #homePageIntroduce2 .background .buttons {
+      text-align: center; }
+      #homePageIntroduce2 .background .buttons .more {
+        padding: 10px 15px;
+        margin-right: 10px; }
+      #homePageIntroduce2 .background .buttons .contact {
+        margin-left: 10px;
+        padding: 10px 15px;
+        margin-right: 0px; } }
+
+#homePageWhyUs h1 {
+  font-size: 106px;
+  line-height: 106px;
+  font-family: HelveticaNeue-UltraLight;
+  margin: 100px 0 60px 0;
+  padding: 0;
+  font-weight: normal;
+  text-align: center;
+  color: #182752; }
+
+#homePageWhyUs .options h3 {
+  background: #fdb414;
+  color: #FFF;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 15px 5px;
+  position: relative;
+  text-align: center;
+  font-family: HelveticaNeue-Thin; }
+  #homePageWhyUs .options h3:before {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    width: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 8px 0 8px;
+    border-color: #fdb414 transparent transparent; }
+
+#homePageWhyUs .options p {
+  padding-top: 35px;
+  text-align: left;
+  font-family: HelveticaNeue-Thin;
+  font-size: 20px;
+  line-height: 30px; }
+
+#homePageTrusted {
+  margin-top: 40px; }
+  #homePageTrusted .background {
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/trusted/trusted_background.jpg) no-repeat fixed center center;
+    background-size: cover;
+    height: 400px; }
+  #homePageTrusted .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px; }
+    #homePageTrusted .flex .data {
+      width: 800px;
+      padding: 10px;
+      margin: 0px auto;
+      max-width: 100%; }
+      #homePageTrusted .flex .data * {
+        color: #FFF; }
+      #homePageTrusted .flex .data h3 {
+        font-size: 40px;
+        line-height: 48px;
+        font-family: HelveticaNeue-Thin; }
+      #homePageTrusted .flex .data span {
+        display: block;
+        font-size: 20px; }
+      #homePageTrusted .flex .data a {
+        margin-top: 20px;
+        padding: 15px 30px;
+        line-height: 1em;
+        border-radius: 30px;
+        background-color: #2249a1;
+        display: inline-block;
+        margin-right: 40px;
+        text-decoration: none;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+        #homePageTrusted .flex .data a:hover {
+          background-color: #fff;
+          color: #2249a1; }
+
+#whyUsAll {
+  position: relative; }
+  #whyUsAll .head {
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/why_us/why_us_background.jpg) no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #whyUsAll .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #whyUsAll .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #whyUsAll .features .all {
+    position: relative;
+    padding: 10px 0px 0px; }
+    #whyUsAll .features .all .pretty_icon {
+      position: absolute;
+      width: 50%;
+      top: 0%;
+      opacity: 0.2;
+      z-index: 0; }
+    #whyUsAll .features .all .header {
+      z-index: 2;
+      margin-bottom: 60px; }
+      #whyUsAll .features .all .header h1 {
+        font-size: 2.8125rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.0625rem;
+        font-family: HelveticaNeue-Thin;
+        margin: 60px 0px 30px; }
+        #whyUsAll .features .all .header h1:after {
+          content: '';
+          margin-left: 10px;
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 20px 20px;
+          border-color: transparent transparent #fdb414 transparent; }
+      #whyUsAll .features .all .header p {
+        position: relative;
+        margin: 0;
+        padding: 0.625rem 0;
+        letter-spacing: 0.0125rem;
+        font-size: 17px; }
+    #whyUsAll .features .all .options {
+      text-align: center;
+      z-index: 2;
+      padding: 20px; }
+      #whyUsAll .features .all .options .img-container {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        padding: 20px;
+        border: 2px solid #DDD;
+        margin: 10px auto; }
+      #whyUsAll .features .all .options h3 {
+        font-size: 28px;
+        font-family: HelveticaNeue-Thin;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        margin-top: 20px; }
+      #whyUsAll .features .all .options p {
+        font-size: 18px; }
+      #whyUsAll .features .all .options .data {
+        padding-bottom: 50px; }
+        #whyUsAll .features .all .options .data.lined:after {
+          content: '';
+          right: -25%;
+          width: 50%;
+          height: 2px;
+          background: #b0babf;
+          position: absolute;
+          top: 58px; }
+    #whyUsAll .features .all .extra_features {
+      z-index: 2;
+      background: #00d4ff;
+      background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f3f3f3), color-stop(50%, #2249a1));
+      background: linear-gradient(90deg, #f3f3f3 50%, #2249a1 50%);
+      padding: 50px 0px; }
+      #whyUsAll .features .all .extra_features .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      #whyUsAll .features .all .extra_features .left_side {
+        padding: 0px 40px 0px 0px; }
+        #whyUsAll .features .all .extra_features .left_side:after {
+          content: '';
+          margin-left: 10px;
+          display: inline-block;
+          position: absolute;
+          right: -15px;
+          top: calc(50% - 20px);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 0 40px 40px;
+          border-color: transparent transparent #f3f3f3 transparent;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+        #whyUsAll .features .all .extra_features .left_side h3 {
+          font-size: 1.8125rem;
+          text-transform: uppercase;
+          letter-spacing: 0.0625rem;
+          font-family: HelveticaNeue-Thin;
+          margin-bottom: 40px; }
+          #whyUsAll .features .all .extra_features .left_side h3:after {
+            content: '';
+            margin-left: 10px;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 20px 20px;
+            border-color: transparent transparent #fdb414 transparent; }
+      #whyUsAll .features .all .extra_features ul {
+        margin-left: 35px;
+        margin-top: 20px; }
+        #whyUsAll .features .all .extra_features ul li {
+          color: #FFF;
+          margin: 0px 0px 20px; }
+  #whyUsAll .features .all:nth-of-type(even) {
+    background-color: #f2f2f2; }
+    #whyUsAll .features .all:nth-of-type(even) .pretty_icon {
+      left: 0px; }
+    #whyUsAll .features .all:nth-of-type(even) .header .row .col-md-6:nth-of-type(1) {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+  #whyUsAll .features .all:nth-of-type(odd) .pretty_icon {
+    right: 0px; }
+
+/*
+** why us mobile design
+*/
+@media screen and (max-width: 991px) {
+  #homePageWhyUs h1 {
+    font-size: 70px;
+    line-height: 70px; }
+  #homePageWhyUs .options p {
+    padding-bottom: 35px; }
+  #homePageTrusted .flex .data a {
+    margin-right: 0px; }
+  #whyUsAll .features .all {
+    overflow: hidden; }
+    #whyUsAll .features .all .pretty_icon {
+      position: absolute;
+      width: 50%;
+      top: 0%;
+      opacity: 0.2;
+      z-index: 0; }
+    #whyUsAll .features .all .header {
+      margin-bottom: 20px; }
+      #whyUsAll .features .all .header h1 {
+        font-size: 2.5rem; }
+    #whyUsAll .features .all .options .data.lined:after {
+      display: none; }
+    #whyUsAll .features .all .extra_features {
+      background: transparent;
+      background: transparent;
+      padding: 0px; }
+      #whyUsAll .features .all .extra_features .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        #whyUsAll .features .all .extra_features .row .col-md-6:nth-of-type(1) {
+          background-color: #f3f3f3;
+          padding-top: 20px;
+          padding-bottom: 20px; }
+        #whyUsAll .features .all .extra_features .row .col-md-6:nth-of-type(2) {
+          background-color: #2249a1;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+      #whyUsAll .features .all .extra_features .left_side {
+        padding: 0px 0px 0px 0px; }
+        #whyUsAll .features .all .extra_features .left_side:after {
+          display: none; }
+      #whyUsAll .features .all .extra_features ul {
+        margin-left: 0px; }
+  #whyUsAll .features .all:nth-of-type(even) .pretty_icon {
+    right: 0px;
+    left: auto; }
+  #whyUsAll .features .all:nth-of-type(odd) .pretty_icon {
+    right: 0px; } }
+
+#homePageProducts {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/intro2_background.jpg) no-repeat;
+  background-size: cover; }
+  #homePageProducts h1 {
+    font-size: 40px;
+    padding: 40px 0px;
+    font-weight: bold;
+    font-family: Lato; }
+  #homePageProducts .options .data {
+    margin-bottom: 20px; }
+    #homePageProducts .options .data:hover svg {
+      margin-top: -20px; }
+      #homePageProducts .options .data:hover svg path {
+        fill: #fdb414 !important; }
+    #homePageProducts .options .data svg {
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #homePageProducts .options .data svg path {
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        fill: #2249a1; }
+    #homePageProducts .options .data h3, #homePageProducts .options .data p {
+      font-family: Lato-Regular; }
+      #homePageProducts .options .data h3 a, #homePageProducts .options .data p a {
+        color: #000; }
+
+#homePageSolutions {
+  padding: 40px 0px; }
+  #homePageSolutions span {
+    font-size: 82px;
+    line-height: 82px;
+    color: #333;
+    font-family: HelveticaNeue-UltraLight;
+    margin: 0 0 60px;
+    padding: 0; }
+  #homePageSolutions .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    #homePageSolutions .icon span {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin: 0px !important; }
+
+#AllProducts {
+  position: relative; }
+  #AllProducts .product .head {
+    padding: 40px 0 75px; }
+    #AllProducts .product .head .row {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #AllProducts .product .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #AllProducts .product .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .head p {
+      color: #FFF;
+      font-family: HelveticaNeue-Thin;
+      font-size: 22px; }
+    #AllProducts .product .head.second {
+      background-color: #f2f2f2;
+      padding: 80px 0;
+      overflow: hidden; }
+      #AllProducts .product .head.second h1 {
+        margin-bottom: 20px; }
+      #AllProducts .product .head.second img {
+        height: 100%; }
+      #AllProducts .product .head.second * {
+        color: #333; }
+  #AllProducts .product .content {
+    padding-bottom: 40px;
+    position: relative; }
+    #AllProducts .product .content h1 {
+      margin: 0;
+      font-size: 62px;
+      line-height: 62px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 80px 0px 40px; }
+      #AllProducts .product .content h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .content .img {
+      width: 150px;
+      position: absolute;
+      left: calc(50% - 75px);
+      top: calc(50% - 20px); }
+    #AllProducts .product .content .text {
+      margin-bottom: 40px;
+      font-family: HelveticaNeue-Thin;
+      font-size: 18px;
+      border: 1px solid #DDD;
+      border-radius: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #AllProducts .product .content .text:hover {
+        -webkit-box-shadow: 0px 0px 20px #e8e6e6;
+                box-shadow: 0px 0px 20px #e8e6e6; }
+    #AllProducts .product .content .head_data {
+      text-align: center;
+      margin-bottom: 10px; }
+      #AllProducts .product .content .head_data img {
+        width: 50px;
+        display: inline-block;
+        vertical-align: bottom; }
+      #AllProducts .product .content .head_data h4 {
+        font-weight: bold;
+        display: inline-block;
+        margin: 0px;
+        font-family: Lato; }
+  #AllProducts .product .purches {
+    padding: 130px 0 75px;
+    text-align: right; }
+    #AllProducts .product .purches h2 {
+      color: #FFF;
+      margin: 60px 0 50px;
+      padding: 0;
+      font-size: 39px;
+      line-height: 50px;
+      font-family: HelveticaNeue-Thin;
+      text-align: right;
+      float: right; }
+    #AllProducts .product .purches a {
+      display: inline-block;
+      padding: 28px 10px;
+      background: #fdb414;
+      color: #FFF;
+      text-align: center;
+      font-size: 23px;
+      line-height: 16px;
+      min-width: 250px;
+      text-decoration: none;
+      font-family: HelveticaNeue-Thin;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #AllProducts .product .purches a:hover {
+        background: #2249a1; }
+
+/*
+* products design for mobile
+*/
+@media screen and (max-width: 991px) {
+  #homePageSolutions span {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-family: HelveticaNeue-Thin;
+    text-align: left !important; }
+  #homePageSolutions .icon {
+    display: none; }
+  #AllProducts .product .head {
+    padding: 40px 0 10px;
+    background-position: 70% center !important; }
+    #AllProducts .product .head .row {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #AllProducts .product .head h1 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+      font-weight: bold; }
+    #AllProducts .product .head p {
+      font-size: 18px; }
+    #AllProducts .product .head.second {
+      padding: 80px 0 30px; }
+      #AllProducts .product .head.second img {
+        height: auto; }
+  #AllProducts .product .content {
+    padding-bottom: 40px;
+    position: relative; }
+    #AllProducts .product .content h1 {
+      font-size: 42px;
+      line-height: 42px;
+      font-family: HelveticaNeue-Thin;
+      text-align: center;
+      padding: 80px 15px 40px; }
+      #AllProducts .product .content h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+    #AllProducts .product .content .img {
+      display: none; }
+    #AllProducts .product .content .text {
+      margin-right: 15px;
+      margin-left: 15px; }
+  #AllProducts .product .purches {
+    background-position: 0 0 !important;
+    background-size: cover !important;
+    padding: 80px 0;
+    text-align: center; }
+    #AllProducts .product .purches h2 {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center !important;
+      max-width: 100% !important;
+      float: none; }
+    #AllProducts .product .purches a {
+      padding: 22px 10px; } }
+
+#homePageNewsLetters {
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/introduce/intro2_background.jpg) no-repeat;
+  background-size: cover;
+  padding: 60px 0px; }
+  #homePageNewsLetters h1 {
+    margin-bottom: 40px; }
+  #homePageNewsLetters .data {
+    margin-bottom: 20px; }
+    #homePageNewsLetters .data .border {
+      border: 1px solid #ddd;
+      padding: 10px; }
+    #homePageNewsLetters .data div {
+      text-decoration: none; }
+      #homePageNewsLetters .data div .img-container {
+        width: 100%;
+        overflow: hidden; }
+        #homePageNewsLetters .data div .img-container img {
+          height: auto;
+          width: 100%;
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+          #homePageNewsLetters .data div .img-container img:hover {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1); }
+      #homePageNewsLetters .data div .title {
+        margin: 10px 0px;
+        font-family: Lato-Bold;
+        color: #333; }
+
+/*
+* support section
+*/
+#homePageSupport {
+  padding-top: 80px; }
+  #homePageSupport h2 {
+    font-family: HelveticaNeue-Thin;
+    font-size: 40px;
+    padding: 10px 0 10px;
+    margin: 30px 0px; }
+  #homePageSupport a {
+    display: inline-block;
+    padding: 28px 10px;
+    background: #fdb414;
+    color: #FFF;
+    text-align: center;
+    font-size: 23px;
+    line-height: 16px;
+    min-width: 250px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none; }
+    #homePageSupport a:hover {
+      background: #2249a1; }
+
+/**
+support page 
+*/
+#SupportFAQ, #SupportDialingCodes, #SupportRemoteSupport {
+  position: relative; }
+  #SupportFAQ .head, #SupportDialingCodes .head, #SupportRemoteSupport .head {
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/support/dialing_codes_background.webp) no-repeat right 0;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #SupportFAQ .head h1, #SupportDialingCodes .head h1, #SupportRemoteSupport .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #SupportFAQ .head h1:after, #SupportDialingCodes .head h1:after, #SupportRemoteSupport .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #SupportFAQ .faqs h3, #SupportDialingCodes .faqs h3, #SupportRemoteSupport .faqs h3 {
+    color: #fdb414;
+    font-weight: bold;
+    font-family: Lato;
+    margin-top: 50px; }
+  #SupportFAQ .faqs .quest, #SupportDialingCodes .faqs .quest, #SupportRemoteSupport .faqs .quest {
+    margin: 2.5px 0px;
+    display: block; }
+    #SupportFAQ .faqs .quest .qhead, #SupportDialingCodes .faqs .quest .qhead, #SupportRemoteSupport .faqs .quest .qhead {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      color: #FFF;
+      background-color: #2249a1;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      font-family: Lato-Regular; }
+      #SupportFAQ .faqs .quest .qhead.opened, #SupportDialingCodes .faqs .quest .qhead.opened, #SupportRemoteSupport .faqs .quest .qhead.opened {
+        background-color: #fdb414; }
+        #SupportFAQ .faqs .quest .qhead.opened img, #SupportDialingCodes .faqs .quest .qhead.opened img, #SupportRemoteSupport .faqs .quest .qhead.opened img {
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg); }
+      #SupportFAQ .faqs .quest .qhead img, #SupportDialingCodes .faqs .quest .qhead img, #SupportRemoteSupport .faqs .quest .qhead img {
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        right: 10px;
+        width: 25px; }
+    #SupportFAQ .faqs .quest .qan, #SupportDialingCodes .faqs .quest .qan, #SupportRemoteSupport .faqs .quest .qan {
+      padding: 10px;
+      display: none;
+      font-family: Lato-Regular; }
+
+#SupportDialingCodes {
+  position: relative; }
+  #SupportDialingCodes .head {
+    margin-top: 50px; }
+    #SupportDialingCodes .head h1 {
+      font-size: 62px;
+      line-height: 72px; }
+  #SupportDialingCodes .codes {
+    margin-top: 50px; }
+    #SupportDialingCodes .codes table {
+      margin-top: 10px; }
+
+#SupportRemoteSupport .head {
+  background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/support/remove_support_background.jpg) no-repeat right 0;
+  background-size: cover;
+  margin-top: 50px; }
+
+/**
+** support responsive design
+**/
+@media screen and (max-width: 991px) {
+  #homePageSupport, #SupportDialingCodes {
+    padding-top: 20px; }
+    #homePageSupport h2, #SupportDialingCodes h2 {
+      margin: 30px 0px; }
+    #homePageSupport a, #SupportDialingCodes a {
+      margin-bottom: 30px; } }
+
+#contactWays {
+  position: relative; }
+  #contactWays .head {
+    background: url(https://bishoyromany.github.io/static_vpn_company_webiste/images/support/contact_us_background.jpg) no-repeat right 0;
+    background-size: cover;
+    padding: 80px 0;
+    text-decoration: none;
+    display: block; }
+    #contactWays .head h1 {
+      color: #FFF;
+      margin: 0;
+      font-size: 82px;
+      line-height: 82px;
+      font-family: HelveticaNeue-UltraLight;
+      padding: 0; }
+      #contactWays .head h1:after {
+        content: '';
+        margin-left: 10px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent #fdb414 transparent; }
+  #contactWays .contact_ways {
+    padding-top: 50px; }
+    #contactWays .contact_ways .data {
+      text-align: center;
+      border: 1px solid #DDD;
+      padding: 10px;
+      margin-bottom: 40px;
+      height: 350px;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+      #contactWays .contact_ways .data:hover {
+        -webkit-box-shadow: 0px 0px 32px -12px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 32px -12px rgba(0, 0, 0, 0.75); }
+      #contactWays .contact_ways .data .img-container {
+        padding: 10px 50px;
+        height: 160px;
+        overflow: hidden; }
+      #contactWays .contact_ways .data h3 {
+        font-weight: bold;
+        font-family: HelveticaNeue-UltraLight;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-transform: uppercase; }
+      #contactWays .contact_ways .data a, #contactWays .contact_ways .data span {
+        font-family: HelveticaNeue-Regular;
+        font-size: 30px;
+        color: #fdb414;
+        margin-bottom: 50px;
+        text-decoration: none;
+        display: inline-block;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        font-weight: bold;
+        word-break: break-all; }
+        #contactWays .contact_ways .data a:hover, #contactWays .contact_ways .data span:hover {
+          color: #2249a1; }
+      #contactWays .contact_ways .data span {
+        font-size: 20px; }
+  #contactWays .contact_form {
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    #contactWays .contact_form form .form-gruop {
+      margin-bottom: 10px; }
+    #contactWays .contact_form form textarea {
+      max-width: 100%;
+      min-height: 200px; }
+    #contactWays .contact_form form .submit {
+      border-color: #fdb414;
+      font-size: 23px;
+      clear: both;
+      margin: 20px auto;
+      color: #fdb414;
+      -webkit-appearance: none;
+      border-radius: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background: #fff;
+      padding: 18px 25px;
+      min-width: 328px;
+      font-family: 'Open Sans',sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      line-height: 16px;
+      min-width: 328px;
+      cursor: pointer;
+      display: block; }
+      #contactWays .contact_form form .submit:hover {
+        background: #fdb414;
+        color: #FFF; }
+    #contactWays .contact_form form .clear-fix {
+      clear: both; }
+  #contactWays #Country {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1000; }
+    #contactWays #Country .selected {
+      cursor: pointer;
+      padding: 10px;
+      position: relative;
+      border: 1px solid #ccc; }
+      #contactWays #Country .selected:before {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 13px);
+        padding: 7px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        content: ""; }
+      #contactWays #Country .selected.it_down_now:beforE {
+        top: calc(50% - 5px);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg); }
+      #contactWays #Country .selected.is-invalid {
+        border: 1px solid red; }
+      #contactWays #Country .selected img {
+        height: 25px;
+        margin-right: 40px;
+        float: right;
+        vertical-align: middle; }
+    #contactWays #Country ul {
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      width: 100%;
+      height: 300px;
+      overflow: auto;
+      background-color: #f2f2f2;
+      display: none; }
+      #contactWays #Country ul li {
+        padding: 10px;
+        border-top: 1px solid #DDD;
+        cursor: pointer;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out; }
+        #contactWays #Country ul li:hover {
+          color: #FFF;
+          background: #2249a1; }
+        #contactWays #Country ul li.searchCountry:hover {
+          background: #f2f2f2; }
+        #contactWays #Country ul li img {
+          height: 30px;
+          float: right;
+          vertical-align: middle; }
+
+/**
+** contact responsive design
+**/
+@media screen and (max-width: 991px) {
+  #contactWays {
+    padding-top: 20px; }
+    #contactWays h2 {
+      margin: 30px 0px; }
+    #contactWays a {
+      margin-bottom: 30px; }
+    #contactWays .contact_ways {
+      padding-top: 50px; }
+      #contactWays .contact_ways .data {
+        height: auto; }
+        #contactWays .contact_ways .data .img-container {
+          height: auto; } }
+
+#paymentMethods {
+  margin-bottom: 40px;
+  margin-top: 80px; }
+  #paymentMethods h3 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: HelveticaNeue-Thin; }
+    #paymentMethods h3 img {
+      margin-left: 10px;
+      width: 40px;
+      vertical-align: text-top; }
+  #paymentMethods .img-container {
+    margin: 0px auto;
+    text-align: center; }
+  #paymentMethods .ways {
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px 5%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #paymentMethods .ways .img-container {
+      -ms-flex-preferred-size: 85px;
+          flex-basis: 85px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      text-align: center;
+      margin: 10px 20px; }
+      #paymentMethods .ways .img-container:hover {
+        opacity: 1; }
+      #paymentMethods .ways .img-container img {
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        margin: 0px auto; }
+
+footer {
+  background-color: #1d4ca1;
+  padding: 0px 0px 40px 0px; }
+  footer .upper {
+    padding-top: 30px; }
+    footer .upper .social {
+      float: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 180px;
+      z-index: 8; }
+      footer .upper .social li {
+        margin-left: 5px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        footer .upper .social li a {
+          width: 25px; }
+    footer .upper .prevacy_policy {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      text-align: right;
+      display: block;
+      color: #FFF;
+      font-size: 15px;
+      text-decoration: none; }
+      footer .upper .prevacy_policy:hover {
+        color: #fdb414; }
+    footer .upper .scroll_top {
+      text-align: right;
+      display: block;
+      color: #ff7230;
+      font-size: 15px;
+      text-decoration: none; }
+      footer .upper .scroll_top:hover {
+        color: #fdb414; }
+  footer .map a {
+    color: #FFF;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 5px; }
+    footer .map a:hover {
+      color: #fdb414; }
+  footer .map .header {
+    margin-bottom: 20px;
+    font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */
